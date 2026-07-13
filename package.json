@@ -1,0 +1,16 @@
+{
+  "name": "himnario-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "API de solo lectura para consultar el himnario en SQLite.",
+  "type": "commonjs",
+  "scripts": {
+    "import": "node src/import-hymnal.js",
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
