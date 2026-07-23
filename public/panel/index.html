@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control Himnario · OBS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/panel.css">
+</head>
+<body>
+  <div class="main-container">
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-mark"><i class="fas fa-music"></i></span>
+        <div><span class="panel-kicker">Control de transmisión</span><h1>Himnario OBS</h1></div>
+      </div>
+      <div class="header-actions">
+        <div class="database-status" id="database-status"><span class="status-dot"></span><span>Cargando biblioteca…</span></div>
+        <button id="settings-button" class="icon-button" type="button" aria-label="Abrir configuración" aria-controls="settings-drawer" aria-expanded="false" title="Configuración"><i class="fas fa-sliders"></i></button>
+      </div>
+    </header>
+
+    <main class="workspace">
+    <section class="control-panel">
+      <div class="panel-heading">
+        <div><span class="step-number">01</span><div><h2>Elegir himno</h2><p>Busca en la biblioteca local</p></div></div>
+      </div>
+      <div class="form-container">
+        <div class="field-row">
+          <div class="form-group">
+            <label for="collection-select">Colección</label>
+            <select id="collection-select"></select>
+          </div>
+          <div class="form-group mode-field">
+            <label for="sequence-mode">Orden</label>
+            <select id="sequence-mode"><option value="source">Texto original</option><option value="performance">Con coros</option></select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="hymn-search">Buscar himno</label>
+          <div class="select-search-container">
+            <input type="text" id="hymn-search" class="select-with-search" placeholder="Buscar por título…" autocomplete="off">
+            <span class="search-icon"><i class="fas fa-search"></i></span>
+            <div id="hymn-dropdown" class="search-dropdown hymn-dropdown"></div>
+          </div>
+        </div>
+        <div class="selection-meta" id="selection-meta" hidden>
+          <strong id="selected-hymn-title"></strong>
+          <span id="selected-hymn-section"></span>
+        </div>
+        <div class="transport">
+          <button id="prev-line" class="btn btn-primary" type="button" title="Parte anterior"><i class="fas fa-arrow-left"></i><span>Anterior</span></button>
+          <div class="line-counter"><small>Parte</small><strong id="line-counter">— / —</strong></div>
+          <button id="next-line" class="btn btn-primary" type="button" title="Parte siguiente"><span>Siguiente</span><i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="broadcast-control"><div><span class="broadcast-icon"><i class="fas fa-tower-broadcast"></i></span><span><strong>Salida en vivo</strong><small>Mostrar esta parte en OBS</small></span></div><label class="switch"><input type="checkbox" id="visibility-toggle"><span class="slider"></span></label></div>
+      </div>
+    </section>
+
+    <section class="preview-panel">
+      <div class="panel-heading preview-heading"><div><span class="step-number">02</span><div><h2>Vista previa</h2><p>Contenido listo para pantalla</p></div></div><span class="live-pill"><span></span> OBS</span></div>
+      <div class="preview-content">
+        <div id="preview-current" class="preview-verse current"><div class="verse-header"><span class="verse-ref">Actual</span><span class="part-badge" id="current-type"></span></div><div class="verse-text">Seleccione un himno</div></div>
+        <div id="preview-next" class="preview-verse next"><div class="verse-header"><span class="verse-ref">Siguiente</span></div><div class="verse-text">—</div></div>
+      </div>
+      <div class="obs-url"><span><i class="fas fa-display"></i> URL del visor</span><code id="obs-url"></code></div>
+    </section>
+    </main>
+  </div>
+
+  <aside id="settings-drawer" class="settings-drawer" aria-hidden="true" aria-labelledby="settings-title">
+    <div class="settings-header"><div><span class="eyebrow">Personalización</span><h2 id="settings-title">Tema y estilo</h2></div><button id="settings-close" class="icon-button" type="button" aria-label="Cerrar configuración"><i class="fas fa-xmark"></i></button></div>
+    <div class="settings-body">
+      <section class="settings-section"><h4>Elige un tema</h4><div id="theme-list" class="theme-list" role="radiogroup" aria-label="Temas disponibles"></div></section>
+      <section class="settings-section settings-grid">
+        <h4>Texto y posición</h4>
+        <label for="horizontal-align">Posición horizontal</label><select id="horizontal-align"><option value="left">Izquierda</option><option value="center">Centro</option><option value="right">Derecha</option></select>
+        <label for="vertical-align">Posición vertical</label><select id="vertical-align"><option value="top">Arriba</option><option value="center">Centro</option><option value="bottom">Abajo</option></select>
+        <label for="font-family">Tipo de letra</label><select id="font-family"></select>
+        <div class="switch-container compact auto-fit-control"><span><strong>Ajustar al contenedor</strong><small>Calcula el mayor texto que cabe sin recortarlo</small></span><label class="switch"><input type="checkbox" id="auto-fit-toggle"><span class="slider"></span></label></div>
+        <label for="font-size">Tamaño manual <output for="font-size" id="font-size-value"></output></label><input type="range" id="font-size" min="18" max="96">
+        <label for="text-color">Color del texto</label><input type="color" id="text-color">
+        <label for="text-align">Alineación del texto</label><select id="text-align"><option value="left">Izquierda</option><option value="center">Centro</option><option value="right">Derecha</option></select>
+        <label for="line-height">Espaciado entre líneas <output for="line-height" id="line-height-value"></output></label><input type="range" id="line-height" min="0.8" max="2.5" step="0.1">
+      </section>
+      <section class="settings-section settings-grid">
+        <h4>Contenedor y contraste</h4>
+        <label for="background-color">Color del fondo</label><input type="color" id="background-color">
+        <label for="background-opacity">Opacidad del fondo <output for="background-opacity" id="background-opacity-value"></output></label><input type="range" id="background-opacity" min="0" max="100">
+        <div class="switch-container compact"><span class="switch-label">Mostrar fondo del tema</span><label class="switch"><input type="checkbox" id="background-toggle"><span class="slider"></span></label></div>
+        <label for="padding">Márgenes internos <output for="padding" id="padding-value"></output></label><input type="range" id="padding" min="0" max="120">
+        <label for="max-width">Ancho máximo <output for="max-width" id="max-width-value"></output></label><input type="range" id="max-width" min="320" max="1800" step="20">
+        <label for="text-effect">Efecto de contraste</label><select id="text-effect"><option value="none">Ninguno</option><option value="shadow">Sombra</option><option value="outline">Contorno</option><option value="contrast">Contraste</option></select>
+      </section>
+      <button id="reset-theme-settings" class="btn btn-secondary" type="button"><i class="fas fa-rotate-left"></i> Restaurar valores del tema</button>
+    </div>
+  </aside>
+  <div id="settings-scrim" class="settings-scrim" hidden></div>
+  <script src="/themes/index.js"></script>
+  <script src="/assets/js/control.js"></script>
+</body>
+</html>

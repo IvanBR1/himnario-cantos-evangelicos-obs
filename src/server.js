@@ -1,112 +1,87 @@
+const fs = require('node:fs');
 const http = require('node:http');
-const { openDatabase } = require('./database');
+const path = require('node:path');
 
+const PUBLIC_ROOT = path.resolve(__dirname, '..', 'public');
 const PORT = Number(process.env.PORT || 3000);
-const MAX_LIMIT = 100;
+const CONTENT_TYPES = {
+  '.css': 'text/css; charset=utf-8',
+  '.html': 'text/html; charset=utf-8',
+  '.ico': 'image/x-icon',
+  '.js': 'text/javascript; charset=utf-8',
+  '.json': 'application/json; charset=utf-8',
+  '.png': 'image/png',
+  '.svg': 'image/svg+xml',
+  '.webp': 'image/webp'
+};
 
-function json(response, status, payload) {
-  response.writeHead(status, {
-    'Content-Type': 'application/json; charset=utf-8',
-    'Access-Control-Allow-Origin': '*'
-  });
-  response.end(JSON.stringify(payload));
+function resolvePublicPath(pathname) {
+  const routes = {
+    '/': 'index.html',
+    '/panel': 'panel/index.html',
+    '/panel/': 'panel/index.html',
+    '/visualizador': 'visualizador/index.html',
+    '/visualizador/': 'visualizador/index.html'
+  };
+  const relativePath = routes[pathname] || pathname.replace(/^\/+/u, '');
+  const filePath = path.resolve(PUBLIC_ROOT, relativePath);
+  if (filePath !== PUBLIC_ROOT && !filePath.startsWith(`${PUBLIC_ROOT}${path.sep}`)) return null;
+  return filePath;
 }
 
-function parsePagination(query) {
-  const limit = Math.min(Math.max(Number(query.get('limit')) || 50, 1), MAX_LIMIT);
-  const offset = Math.max(Number(query.get('offset')) || 0, 0);
-  return { limit, offset };
-}
-
-function listHymns(db, query) {
-  const { limit, offset } = parsePagination(query);
-  const clauses = [];
-  const values = [];
-  const search = query.get('search')?.trim();
-  if (search) {
-    clauses.push('LOWER(h.title) LIKE LOWER(?)');
-    values.push(`%${search}%`);
-  }
-  if (query.get('collection')) {
-    clauses.push('c.slug = ?');
-    values.push(query.get('collection'));
-  }
-  if (query.get('section')) {
-    clauses.push('s.code = ?');
-    values.push(query.get('section'));
-  }
-  const where = clauses.length ? `WHERE ${clauses.join(' AND ')}` : '';
-  const rows = db.prepare(`SELECT h.id, h.number, h.title, h.audio_url AS audioUrl,
-    h.has_chorus AS hasChorus, h.ends_with_chorus AS endsWithChorus,
-    h.raw_ends_with_repetition AS rawEndsWithRepetition,
-    c.slug AS collection, c.name AS collectionName, s.code AS sectionCode, s.name AS sectionName
-    FROM hymns h JOIN collections c ON c.id = h.collection_id
-    LEFT JOIN sections s ON s.id = h.section_id ${where}
-    ORDER BY c.id, h.number LIMIT ? OFFSET ?`).all(...values, limit, offset);
-  const total = db.prepare(`SELECT COUNT(*) AS total FROM hymns h
-    JOIN collections c ON c.id = h.collection_id LEFT JOIN sections s ON s.id = h.section_id ${where}`).get(...values).total;
-  return { total, limit, offset, items: rows };
-}
-
-function getHymn(db, id) {
-  const hymn = db.prepare(`SELECT h.id, h.number, h.title, h.audio_url AS audioUrl,
-    h.has_chorus AS hasChorus, h.ends_with_chorus AS endsWithChorus,
-    h.raw_ends_with_repetition AS rawEndsWithRepetition,
-    c.slug AS collection, c.name AS collectionName, s.code AS sectionCode, s.name AS sectionName
-    FROM hymns h JOIN collections c ON c.id = h.collection_id
-    LEFT JOIN sections s ON s.id = h.section_id WHERE h.id = ?`).get(id);
-  if (!hymn) return null;
-  const parts = db.prepare(`SELECT id, position, type, label, text, repeat_marked AS repeatMarked,
-    start_time_ms AS startTimeMs, end_time_ms AS endTimeMs FROM hymn_parts WHERE hymn_id = ? ORDER BY position`).all(id);
-  return { ...hymn, parts };
-}
-
-function getSequence(db, id, mode) {
-  return db.prepare(`SELECT ps.position, ps.note, hp.id AS partId, hp.type, hp.label, hp.text,
-    hp.repeat_marked AS repeatMarked, hp.start_time_ms AS startTimeMs, hp.end_time_ms AS endTimeMs
-    FROM playback_sequence ps
-    JOIN hymn_parts hp ON hp.id = ps.part_id WHERE ps.hymn_id = ? AND ps.mode = ? ORDER BY ps.position`).all(id, mode);
-}
-
-const server = http.createServer((request, response) => {
-  try {
-    if (request.method !== 'GET') return json(response, 405, { error: 'Solo se permiten consultas GET.' });
-    const url = new URL(request.url, `http://${request.headers.host || 'localhost'}`);
-    const db = openDatabase();
-    try {
-      if (url.pathname === '/health') return json(response, 200, { ok: true });
-      if (url.pathname === '/api/collections') {
-        const items = db.prepare(`SELECT c.slug, c.name, c.source_file AS sourceFile, COUNT(h.id) AS hymnCount
-          FROM collections c LEFT JOIN hymns h ON h.collection_id = c.id GROUP BY c.id ORDER BY c.id`).all();
-        return json(response, 200, { items });
-      }
-      if (url.pathname === '/api/sections') {
-        const items = db.prepare(`SELECT c.slug AS collection, s.code, s.name, COUNT(h.id) AS hymnCount
-          FROM sections s JOIN collections c ON c.id = s.collection_id
-          LEFT JOIN hymns h ON h.section_id = s.id GROUP BY s.id ORDER BY c.id, s.id`).all();
-        return json(response, 200, { items });
-      }
-      if (url.pathname === '/api/hymns') return json(response, 200, listHymns(db, url.searchParams));
-      const sequenceMatch = url.pathname.match(/^\/api\/hymns\/(\d+)\/sequence$/);
-      if (sequenceMatch) {
-        const mode = url.searchParams.get('mode') === 'source' ? 'source' : 'performance';
-        const hymn = getHymn(db, Number(sequenceMatch[1]));
-        if (!hymn) return json(response, 404, { error: 'Himno no encontrado.' });
-        return json(response, 200, { hymnId: hymn.id, mode, endsWithChorus: Boolean(hymn.endsWithChorus), items: getSequence(db, hymn.id, mode) });
-      }
-      const hymnMatch = url.pathname.match(/^\/api\/hymns\/(\d+)$/);
-      if (hymnMatch) {
-        const hymn = getHymn(db, Number(hymnMatch[1]));
-        return hymn ? json(response, 200, hymn) : json(response, 404, { error: 'Himno no encontrado.' });
-      }
-      return json(response, 404, { error: 'Ruta no encontrada.' });
-    } finally {
-      db.close();
+function createServer() {
+  return http.createServer((request, response) => {
+    if (!['GET', 'HEAD'].includes(request.method)) {
+      response.writeHead(405, {
+        'Content-Type': 'text/plain; charset=utf-8',
+        Allow: 'GET, HEAD'
+      });
+      response.end('Método no permitido');
+      return;
     }
-  } catch (error) {
-    console.error(error);
-    return json(response, 500, { error: 'No fue posible consultar la base de datos.' });
-  }
-});
 
-server.listen(PORT, () => console.log(`Himnario API disponible en http://localhost:${PORT}`));
+    let pathname;
+    try {
+      pathname = decodeURIComponent(new URL(request.url, `http://${request.headers.host || 'localhost'}`).pathname);
+    } catch {
+      response.writeHead(400, { 'Content-Type': 'text/plain; charset=utf-8' });
+      response.end('Solicitud inválida');
+      return;
+    }
+
+    const filePath = resolvePublicPath(pathname);
+    if (!filePath) {
+      response.writeHead(403, { 'Content-Type': 'text/plain; charset=utf-8' });
+      response.end('Acceso denegado');
+      return;
+    }
+
+    fs.stat(filePath, (error, stats) => {
+      if (error || !stats.isFile()) {
+        response.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+        response.end('No encontrado');
+        return;
+      }
+      response.writeHead(200, {
+        'Content-Type': CONTENT_TYPES[path.extname(filePath).toLocaleLowerCase('es-MX')] || 'application/octet-stream',
+        'Content-Length': stats.size,
+        'Cache-Control': 'no-cache'
+      });
+      if (request.method === 'HEAD') {
+        response.end();
+        return;
+      }
+      fs.createReadStream(filePath).pipe(response);
+    });
+  });
+}
+
+if (require.main === module) {
+  createServer().listen(PORT, () => {
+    console.log(`Presentación: http://localhost:${PORT}/`);
+    console.log(`Panel: http://localhost:${PORT}/panel/`);
+    console.log(`Visualizador OBS: http://localhost:${PORT}/visualizador/`);
+  });
+}
+
+module.exports = { CONTENT_TYPES, PUBLIC_ROOT, createServer, resolvePublicPath };

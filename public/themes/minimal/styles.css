@@ -1,0 +1,3 @@
+body[data-theme="minimal"] { font-family: 'Open Sans', Arial, sans-serif; }
+.minimal-card { background: var(--verse-container-bg); border-radius: 4px; border-top: 1px solid rgba(255,255,255,.28); border-bottom: 1px solid rgba(255,255,255,.16); }
+.minimal-card .verse-reference { margin-top: 14px; font-size: clamp(15px, 1.4vw, 22px); font-weight: 600; opacity: .85; letter-spacing: .04em; text-transform: uppercase; }

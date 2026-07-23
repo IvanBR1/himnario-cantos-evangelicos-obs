@@ -1,3 +1,2 @@
 node_modules/
-data/*.sqlite
-data/*.sqlite-*
+public/data/himnario.db.json

@@ -1,0 +1,53 @@
+:root {
+    --verse-left: 50%;
+    --verse-right: auto;
+    --verse-top: 50%;
+    --verse-bottom: auto;
+    --verse-translate-x: -50%;
+    --verse-translate-y: -50%;
+    --verse-font-family: Merriweather, Georgia, serif;
+    --verse-font-size: 52px;
+    --verse-text-color: #f8efe0;
+    --verse-container-bg: rgba(23, 33, 43, 0.88);
+    --verse-text-align: center;
+    --verse-line-height: 1.2;
+    --verse-padding: 32px;
+    --verse-max-width: 1120px;
+    --verse-text-shadow: 0 4px 18px rgba(0, 0, 0, .78);
+    --verse-filter: none;
+}
+
+* { box-sizing: border-box; }
+html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+body { background: transparent; }
+.obs-stage { position: fixed; inset: 0; overflow: hidden; }
+.verse-container {
+    position: absolute;
+    top: var(--verse-top);
+    right: var(--verse-right);
+    bottom: var(--verse-bottom);
+    left: var(--verse-left);
+    width: min(calc(100vw - 48px), var(--verse-max-width));
+    max-height: calc(100vh - 48px);
+    padding: var(--verse-padding);
+    color: var(--verse-text-color);
+    text-align: var(--verse-text-align);
+    transform: translate(var(--verse-translate-x), var(--verse-translate-y)) scale(.985);
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity .45s ease, transform .55s cubic-bezier(.16, 1, .3, 1);
+}
+.verse-container.visible { opacity: 1; transform: translate(var(--verse-translate-x), var(--verse-translate-y)) scale(1); }
+.verse-text, .verse-text * {
+    color: var(--verse-text-color) !important;
+    font-family: var(--verse-font-family) !important;
+    font-size: var(--verse-font-size) !important;
+    line-height: var(--verse-line-height) !important;
+    text-align: var(--verse-text-align) !important;
+    text-shadow: var(--verse-text-shadow);
+    filter: var(--verse-filter);
+    overflow-wrap: anywhere;
+    white-space: pre-line;
+}
+.verse-reference { color: var(--verse-text-color); font-family: var(--verse-font-family); text-align: var(--verse-text-align); text-shadow: var(--verse-text-shadow); }
+body.background-hidden .verse-container { background: transparent !important; }

@@ -1,14 +1,15 @@
 {
-  "name": "himnario-api",
-  "version": "0.1.0",
+  "name": "himnario-obs",
+  "version": "1.1.0",
   "private": true,
-  "description": "API de solo lectura para consultar el himnario en SQLite.",
+  "description": "Himnario monolítico con panel de control y visualizador para OBS.",
   "type": "commonjs",
   "scripts": {
     "import": "node src/import-hymnal.js",
+    "build": "npm run import && node src/build-static.js",
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
-    "test": "node --test"
+    "test": "npm run build && node --test"
   },
   "engines": {
     "node": ">=22.5.0"

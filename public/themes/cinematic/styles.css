@@ -1,0 +1,6 @@
+.cinematic-backdrop { position: fixed; inset: 0; opacity: 0; pointer-events: none; background: radial-gradient(ellipse at 50% 85%, rgba(142,93,28,.28), transparent 48%), linear-gradient(180deg, rgba(0,0,0,.04), rgba(0,0,0,.66)); transition: opacity .5s ease; }
+body.has-verse .cinematic-backdrop { opacity: 1; }
+body.background-hidden .cinematic-backdrop { opacity: 0; }
+.cinematic-card { background: linear-gradient(135deg, rgba(9,6,9,.54), rgba(34,23,18,.34)), var(--verse-container-bg); border: 1px solid rgba(227,187,105,.52); box-shadow: 0 20px 60px rgba(0,0,0,.68), inset 0 0 0 1px rgba(255,255,255,.05); }
+.cinematic-rule { width: 86px; height: 2px; margin: 0 auto 24px; background: linear-gradient(90deg, transparent, #e8bf6d, transparent); }
+.cinematic-card .verse-reference { margin-top: 24px; font-size: clamp(16px, 1.5vw, 26px); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }

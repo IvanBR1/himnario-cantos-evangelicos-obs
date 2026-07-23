@@ -1,0 +1,8 @@
+body[data-theme="modern"] { background: transparent; }
+.theme-background, .theme-overlay { position: fixed; inset: 0; pointer-events: none; opacity: 0; transition: opacity .65s ease; }
+body.has-verse .theme-background, body.has-verse .theme-overlay { opacity: 1; }
+body.background-hidden .theme-background, body.background-hidden .theme-overlay { opacity: 0; }
+.modern-background { background: url('assets/biblia_bg_1.png') center/cover no-repeat; filter: saturate(.95) brightness(.78); }
+.modern-overlay { background: linear-gradient(180deg, rgba(0,0,0,.16), rgba(0,0,0,.04) 35%, rgba(0,0,0,.58)), radial-gradient(circle at 50% 13%, transparent, rgba(0,0,0,.45) 75%); }
+.modern-card { display: flex; flex-direction: column; align-items: center; background: var(--verse-container-bg); text-shadow: var(--verse-text-shadow); }
+.modern-card .verse-reference { width: min(72%, 720px); margin-top: clamp(12px, 1.8vh, 24px); padding-top: clamp(8px, 1.2vh, 16px); border-top: 1px solid rgba(217,181,107,.52); font-size: clamp(16px, 1.55vw, 28px); font-weight: 700; }
