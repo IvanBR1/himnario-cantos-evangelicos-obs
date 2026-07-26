@@ -11,7 +11,7 @@
         .forEach(file => document.write(`<script src="/themes/${file}"><` + '/script>'));
 
     // Único punto de alta: cada entrada aporta su configuración y su hoja de estilos.
-    ['classic', 'modern', 'minimal', 'cinematic'].forEach(theme => {
+    ['classic', 'modern', 'minimal', 'cinematic', 'broadcast', 'glass', 'editorial', 'neon', 'ribbon', 'spotlight'].forEach(theme => {
         document.write(`<link rel="stylesheet" href="/themes/${theme}/styles.css">`);
         document.write(`<script src="/themes/${theme}/config.js"><` + '/script>');
     });

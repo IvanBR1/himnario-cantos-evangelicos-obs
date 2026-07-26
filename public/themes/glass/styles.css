@@ -1,0 +1,8 @@
+Exit code: 0
+Wall time: 0.2 seconds
+Output:
+.glass-card { border: 1px solid rgba(255,255,255,.32); border-radius: 30px; background: radial-gradient(circle at 8% 0%, rgba(82,214,255,.25), transparent 35%), radial-gradient(circle at 96% 100%, rgba(155,109,255,.24), transparent 34%), linear-gradient(135deg, rgba(255,255,255,.2), rgba(142,197,252,.09)), var(--verse-container-bg); box-shadow: 0 30px 80px rgba(0,0,0,.5), inset 0 1px rgba(255,255,255,.7); backdrop-filter: blur(24px); }
+.glass-card .verse-heading { color: #a9edff; }
+.glass-card .verse-reference { margin-top: 20px; font-size: clamp(15px, 1.45vw, 24px); font-weight: 700; letter-spacing: .06em; }
+
+

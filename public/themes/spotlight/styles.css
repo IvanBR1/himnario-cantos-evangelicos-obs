@@ -1,0 +1,8 @@
+Exit code: 0
+Wall time: 0.2 seconds
+Output:
+.spotlight-card { border: 13px double rgba(216,170,88,.3); border-radius: 999px; background: linear-gradient(115deg, transparent 30%, rgba(216,170,88,.13) 48%, transparent 63%), radial-gradient(circle, rgba(48,38,25,.95), rgba(9,8,7,.97) 70%), var(--verse-container-bg); box-shadow: 0 0 80px rgba(216,170,88,.2); }
+.spotlight-card .verse-heading { color: #d8aa58; }
+.spotlight-card .verse-reference { margin-top: 20px; color: #e6c787; font-size: clamp(15px, 1.45vw, 24px); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+
+

@@ -1,0 +1,9 @@
+Exit code: 0
+Wall time: 0.2 seconds
+Output:
+.neon-card { border: 3px solid #00e5ff; border-radius: 8px; background: var(--verse-container-bg); box-shadow: 0 0 12px #00e5ff, 0 0 42px rgba(0,229,255,.34), inset 0 0 45px #001e38; }
+.neon-card .verse-heading { color: #ff3ca6; text-shadow: 0 0 12px #ff3ca6; }
+.neon-card .verse-text, .neon-card .verse-text * { text-shadow: 0 0 18px rgba(0,229,255,.6); }
+.neon-card .verse-reference { margin-top: 20px; color: #9defff; font-size: clamp(15px, 1.5vw, 24px); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+
+

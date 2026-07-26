@@ -52,14 +52,14 @@ La integración conserva las funciones y apariencia del proyecto `himnario-panel
 - parte actual y siguiente;
 - salida visible u oculta;
 - estado persistente del último himno;
-- temas Clásico, Libro moderno, Minimalista y Cinematográfico;
+- temas Clásico, Libro moderno, Minimalista, Cinematográfico, Transmisión, Cristal, Editorial, Neón, Cinta y Reflector;
 - posición mediante selectores horizontal y vertical;
 - autoajuste tipográfico activo por defecto, con reducción de seguridad para impedir recortes;
 - tipografía, colores, opacidad, ancho y efectos configurables.
 
 Las líneas vacías y los saltos internos se presentan mediante `white-space: pre-line`. Si el TXT no numera una estrofa, el panel no inventa numeración.
 
-Todos los temas colocan el contenedor al centro de la pantalla por defecto. Las posiciones superior, central e inferior actúan como anclajes completos; en posición inferior, un texto largo crece hacia arriba. La referencia del visualizador incluye colección, número, título del himno, tipo de parte y progreso.
+Cada tema define una posición inicial, y las posiciones superior, central e inferior actúan como anclajes completos; en posición inferior, un texto largo crece hacia arriba. La referencia del visualizador incluye colección, número, título del himno, tipo de parte y progreso.
 
 ## Netlify
 

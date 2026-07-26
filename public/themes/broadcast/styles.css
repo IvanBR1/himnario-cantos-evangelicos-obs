@@ -1,0 +1,8 @@
+Exit code: 0
+Wall time: 0.2 seconds
+Output:
+.broadcast-card { background: radial-gradient(circle at calc(100% + 30px) calc(100% + 45px), transparent 0 72px, rgba(79,143,240,.13) 73px 118px, transparent 119px), linear-gradient(100deg, rgba(16,23,34,.96), rgba(29,43,65,.91)), var(--verse-container-bg); border-left: 14px solid #4f8ff0; box-shadow: 0 22px 65px rgba(0,0,0,.52); }
+.broadcast-card .verse-heading { color: #9ec3ff; }
+.broadcast-card .verse-reference { margin-top: 18px; color: #d9e7ff; font-size: clamp(15px, 1.5vw, 25px); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+
+

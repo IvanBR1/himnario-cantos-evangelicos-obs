@@ -180,6 +180,30 @@ test("la versión y los recursos integrados no dependen de un servicio separado"
   );
 });
 
+test("ofrece el catálogo de temas unificado", () => {
+  const expectedThemes = [
+    ["classic", "Clásico"],
+    ["modern", "Libro moderno"],
+    ["minimal", "Minimalista"],
+    ["cinematic", "Cinematográfico"],
+    ["broadcast", "Transmisión"],
+    ["glass", "Cristal"],
+    ["editorial", "Editorial"],
+    ["neon", "Neón"],
+    ["ribbon", "Cinta"],
+    ["spotlight", "Reflector"],
+  ];
+
+  for (const [id, name] of expectedThemes) {
+    const config = fs.readFileSync(
+      path.join(ROOT, "public", "themes", id, "config.js"),
+      "utf8",
+    );
+    assert.match(config, new RegExp(`id: '${id}'`, "u"));
+    assert.match(config, new RegExp(`name: '${name}'`, "u"));
+  }
+});
+
 test("el visualizador usa autoajuste seguro y posiciones por alineación", () => {
   const panel = fs.readFileSync(
     path.join(ROOT, "public", "panel", "index.html"),
