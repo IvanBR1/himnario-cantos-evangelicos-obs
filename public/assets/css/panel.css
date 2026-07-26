@@ -248,3 +248,19 @@ body[data-panel-appearance="minimal"] .preview-content { display: grid; gap: 3px
 body[data-panel-appearance="minimal"] .preview-verse { min-height: 0 !important; padding: 5px; }
 body[data-panel-appearance="minimal"] .preview-verse .verse-text { font-size: 10px !important; }
 body[data-panel-appearance="minimal"] .preview-panel { min-height: auto; }
+
+/* Estructura común: el espacio de trabajo sólo muestra controles y vista previa. */
+.workspace > .control-panel > .panel-heading { display: none; }
+.workspace > .preview-panel > .panel-heading { justify-content: flex-end; margin-bottom: 4px; }
+.workspace > .preview-panel > .panel-heading > div { display: none; }
+.theme-list { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+.theme-card small { display: none !important; }
+.theme-card { grid-template-columns: 32px 1fr; min-height: 42px; }
+.settings-header > div > .eyebrow,
+.settings-header > div > .eyebrow-ui,
+.settings-header > div > p { display: none; }
+
+.settings-section-heading p,
+.panel-appearance-section .field-help { display: none !important; }
+
+body[data-panel-appearance="minimal"] .theme-card { grid-template-columns: 1fr; min-height: 30px; }
