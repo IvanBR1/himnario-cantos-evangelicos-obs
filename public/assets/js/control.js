@@ -153,23 +153,63 @@ function renderSearchResults(items) {
 }
 
 function normalizeSearch(value) {
-  return String(value || '').normalize('NFD').replace(/\p{M}/gu, '').toLocaleLowerCase('es-MX');
+  return String(value || '').normalize('NFD').replace(/\p{M}/gu, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim().toLocaleLowerCase('es-MX');
+}
+
+function levenshteinDistance(source, target) {
+  if (source === target) return 0;
+  if (!source.length) return target.length;
+  if (!target.length) return source.length;
+  let previous = Array.from({ length: target.length + 1 }, (_, index) => index);
+  for (let row = 1; row <= source.length; row += 1) {
+    const current = [row];
+    for (let column = 1; column <= target.length; column += 1) {
+      current[column] = Math.min(
+        current[column - 1] + 1,
+        previous[column] + 1,
+        previous[column - 1] + (source[row - 1] === target[column - 1] ? 0 : 1),
+      );
+    }
+    previous = current;
+  }
+  return previous[target.length];
+}
+
+function fuzzyTermScore(term, words) {
+  const exactIndex = words.findIndex(word => word === term);
+  if (exactIndex >= 0) return exactIndex / 1000;
+  const prefixIndex = words.findIndex(word => word.startsWith(term) || term.startsWith(word));
+  if (prefixIndex >= 0) return 0.25 + prefixIndex / 1000;
+  if (term.length < 3) return null;
+  const tolerance = term.length < 6 ? 1 : 2;
+  let best = null;
+  words.forEach((word, index) => {
+    if (Math.abs(word.length - term.length) > tolerance) return;
+    const distance = levenshteinDistance(term, word);
+    if (distance <= tolerance) best = Math.min(best ?? Infinity, distance + 1 + index / 1000);
+  });
+  return best;
+}
+
+function scoreHymnSearch(hymn, terms, normalizedQuery) {
+  if (hymn.searchText.includes(normalizedQuery)) return -1;
+  const scores = terms.map(term => fuzzyTermScore(term, hymn.searchWords));
+  return scores.every(score => score !== null)
+    ? scores.reduce((total, score) => total + score, 0)
+    : null;
 }
 
 function searchHymns(query = '') {
   if (!database) return renderSearchResults([]);
   const term = normalizeSearch(query.trim());
-  const items = database.hymns.filter(hymn => {
-    if (hymn.collectionId !== elements.collection.value) return false;
-    if (!term) return true;
-    return normalizeSearch([
-      hymn.displayNumber,
-      hymn.title,
-      hymn.subtitle,
-      ...hymn.authors,
-      ...hymn.translators
-    ].filter(Boolean).join(' ')).includes(term);
-  }).slice(0, 30);
+  const terms = [...new Set(term.split(/\s+/u).filter(Boolean))];
+  const items = database.hymns
+    .filter(hymn => hymn.collectionId === elements.collection.value)
+    .map(hymn => ({ hymn, score: term ? scoreHymnSearch(hymn, terms, term) : 0 }))
+    .filter(result => result.score !== null)
+    .sort((left, right) => left.score - right.score || left.hymn.title.localeCompare(right.hymn.title, 'es'))
+    .slice(0, 30)
+    .map(result => result.hymn);
   renderSearchResults(items);
 }
 
@@ -182,6 +222,13 @@ async function initializeDatabase(saved) {
       throw new Error('La base local no tiene un formato compatible');
     }
     collections = database.collections || [];
+    database.hymns.forEach(hymn => {
+      hymn.searchText = normalizeSearch([
+        hymn.displayNumber, hymn.title, hymn.subtitle, hymn.bodyText,
+        ...(hymn.authors || []), ...(hymn.translators || [])
+      ].filter(Boolean).join(' '));
+      hymn.searchWords = [...new Set(hymn.searchText.split(/\s+/u).filter(Boolean))];
+    });
     hymnsById = new Map(database.hymns.map(hymn => [hymn.id, hymn]));
     masterSectionsById = new Map(database.masterSections.map(section => [section.id, section]));
     sectionsById = new Map(database.sections.map(section => [section.id, section]));

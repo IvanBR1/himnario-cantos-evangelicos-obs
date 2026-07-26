@@ -40,7 +40,7 @@
         <div class="form-group">
           <label for="hymn-search">Buscar himno</label>
           <div class="select-search-container">
-            <input type="text" id="hymn-search" class="select-with-search" placeholder="Buscar por título…" autocomplete="off">
+            <input type="text" id="hymn-search" class="select-with-search" placeholder="Buscar por título o letra…" autocomplete="off">
             <span class="search-icon"><i class="fas fa-search"></i></span>
             <div id="hymn-dropdown" class="search-dropdown hymn-dropdown"></div>
           </div>
@@ -72,6 +72,16 @@
   <aside id="settings-drawer" class="settings-drawer" aria-hidden="true" aria-labelledby="settings-title">
     <div class="settings-header"><div><span class="eyebrow">Personalización</span><h2 id="settings-title">Tema y estilo</h2></div><button id="settings-close" class="icon-button" type="button" aria-label="Cerrar configuración"><i class="fas fa-xmark"></i></button></div>
     <div class="settings-body">
+      <section class="settings-section panel-appearance-section">
+        <h4>Panel</h4>
+        <small class="field-help">Normal es la vista predeterminada; Compacto reduce la altura de los controles y Minimalista elimina los iconos.</small>
+        <label for="panel-appearance">Apariencia general</label>
+        <select id="panel-appearance">
+          <option value="normal">Normal</option>
+          <option value="compact">Compacto</option>
+          <option value="minimal">Minimalista</option>
+        </select>
+      </section>
       <section class="settings-section"><h4>Elige un tema</h4><div id="theme-list" class="theme-list" role="radiogroup" aria-label="Temas disponibles"></div></section>
       <section class="settings-section settings-grid">
         <h4>Texto y posición</h4>
@@ -99,5 +109,6 @@
   <div id="settings-scrim" class="settings-scrim" hidden></div>
   <script src="/themes/index.js"></script>
   <script src="/assets/js/control.js"></script>
+  <script src="/assets/js/panel-appearance.js"></script>
 </body>
 </html>

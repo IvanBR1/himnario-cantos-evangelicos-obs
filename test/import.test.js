@@ -223,10 +223,15 @@ test("el visualizador usa autoajuste seguro y posiciones por alineación", () =>
   );
 
   assert.match(panel, /id="horizontal-align"/u);
+  assert.match(panel, /id="panel-appearance"/u);
+  assert.match(panel, /value="compact"/u);
+  assert.match(panel, /value="minimal"/u);
   assert.match(panel, /id="vertical-align"/u);
   assert.match(panel, /id="auto-fit-toggle"/u);
   assert.doesNotMatch(panel, /id="text-[xy]"/u);
   assert.match(control, /selectedHymn\.title/u);
+  assert.match(control, /levenshteinDistance/u);
+  assert.match(control, /hymn\.bodyText/u);
   assert.match(defaults, /horizontalAlign:\s*'center'/u);
   assert.match(defaults, /verticalAlign:\s*'center'/u);
   assert.match(defaults, /autoFit:\s*true/u);

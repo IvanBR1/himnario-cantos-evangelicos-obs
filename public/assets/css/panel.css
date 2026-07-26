@@ -173,3 +173,46 @@ select:focus, input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgb
   .transport .btn span { display: none; }
   .theme-list { grid-template-columns: 1fr; }
 }
+
+/* Apariencia común del panel para espacios reducidos en OBS. */
+body[data-panel-appearance="compact"] .main-container { width: min(1120px, calc(100% - 18px)); padding-top: 8px; padding-bottom: 12px; }
+body[data-panel-appearance="compact"] .app-header { margin-bottom: 8px; }
+body[data-panel-appearance="compact"] .control-panel,
+body[data-panel-appearance="compact"] .preview-panel { padding: 10px; }
+body[data-panel-appearance="compact"] .panel-heading { margin-bottom: 8px; }
+body[data-panel-appearance="compact"] .form-container,
+body[data-panel-appearance="compact"] .settings-grid { gap: 5px; }
+body[data-panel-appearance="compact"] input,
+body[data-panel-appearance="compact"] select,
+body[data-panel-appearance="compact"] textarea,
+body[data-panel-appearance="compact"] .btn { min-height: 29px; padding-top: 5px; padding-bottom: 5px; }
+body[data-panel-appearance="compact"] .settings-drawer { width: min(350px, 94vw); padding: 10px; }
+body[data-panel-appearance="compact"] .settings-body section,
+body[data-panel-appearance="compact"] .settings-section { margin-bottom: 8px; padding-bottom: 8px; }
+body[data-panel-appearance="compact"] .theme-card { padding: 5px; }
+body[data-panel-appearance="compact"] .preview-content { gap: 6px; }
+
+body[data-panel-appearance="minimal"] .brand-mark,
+body[data-panel-appearance="minimal"] .step-number,
+body[data-panel-appearance="minimal"] .search-icon,
+body[data-panel-appearance="minimal"] .broadcast-icon,
+body[data-panel-appearance="minimal"] .theme-swatch,
+body[data-panel-appearance="minimal"] .swatch,
+body[data-panel-appearance="minimal"] .live-pill > i,
+body[data-panel-appearance="minimal"] .live-pill > span:first-child,
+body[data-panel-appearance="minimal"] .status-dot,
+body[data-panel-appearance="minimal"] .status i,
+body[data-panel-appearance="minimal"] .main-container i,
+body[data-panel-appearance="minimal"] .settings-drawer i { display: none !important; }
+body[data-panel-appearance="minimal"] .panel-kicker,
+body[data-panel-appearance="minimal"] .panel-heading p,
+body[data-panel-appearance="minimal"] .settings-section-heading > span { display: none; }
+body[data-panel-appearance="minimal"] .theme-card { grid-template-columns: 1fr; }
+body[data-panel-appearance="minimal"] .icon-button { width: auto; min-height: 30px; padding: 5px 8px; font-size: 0; }
+body[data-panel-appearance="minimal"] #settings-button::after { content: "Ajustes"; font-size: 10px; }
+body[data-panel-appearance="minimal"] #settings-close::after { content: "Cerrar"; font-size: 10px; }
+body[data-panel-appearance="minimal"] .control-panel,
+body[data-panel-appearance="minimal"] .preview-panel,
+body[data-panel-appearance="minimal"] .settings-drawer { box-shadow: none; border-radius: 0; }
+body[data-panel-appearance="minimal"] .preview-content { display: none; }
+body[data-panel-appearance="minimal"] .preview-panel { min-height: auto; }
