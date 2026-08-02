@@ -44,6 +44,7 @@ button, input, select { font: inherit; }
 .error .status-dot { background: #e74c3c; box-shadow: 0 0 0 4px rgba(231,76,60,.12); }
 .icon-button { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--border); border-radius: 9px; background: var(--surface); color: #bac1cc; cursor: pointer; transition: .18s ease; }
 .icon-button:hover, .icon-button:focus-visible { outline: none; color: white; border-color: var(--blue); background: var(--surface-2); transform: translateY(-1px); }
+.close-icon { display: block; width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
 
 .workspace { display: grid; grid-template-columns: minmax(330px, .82fr) minmax(420px, 1.18fr); gap: 12px; align-items: stretch; }
 .control-panel, .preview-panel { min-width: 0; padding: 15px; border: 1px solid var(--border); border-radius: 12px; background: rgba(25,28,34,.96); box-shadow: var(--shadow); }
@@ -63,8 +64,11 @@ label { display: block; margin-bottom: 5px; color: #c6ccd5; font-size: 9px; font
 select, input { width: 100%; min-height: 34px; padding: 7px 9px; border: 1px solid var(--border); border-radius: 8px; outline: none; background: var(--surface-2); color: var(--ink); transition: .18s ease; }
 select:focus, input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(79,143,240,.12); }
 .select-search-container { position: relative; }
-.select-with-search { padding-right: 38px; }
-.search-icon { position: absolute; right: 11px; top: 17px; transform: translateY(-50%); color: #77818f; pointer-events: none; }
+.select-with-search { padding-right: 64px; }
+.search-icon { position: absolute; right: 11px; top: 50%; transform: translateY(-50%); color: #77818f; pointer-events: none; }
+.search-clear { position: absolute; z-index: 1; right: 32px; top: 50%; display: grid; place-items: center; width: 22px; height: 22px; padding: 0; border: 0; border-radius: 50%; transform: translateY(-50%); background: transparent; color: #9da7b5; cursor: pointer; }
+.search-clear[hidden] { display: none; }
+.search-clear:hover, .search-clear:focus-visible { outline: none; background: var(--surface-3); color: #fff; }
 .search-dropdown { display: none; position: absolute; z-index: 1000; top: calc(100% + 5px); left: 0; right: 0; max-height: 310px; overflow-y: auto; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); box-shadow: 0 16px 35px rgba(0,0,0,.38); }
 .search-dropdown.visible { display: block; }
 .search-dropdown-item { padding: 8px 10px; border-bottom: 1px solid rgba(255,255,255,.045); cursor: pointer; transition: .14s ease; }

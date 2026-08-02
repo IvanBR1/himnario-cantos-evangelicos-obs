@@ -1,10 +1,6 @@
-Exit code: 0
-Wall time: 0.2 seconds
-Output:
 .ribbon-card { overflow: hidden; padding-top: 30px; padding-bottom: 30px; background: linear-gradient(100deg, rgba(206,41,75,.96), rgba(126,24,49,.95)), var(--verse-container-bg); box-shadow: 0 18px 45px rgba(0,0,0,.45); clip-path: polygon(0 0, 96% 0, 100% 50%, 96% 100%, 0 100%); }
 .ribbon-card::before { position: absolute; top: 0; bottom: 0; left: 0; width: 18px; background: #f5b642; content: ''; }
 .ribbon-card::after { position: absolute; top: 0; right: 7%; width: 2px; height: 100%; background: rgba(255,255,255,.18); content: ''; }
 .ribbon-card .verse-heading { color: #ffd3dc; }
 .ribbon-card .verse-reference { margin-top: 16px; color: #fff0c4; font-size: clamp(15px, 1.45vw, 24px); font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
-
 

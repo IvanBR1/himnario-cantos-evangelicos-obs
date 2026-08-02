@@ -3,6 +3,7 @@ const crypto = require("node:crypto");
 const fs = require("node:fs");
 const path = require("node:path");
 const test = require("node:test");
+const vm = require("node:vm");
 const { PUBLIC_DATABASE_PATH, copyDatabase } = require("../src/build-static");
 const { createServer, resolvePublicPath } = require("../src/server");
 const {
@@ -194,6 +195,15 @@ test("ofrece el catálogo de temas unificado", () => {
     ["spotlight", "Reflector"],
   ];
 
+  const registeredThemes = new Map();
+  const context = vm.createContext({
+    window: {
+      BibleThemeRegistry: {
+        register: (theme) => registeredThemes.set(theme.id, theme),
+      },
+    },
+  });
+
   for (const [id, name] of expectedThemes) {
     const config = fs.readFileSync(
       path.join(ROOT, "public", "themes", id, "config.js"),
@@ -201,7 +211,54 @@ test("ofrece el catálogo de temas unificado", () => {
     );
     assert.match(config, new RegExp(`id: '${id}'`, "u"));
     assert.match(config, new RegExp(`name: '${name}'`, "u"));
+    vm.runInContext(config, context, { filename: `${id}/config.js` });
   }
+  assert.deepEqual([...registeredThemes.keys()], expectedThemes.map(([id]) => id));
+});
+
+test("prioriza número, título y letra y ordena por número natural", () => {
+  const control = fs.readFileSync(
+    path.join(ROOT, "public", "assets", "js", "control.js"),
+    "utf8",
+  );
+  const element = {};
+  const context = vm.createContext({
+    document: {
+      getElementById: () => element,
+      addEventListener: () => {},
+    },
+    window: { BibleThemeDefaults: {} },
+  });
+  vm.runInContext(control, context, { filename: "control.js" });
+
+  const prepare = (displayNumber, title, bodyText = "") => {
+    const hymn = { displayNumber, title };
+    hymn.numberSearchText = context.normalizeSearch(displayNumber);
+    hymn.titleSearchText = context.normalizeSearch(title);
+    hymn.headingSearchText = context.normalizeSearch(`${displayNumber} ${title}`);
+    hymn.lyricsSearchText = context.normalizeSearch(bodyText);
+    for (const field of ["title", "heading", "lyrics"]) {
+      hymn[`${field}SearchWords`] = [
+        ...new Set(hymn[`${field}SearchText`].split(/\s+/u).filter(Boolean)),
+      ];
+    }
+    return hymn;
+  };
+  const score = (hymn, query) => {
+    const normalized = context.normalizeSearch(query);
+    return context.scoreHymnSearch(hymn, normalized.split(/\s+/u), normalized);
+  };
+
+  assert.equal(score(prepare("10", "NUNCA DIOS MÍO"), "10").priority, 0);
+  assert.equal(score(prepare("25", "DIOS ES AMOR"), "dios").priority, 1);
+  assert.equal(score(prepare("2", "TIERNAS CANCIONES", "Dios es nuestro amparo"), "dios").priority, 2);
+  assert.deepEqual(
+    [prepare("100", "C"), prepare("9", "A"), prepare("10", "B"), prepare("428 b", "E"), prepare("428 a", "D")]
+      .sort(context.compareHymnOrder)
+      .map((hymn) => hymn.displayNumber),
+    ["9", "10", "100", "428 a", "428 b"],
+  );
+  assert.match(control, /hymn-search-clear/u);
 });
 
 test("el visualizador usa autoajuste seguro y posiciones por alineación", () => {

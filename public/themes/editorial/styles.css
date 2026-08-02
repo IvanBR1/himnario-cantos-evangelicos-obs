@@ -1,9 +1,5 @@
-Exit code: 0
-Wall time: 0.2 seconds
-Output:
 .editorial-card { color: #251c19; border-radius: 2px; background: var(--verse-container-bg); box-shadow: 18px 18px 0 rgba(111,29,43,.85), 0 28px 70px rgba(0,0,0,.45); }
 .editorial-card .verse-heading { color: #8c2637; }
 .editorial-card .verse-text, .editorial-card .verse-text * { color: #251c19 !important; }
 .editorial-card .verse-reference { margin-top: 22px; padding-left: 22px; border-left: 1px solid #9e7561; color: #6f1d2b; font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(18px, 1.7vw, 29px); font-weight: 700; }
-
 

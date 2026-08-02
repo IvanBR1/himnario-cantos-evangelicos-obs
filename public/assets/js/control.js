@@ -2,7 +2,7 @@ const DATABASE_URL = '/data/himnario.db.json';
 const $ = id => document.getElementById(id);
 
 const elements = {
-  collection: $('collection-select'), search: $('hymn-search'), dropdown: $('hymn-dropdown'), mode: $('sequence-mode'),
+  collection: $('collection-select'), search: $('hymn-search'), searchClear: $('hymn-search-clear'), dropdown: $('hymn-dropdown'), mode: $('sequence-mode'),
   previous: $('prev-line'), next: $('next-line'), visibility: $('visibility-toggle'), counter: $('line-counter'),
   meta: $('selection-meta'), title: $('selected-hymn-title'), section: $('selected-hymn-section'),
   previewCurrent: $('preview-current'), previewNext: $('preview-next'), currentType: $('current-type'),
@@ -24,6 +24,7 @@ let isVisible = false;
 let selectedThemeId = 'classic';
 let themeSettings = { ...window.BibleThemeDefaults };
 let searchTimer;
+const hymnNumberCollator = new Intl.Collator('es-MX', { numeric: true, sensitivity: 'base' });
 
 const controls = {
   horizontalAlign: $('horizontal-align'), verticalAlign: $('vertical-align'), autoFit: $('auto-fit-toggle'),
@@ -40,6 +41,10 @@ function setDatabaseStatus(state, message) {
 
 function escapeHtml(value) {
   return String(value).replace(/[&<>'"]/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[character]);
+}
+
+function setSearchClearButton() {
+  elements.searchClear.hidden = !elements.search.value;
 }
 
 function partLabel(item) {
@@ -124,6 +129,7 @@ function loadSequence(preferredIndex = 0) {
 function selectHymn(hymn, preferredIndex = 0) {
   selectedHymn = hymn;
   elements.search.value = `${hymn.displayNumber}. ${hymn.title}`;
+  setSearchClearButton();
   elements.dropdown.classList.remove('visible');
   elements.meta.hidden = false;
   elements.title.textContent = `${hymn.displayNumber}. ${hymn.title}`;
@@ -191,12 +197,45 @@ function fuzzyTermScore(term, words) {
   return best;
 }
 
-function scoreHymnSearch(hymn, terms, normalizedQuery) {
-  if (hymn.searchText.includes(normalizedQuery)) return -1;
-  const scores = terms.map(term => fuzzyTermScore(term, hymn.searchWords));
+function scoreSearchField(searchText, searchWords, terms, normalizedQuery) {
+  if (!searchText) return null;
+  if (searchText === normalizedQuery) return 0;
+  if (searchText.startsWith(normalizedQuery)) return 0.05;
+  if (searchText.includes(normalizedQuery)) return 0.1;
+  const scores = terms.map(term => fuzzyTermScore(term, searchWords));
   return scores.every(score => score !== null)
-    ? scores.reduce((total, score) => total + score, 0)
+    ? 0.25 + scores.reduce((total, score) => total + score, 0)
     : null;
+}
+
+function scoreNumberSearch(numberText, normalizedQuery) {
+  if (numberText === normalizedQuery) return 0;
+  if (!/^\d+$/u.test(normalizedQuery)) return null;
+  if (numberText.startsWith(`${normalizedQuery} `)) return 0.02;
+  if (numberText.startsWith(normalizedQuery)) return 0.05;
+  return numberText.includes(normalizedQuery) ? 0.1 : null;
+}
+
+function scoreHymnSearch(hymn, terms, normalizedQuery) {
+  const numberScore = scoreNumberSearch(hymn.numberSearchText, normalizedQuery);
+  if (numberScore !== null) return { priority: 0, relevance: numberScore };
+
+  const titleScore = scoreSearchField(hymn.titleSearchText, hymn.titleSearchWords, terms, normalizedQuery);
+  const headingScore = scoreSearchField(hymn.headingSearchText, hymn.headingSearchWords, terms, normalizedQuery);
+  if (titleScore !== null || headingScore !== null) {
+    return {
+      priority: 1,
+      relevance: Math.min(titleScore ?? Infinity, (headingScore ?? Infinity) + 0.05)
+    };
+  }
+
+  const lyricsScore = scoreSearchField(hymn.lyricsSearchText, hymn.lyricsSearchWords, terms, normalizedQuery);
+  return lyricsScore === null ? null : { priority: 2, relevance: lyricsScore };
+}
+
+function compareHymnOrder(left, right) {
+  return hymnNumberCollator.compare(left.displayNumber, right.displayNumber)
+    || left.title.localeCompare(right.title, 'es-MX', { sensitivity: 'base' });
 }
 
 function searchHymns(query = '') {
@@ -205,9 +244,11 @@ function searchHymns(query = '') {
   const terms = [...new Set(term.split(/\s+/u).filter(Boolean))];
   const items = database.hymns
     .filter(hymn => hymn.collectionId === elements.collection.value)
-    .map(hymn => ({ hymn, score: term ? scoreHymnSearch(hymn, terms, term) : 0 }))
-    .filter(result => result.score !== null)
-    .sort((left, right) => left.score - right.score || left.hymn.title.localeCompare(right.hymn.title, 'es'))
+    .map(hymn => ({ hymn, match: term ? scoreHymnSearch(hymn, terms, term) : { priority: 0, relevance: 0 } }))
+    .filter(result => result.match !== null)
+    .sort((left, right) => (term
+      ? left.match.priority - right.match.priority || left.match.relevance - right.match.relevance
+      : 0) || compareHymnOrder(left.hymn, right.hymn))
     .slice(0, 30)
     .map(result => result.hymn);
   renderSearchResults(items);
@@ -223,11 +264,15 @@ async function initializeDatabase(saved) {
     }
     collections = database.collections || [];
     database.hymns.forEach(hymn => {
-      hymn.searchText = normalizeSearch([
-        hymn.displayNumber, hymn.title, hymn.subtitle, hymn.bodyText,
-        ...(hymn.authors || []), ...(hymn.translators || [])
+      hymn.numberSearchText = normalizeSearch(hymn.displayNumber);
+      hymn.titleSearchText = normalizeSearch([hymn.title, hymn.subtitle].filter(Boolean).join(' '));
+      hymn.headingSearchText = normalizeSearch([hymn.displayNumber, hymn.title, hymn.subtitle].filter(Boolean).join(' '));
+      hymn.lyricsSearchText = normalizeSearch([
+        hymn.bodyText, ...(hymn.authors || []), ...(hymn.translators || [])
       ].filter(Boolean).join(' '));
-      hymn.searchWords = [...new Set(hymn.searchText.split(/\s+/u).filter(Boolean))];
+      hymn.titleSearchWords = [...new Set(hymn.titleSearchText.split(/\s+/u).filter(Boolean))];
+      hymn.headingSearchWords = [...new Set(hymn.headingSearchText.split(/\s+/u).filter(Boolean))];
+      hymn.lyricsSearchWords = [...new Set(hymn.lyricsSearchText.split(/\s+/u).filter(Boolean))];
     });
     hymnsById = new Map(database.hymns.map(hymn => [hymn.id, hymn]));
     masterSectionsById = new Map(database.masterSections.map(section => [section.id, section]));
@@ -332,14 +377,25 @@ document.addEventListener('DOMContentLoaded', async () => {
     button.setAttribute('aria-expanded', String(open));
   }));
 
-  elements.search.addEventListener('input', () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => searchHymns(elements.search.value), 180); });
+  elements.search.addEventListener('input', () => {
+    setSearchClearButton();
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => searchHymns(elements.search.value), 180);
+  });
   elements.search.addEventListener('focus', () => searchHymns(elements.search.value.includes('.') ? '' : elements.search.value));
   elements.search.addEventListener('keydown', event => {
     if (event.key === 'Enter' && searchResults[0]) { event.preventDefault(); selectHymn(searchResults[0]); }
     if (event.key === 'Escape') elements.dropdown.classList.remove('visible');
   });
   document.addEventListener('click', event => { if (!elements.search.contains(event.target) && !elements.dropdown.contains(event.target)) elements.dropdown.classList.remove('visible'); });
-  elements.collection.addEventListener('change', () => { selectedHymn = null; sequence = []; currentIndex = 0; elements.search.value = ''; elements.meta.hidden = true; updatePreview(); searchHymns(''); saveState(); });
+  elements.searchClear.addEventListener('click', () => {
+    clearTimeout(searchTimer);
+    elements.search.value = '';
+    setSearchClearButton();
+    elements.search.focus();
+    searchHymns('');
+  });
+  elements.collection.addEventListener('change', () => { selectedHymn = null; sequence = []; currentIndex = 0; elements.search.value = ''; setSearchClearButton(); elements.meta.hidden = true; updatePreview(); searchHymns(''); saveState(); });
   elements.mode.addEventListener('change', () => loadSequence(0));
   elements.previous.addEventListener('click', () => selectLine(currentIndex - 1));
   elements.next.addEventListener('click', () => selectLine(currentIndex + 1));
