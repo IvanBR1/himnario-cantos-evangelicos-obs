@@ -213,7 +213,7 @@ function extractTitleMetadata(lines, headingTitle) {
 }
 
 function parsePartMarker(value) {
-  const chorus = value.match(/^Coro(?:\s+(\d+))?\s*:?\s*(.*)$/iu);
+  const chorus = value.match(/^Coro\b(?:\s+(\d+))?\s*:?\s*(.*)$/iu);
   if (chorus) {
     const label = chorus[1] ? `Coro ${chorus[1]}` : 'Coro';
     return {
@@ -312,7 +312,13 @@ function splitParts(lines) {
 
     const marker = parsePartMarker(value);
     const startsRepeatedBlock = pendingBlank && /^:{2,}/u.test(value);
-    const startsImplicitParagraph = pendingBlank && current && !current.explicitNumber && current.type !== 'chorus';
+    const repeatBlockClosed = current?.type === 'repetition'
+      && /:{2,}\s*$/u.test(current.lines.at(-1));
+    const startsImplicitParagraph = pendingBlank
+      && current
+      && !current.explicitNumber
+      && current.type !== 'chorus'
+      && (current.type !== 'repetition' || repeatBlockClosed);
 
     if (marker || startsRepeatedBlock || startsImplicitParagraph) closeCurrent();
     if (!current) {

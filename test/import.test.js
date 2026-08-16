@@ -83,6 +83,11 @@ test("conserva saltos, numeración explícita, repeticiones y créditos", () => 
   );
   assert.deepEqual(unnumbered.authors, ["Germán Lüders"]);
 
+  const repeatedBlock = database.hymns.find((hymn) => hymn.id === "esforzador-1").parts[1];
+  assert.equal(repeatedBlock.type, "repetition");
+  assert.match(repeatedBlock.text, /el trono eternal\.\n\nGracia infinita de bondad,/u);
+  assert.match(repeatedBlock.text, /por ti y por mí ::$/u);
+
   const numbered = database.hymns.find((hymn) => hymn.id === "himnario-2");
   assert.deepEqual(
     numbered.parts.map((part) => part.type),
@@ -98,6 +103,11 @@ test("conserva saltos, numeración explícita, repeticiones y créditos", () => 
   assert.match(numbered.parts[1].sourceText, /^Coro:\s*::/u);
   assert.match(numbered.bodyText, /\n\nCoro:/u);
   assert.deepEqual(numbered.translators, ["Vicente Mendoza"]);
+
+  const coronadle = database.hymns.find((hymn) => hymn.id === "himnario-66");
+  const coronadleChoruses = coronadle.parts.filter((part) => part.type === "chorus");
+  assert.equal(coronadleChoruses.length, 1);
+  assert.match(coronadleChoruses[0].text, /Coronadle, con cánticos hoy load;/u);
 
   const unknown = database.hymns.find((hymn) => hymn.id === "esforzador-10");
   assert.deepEqual(unknown.authors, ["Desconocido"]);
