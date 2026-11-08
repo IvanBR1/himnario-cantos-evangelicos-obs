@@ -116,6 +116,9 @@ select:focus, input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgb
 .preview-verse .verse-text { position: relative; z-index: 1; color: #f4f6f9; white-space: pre-line; }
 .preview-verse.current .verse-text { max-width: 92%; font-family: Georgia, serif; font-size: clamp(19px, 2.2vw, 27px); line-height: 1.45; }
 .preview-verse.next .verse-text { color: #aeb6c2; font-size: 11px; line-height: 1.55; }
+.preview-verse[data-cover-theme]:not([data-cover-theme=""]) .preview-cover-title { color: var(--cover-title-color); font-size: calc(1em * var(--cover-title-scale)); font-weight: var(--cover-title-weight); line-height: 1.15; letter-spacing: var(--cover-title-spacing); }
+.preview-verse[data-cover-theme]:not([data-cover-theme=""]) .preview-cover-section { margin-top: 1.2em; padding-top: .85em; border-top: 1px solid var(--cover-rule-color); color: var(--cover-section-color); font-size: calc(1em * var(--cover-section-scale)); line-height: 1.5; }
+.preview-verse[data-cover-theme="editorial"] .verse-text { padding: 14px; background: #f6eddf; border-radius: 4px; }
 .part-badge { padding: 4px 8px; border-radius: 99px; background: rgba(79,143,240,.14); color: #8bb6f7; font-size: 8px; }
 .part-badge:empty { display: none; }
 .obs-url { display: grid; gap: 5px; margin-top: 9px; padding-top: 9px; border-top: 1px solid var(--border); color: var(--muted); font-size: 8px; }
@@ -260,13 +263,6 @@ body[data-panel-appearance="minimal"] .preview-panel { min-height: auto; }
 .theme-list { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 .theme-card small { display: none !important; }
 .theme-card { grid-template-columns: 32px 1fr; min-height: 42px; }
-.settings-header > div > .eyebrow,
-.settings-header > div > .eyebrow-ui,
-.settings-header > div > p { display: none; }
-
-.settings-section-heading p,
-.panel-appearance-section .field-help { display: none !important; }
-
 body[data-panel-appearance="minimal"] .theme-card { grid-template-columns: 1fr; min-height: 30px; }
 /* Catálogo de temas y encabezados alineados con los demás paneles. */
 .theme-swatch-broadcast { background: linear-gradient(100deg,#101722,#1d2b41); border-left: 5px solid #4f8ff0; }

@@ -4,3 +4,14 @@ body.background-hidden .cinematic-backdrop { opacity: 0; }
 .cinematic-card { background: linear-gradient(135deg, rgba(9,6,9,.54), rgba(34,23,18,.34)), var(--verse-container-bg); border: 1px solid rgba(227,187,105,.52); box-shadow: 0 20px 60px rgba(0,0,0,.68), inset 0 0 0 1px rgba(255,255,255,.05); }
 .cinematic-rule { width: 86px; height: 2px; margin: 0 auto 24px; background: linear-gradient(90deg, transparent, #e8bf6d, transparent); }
 .cinematic-card .verse-reference { margin-top: 24px; font-size: clamp(16px, 1.5vw, 26px); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+
+/* Portada del himno */
+.cinematic-card.title-card, .preview-verse[data-cover-theme="cinematic"] {
+  --cover-title-color: #fff1d4;
+  --cover-section-color: #e8bf6d;
+  --cover-rule-color: #8d6a36;
+  --cover-title-scale: 1.08;
+  --cover-section-scale: 0.48;
+  --cover-title-weight: 700;
+  --cover-title-spacing: .035em;
+}

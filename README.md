@@ -29,16 +29,18 @@ En OBS agrega una fuente **Navegador** de 1920 × 1080 con la URL del visualizad
 
 ## Importación
 
-`npm run build` analiza `backup/Himnario.txt` y `backup/HIMNARIO ESFORZADOR.txt`, genera la base canónica `data/himnario.db.json` y copia la versión pública a `public/data/himnario.db.json`.
+`npm run build` analiza `backup/Himnario.txt` y `backup/Himnario Esforzador.txt` y `backup/Extras.txt`, genera la base canónica `data/himnario.db.json` y copia la versión pública a `public/data/himnario.db.json`.
 
 La base contiene:
 
-- 713 cantos: 550 del himnario base y 163 del Esforzador.
+- 714 cantos: 550 del himnario base, 163 del Esforzador y 1 extra.
 - 17 secciones maestras y 30 subsecciones.
 - Variantes editoriales `428 a/b` y `429 a/b/c`.
 - Títulos multilínea, referencias, autores y traductores.
 - Estrofas, coros, indicaciones, repeticiones y saltos de línea.
 - Secuencias en orden original y de interpretación con coros.
+
+Los extras tienen numeración independiente y consecutiva desde 1: `1. GOZO INEFABLE`. Los nuevos cantos se agregan a `backup/Extras.txt` con el siguiente número, sin cambiar la numeración de las otras colecciones.
 
 Para corregir contenido se editan los TXT conservados en `backup/` y se vuelve a ejecutar la construcción.
 
@@ -47,7 +49,7 @@ Para corregir contenido se editan los TXT conservados en `backup/` y se vuelve a
 La integración conserva las funciones y apariencia del proyecto `himnario-panel-obs`:
 
 - búsqueda por número, título, autor o traductor;
-- selección entre ambas colecciones;
+- selección entre las tres colecciones;
 - navegación con botones o flechas del teclado;
 - parte actual y siguiente;
 - salida visible u oculta;

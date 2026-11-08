@@ -14,8 +14,14 @@ const SOURCES = [
   {
     slug: 'esforzador',
     name: 'Himnario Esforzador',
-    filename: 'HIMNARIO ESFORZADOR.txt',
+    filename: 'Himnario Esforzador.txt',
     firstMasterSectionOrdinal: 17
+  },
+  {
+    slug: 'extras',
+    name: 'Extras',
+    filename: 'Extras.txt',
+    firstMasterSectionOrdinal: 18
   }
 ];
 
@@ -154,7 +160,8 @@ function parseCredit(line) {
 function extractCredits(lines) {
   const filtered = trimOuterBlankLines(lines).filter((line) => {
     const value = line.trim();
-    return !/^\d{1,3}$/u.test(value)
+    return value !== 'ESTRIBILLOS'
+      && !/^\d{1,3}$/u.test(value)
       && !/^[\p{Lu}ÁÉÍÓÚÜÑ][\p{Lu}ÁÉÍÓÚÜÑ ]{3,}\s{2,}\d{1,3}$/u.test(value);
   });
   const content = trimOuterBlankLines(filtered);
@@ -321,6 +328,14 @@ function splitParts(lines) {
       && (current.type !== 'repetition' || repeatBlockClosed);
 
     if (marker || startsRepeatedBlock || startsImplicitParagraph) closeCurrent();
+    if (marker?.type === 'chorus' && !marker.content) {
+      const referenced = parts.find((part) => part.type === 'chorus' && part.number === marker.number);
+      if (referenced) {
+        const position = parts.length + 1;
+        parts.push({ ...referenced, id: position, position, sourceText: originalLine });
+        continue;
+      }
+    }
     if (!current) {
       startPart(marker, originalLine);
       pendingBlank = false;

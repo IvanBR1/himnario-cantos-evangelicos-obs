@@ -46,3 +46,14 @@ body.background-hidden .theme-overlay {
   font-size: clamp(16px, 1.55vw, 28px);
   font-weight: 700;
 }
+
+/* Portada del himno */
+.modern-card.title-card, .preview-verse[data-cover-theme="modern"] {
+  --cover-title-color: #fff8e7;
+  --cover-section-color: #e4c27c;
+  --cover-rule-color: #b99450;
+  --cover-title-scale: 1.06;
+  --cover-section-scale: 0.46;
+  --cover-title-weight: 700;
+  --cover-title-spacing: .015em;
+}

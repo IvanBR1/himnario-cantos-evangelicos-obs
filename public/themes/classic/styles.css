@@ -1,3 +1,14 @@
 body[data-theme="classic"] { font-family: 'Open Sans', Arial, sans-serif; }
 .classic-card { background: var(--verse-container-bg); border-left: 5px solid #3498db; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,.3); backdrop-filter: blur(10px); }
 .classic-card .verse-reference { margin-top: 20px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,.16); font-family: 'Open Sans', Arial, sans-serif; font-size: clamp(18px, 1.8vw, 28px); font-weight: 700; }
+
+/* Portada del himno */
+.classic-card.title-card, .preview-verse[data-cover-theme="classic"] {
+  --cover-title-color: #f4f8ff;
+  --cover-section-color: #8dcbf5;
+  --cover-rule-color: #3498db;
+  --cover-title-scale: 1;
+  --cover-section-scale: 0.5;
+  --cover-title-weight: 700;
+  --cover-title-spacing: 0;
+}

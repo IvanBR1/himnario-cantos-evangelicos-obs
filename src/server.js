@@ -3,7 +3,7 @@ const http = require('node:http');
 const path = require('node:path');
 
 const PUBLIC_ROOT = path.resolve(__dirname, '..', 'public');
-const PORT = Number(process.env.PORT || 3000);
+const PORT = Number(process.env.PORT || 3011);
 const CONTENT_TYPES = {
   '.css': 'text/css; charset=utf-8',
   '.html': 'text/html; charset=utf-8',

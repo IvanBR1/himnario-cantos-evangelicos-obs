@@ -51,3 +51,21 @@ body { background: transparent; }
 }
 .verse-reference { color: var(--verse-text-color); font-family: var(--verse-font-family); text-align: var(--verse-text-align); text-shadow: var(--verse-text-shadow); }
 body.background-hidden .verse-container { background: transparent !important; }
+.title-card .verse-text { width: 100%; }
+.title-card .hymn-cover-title {
+    color: var(--cover-title-color, var(--verse-text-color)) !important;
+    font-size: calc(var(--verse-font-size) * var(--cover-title-scale, 1)) !important;
+    font-weight: var(--cover-title-weight, 700);
+    letter-spacing: var(--cover-title-spacing, 0);
+    line-height: 1.15 !important;
+}
+.title-card .hymn-cover-section {
+    margin-top: 1.2em;
+    padding-top: .85em;
+    border-top: 1px solid var(--cover-rule-color, currentColor);
+    color: var(--cover-section-color, var(--verse-text-color)) !important;
+    font-size: calc(var(--verse-font-size) * var(--cover-section-scale, .32)) !important;
+    font-weight: 400;
+    line-height: 1.5 !important;
+}
+.title-card .verse-reference { display: none; }

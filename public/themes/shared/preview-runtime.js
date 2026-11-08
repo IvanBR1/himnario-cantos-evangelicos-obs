@@ -9,6 +9,24 @@
   let verseText;
   let verseReference;
   let fitFrame;
+  let activeTitleCard = null;
+
+  function renderContent(text, titleCard) {
+    activeTitleCard = titleCard || null;
+    verseContainer.classList.toggle('title-card', Boolean(activeTitleCard));
+    verseText.textContent = '';
+    if (!activeTitleCard) {
+      verseText.textContent = text;
+      return;
+    }
+    for (const [key, className] of [['title', 'hymn-cover-title'], ['section', 'hymn-cover-section']]) {
+      if (!activeTitleCard[key]) continue;
+      const line = document.createElement('div');
+      line.className = className;
+      line.textContent = activeTitleCard[key];
+      verseText.appendChild(line);
+    }
+  }
 
   const getTheme = () => window.BibleThemeRegistry.get(selectedThemeId) || window.BibleThemeRegistry.get('classic');
   const getDefaults = () => ({ ...window.BibleThemeDefaults, ...getTheme().defaults });
@@ -117,7 +135,7 @@
     verseContainer = document.getElementById('verse-container');
     verseText = document.getElementById('verse-text');
     verseReference = document.getElementById('verse-reference');
-    verseText.textContent = oldText;
+    renderContent(oldText, activeTitleCard);
     verseReference.textContent = oldReference;
     applySettings(activeSettings);
     if (wasVisible) showVerse();
@@ -138,8 +156,8 @@
     if (command.themeId && command.themeId !== selectedThemeId) renderTheme(command.themeId);
     if (command.settings) applySettings(command.settings);
     if (command.action === 'load') {
-      verseText.textContent = window.BibleThemeUtilities.sanitizeText(command.content || '');
-      verseReference.textContent = command.reference || '';
+      renderContent(command.content || '', command.titleCard);
+      verseReference.textContent = command.titleCard ? '' : (command.reference || '');
       if (command.show !== false) showVerse();
       scheduleFit();
     }

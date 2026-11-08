@@ -48,6 +48,7 @@ function setSearchClearButton() {
 }
 
 function partLabel(item) {
+  if (item.type === 'title') return 'Título';
   if (item.type === 'chorus') return 'Coro';
   if (item.type === 'repetition') return 'Repetición';
   return item.label && /^\d+$/.test(item.label) ? `Estrofa ${item.label}` : (item.label || 'Estrofa');
@@ -55,8 +56,16 @@ function partLabel(item) {
 
 function hymnReference(item = sequence[currentIndex]) {
   if (!selectedHymn || !item) return '';
-  const collection = collections.find(entry => entry.id === selectedHymn.collectionId);
-  return `${collection?.name || selectedHymn.collectionId} ${selectedHymn.displayNumber} · ${selectedHymn.title} · ${partLabel(item)} · ${currentIndex + 1}/${sequence.length}`;
+  if (item.type === 'title') return 'Título';
+  return `${selectedHymn.displayNumber} · ${selectedHymn.title} · ${partLabel(item)} · ${sequenceProgress()}`;
+}
+
+function sequenceProgress() {
+  if (!sequence.length) return '— / —';
+  if (sequence[currentIndex]?.type === 'title') return 'Título';
+  const total = sequence.filter(item => item.type !== 'title').length;
+  const position = sequence.slice(0, currentIndex + 1).filter(item => item.type !== 'title').length;
+  return `${position} / ${total}`;
 }
 
 function saveState() {
@@ -85,7 +94,8 @@ function sendCurrentLine() {
   const item = sequence[currentIndex];
   if (!item) return;
   sendCommand({
-    action: 'load', content: item.text, reference: hymnReference(item), show: isVisible,
+    action: 'load', content: item.text, reference: item.type === 'title' ? '' : hymnReference(item), show: isVisible,
+    titleCard: item.type === 'title' ? item.titleCard : null,
     themeId: selectedThemeId, settings: themeSettings
   });
 }
@@ -93,14 +103,31 @@ function sendCurrentLine() {
 function updatePreview() {
   const current = sequence[currentIndex];
   const next = sequence[currentIndex + 1];
-  elements.previewCurrent.querySelector('.verse-text').textContent = current ? current.text : 'Seleccione un himno';
+  renderPartPreview(elements.previewCurrent, current, 'Seleccione un himno');
   elements.previewCurrent.querySelector('.verse-ref').textContent = current ? `Actual: ${hymnReference(current)}` : 'Actual';
   elements.currentType.textContent = current ? partLabel(current) : '';
-  elements.previewNext.querySelector('.verse-text').textContent = next ? next.text : (current ? 'Fin del himno' : '—');
+  renderPartPreview(elements.previewNext, next, current ? 'Fin del himno' : '—');
   elements.previewNext.querySelector('.verse-ref').textContent = next ? `Siguiente: ${partLabel(next)}` : 'Siguiente';
-  elements.counter.textContent = sequence.length ? `${currentIndex + 1} / ${sequence.length}` : '— / —';
+  elements.counter.textContent = sequenceProgress();
   elements.previous.disabled = !sequence.length || currentIndex === 0;
   elements.next.disabled = !sequence.length || currentIndex >= sequence.length - 1;
+}
+
+function renderPartPreview(container, part, fallback) {
+  const text = container.querySelector('.verse-text');
+  text.textContent = '';
+  container.dataset.coverTheme = part?.type === 'title' ? selectedThemeId : '';
+  if (part?.type !== 'title') {
+    text.textContent = part?.text || fallback;
+    return;
+  }
+  for (const key of ['title', 'section']) {
+    if (!part.titleCard[key]) continue;
+    const line = document.createElement('div');
+    line.className = `preview-cover-${key}`;
+    line.textContent = part.titleCard[key];
+    text.appendChild(line);
+  }
 }
 
 function selectLine(index) {
@@ -113,17 +140,21 @@ function selectLine(index) {
 
 function loadSequence(preferredIndex = 0) {
   if (!selectedHymn) return;
-  const parts = new Map(selectedHymn.parts.map(part => [part.id, part]));
-  sequence = (selectedHymn.sequence[elements.mode.value] || []).map(item => ({
-    ...parts.get(item.partId),
-    sequencePosition: item.position,
-    repeated: item.repeated,
-    note: item.note
-  }));
+  sequence = buildDisplaySequence(selectedHymn, elements.mode.value);
   currentIndex = Math.max(0, Math.min(preferredIndex, sequence.length - 1));
   updatePreview();
   if (isVisible) sendCurrentLine();
   saveState();
+}
+
+function buildDisplaySequence(hymn, mode) {
+  const parts = new Map(hymn.parts.map(part => [part.id, part]));
+  const titleCard = {
+    title: `${hymn.displayNumber}. ${hymn.title}`,
+    section: hymnSectionName(hymn)
+  };
+  return [{ type: 'title', titleCard, text: [titleCard.title, titleCard.section].filter(Boolean).join('\n') },
+    ...(hymn.sequence[mode] || []).map(item => parts.get(item.partId))];
 }
 
 function selectHymn(hymn, preferredIndex = 0) {
@@ -133,15 +164,18 @@ function selectHymn(hymn, preferredIndex = 0) {
   elements.dropdown.classList.remove('visible');
   elements.meta.hidden = false;
   elements.title.textContent = `${hymn.displayNumber}. ${hymn.title}`;
-  const collection = collections.find(entry => entry.id === hymn.collectionId);
+  elements.section.textContent = [hymnCollectionName(hymn), hymnSectionName(hymn)].filter(Boolean).join(' · ');
+  loadSequence(preferredIndex);
+}
+
+function hymnCollectionName(hymn) {
+  return collections.find(entry => entry.id === hymn.collectionId)?.name || hymn.collectionId;
+}
+
+function hymnSectionName(hymn) {
   const masterSection = masterSectionsById.get(hymn.masterSectionId);
   const section = sectionsById.get(hymn.sectionId);
-  elements.section.textContent = [
-    collection?.name,
-    masterSection && `${masterSection.code}. ${masterSection.name}`,
-    section?.name
-  ].filter(Boolean).join(' · ');
-  loadSequence(preferredIndex);
+  return [masterSection && `${masterSection.code}. ${masterSection.name}`, section?.name].filter(Boolean).join(' · ');
 }
 
 function renderSearchResults(items) {
@@ -331,7 +365,7 @@ function renderThemeCards() {
   elements.themeList.querySelectorAll('.theme-card').forEach(card => card.addEventListener('click', () => {
     selectedThemeId = card.dataset.theme;
     themeSettings = getThemeDefaults();
-    renderThemeCards(); syncThemeSettingsUI(); sendThemeSettings();
+    renderThemeCards(); syncThemeSettingsUI(); sendThemeSettings(); updatePreview();
     if (isVisible) sendCurrentLine();
     saveState();
   }));
@@ -371,11 +405,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   $('obs-url').textContent = `${window.location.origin}/visualizador/`;
 
   renderThemeCards(); syncThemeSettingsUI(); sendThemeSettings();
-  document.querySelectorAll('.collapsible-section .section-toggle').forEach(button => button.addEventListener('click', () => {
-    const section = button.closest('.collapsible-section');
-    const open = section.classList.toggle('open');
-    button.setAttribute('aria-expanded', String(open));
-  }));
 
   elements.search.addEventListener('input', () => {
     setSearchClearButton();

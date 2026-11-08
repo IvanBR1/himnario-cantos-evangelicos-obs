@@ -13,8 +13,15 @@
       "id": "esforzador",
       "slug": "esforzador",
       "name": "Himnario Esforzador",
-      "sourceFile": "HIMNARIO ESFORZADOR.txt",
+      "sourceFile": "Himnario Esforzador.txt",
       "hymnCount": 163
+    },
+    {
+      "id": "extras",
+      "slug": "extras",
+      "name": "Extras",
+      "sourceFile": "Extras.txt",
+      "hymnCount": 1
     }
   ],
   "masterSections": [
@@ -90059,16 +90066,9 @@
           "role": "translator",
           "name": "Esther López M.",
           "raw": "Trad. Esther López M."
-        },
-        {
-          "role": "author",
-          "name": "ESTRIBILLOS",
-          "raw": "ESTRIBILLOS"
         }
       ],
-      "authors": [
-        "ESTRIBILLOS"
-      ],
+      "authors": [],
       "translators": [
         "Esther López M."
       ],
@@ -98365,7 +98365,7 @@
       "variant": null,
       "displayNumber": "1",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 4,
         "endLine": 30
       },
@@ -98504,7 +98504,7 @@
       "variant": null,
       "displayNumber": "2",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 31,
         "endLine": 39
       },
@@ -98582,7 +98582,7 @@
       "variant": null,
       "displayNumber": "3",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 40,
         "endLine": 62
       },
@@ -98761,7 +98761,7 @@
       "variant": null,
       "displayNumber": "4",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 63,
         "endLine": 103
       },
@@ -98989,7 +98989,7 @@
       "variant": null,
       "displayNumber": "5",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 104,
         "endLine": 115
       },
@@ -99070,7 +99070,7 @@
       "variant": null,
       "displayNumber": "6",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 116,
         "endLine": 142
       },
@@ -99216,7 +99216,7 @@
       "variant": null,
       "displayNumber": "7",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 143,
         "endLine": 169
       },
@@ -99399,7 +99399,7 @@
       "variant": null,
       "displayNumber": "8",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 170,
         "endLine": 180
       },
@@ -99479,7 +99479,7 @@
       "variant": null,
       "displayNumber": "9",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 181,
         "endLine": 210
       },
@@ -99628,7 +99628,7 @@
       "variant": null,
       "displayNumber": "10",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 211,
         "endLine": 223
       },
@@ -99735,7 +99735,7 @@
       "variant": null,
       "displayNumber": "11",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 224,
         "endLine": 251
       },
@@ -99950,7 +99950,7 @@
       "variant": null,
       "displayNumber": "12",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 252,
         "endLine": 263
       },
@@ -100031,7 +100031,7 @@
       "variant": null,
       "displayNumber": "13",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 264,
         "endLine": 275
       },
@@ -100112,7 +100112,7 @@
       "variant": null,
       "displayNumber": "14",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 276,
         "endLine": 285
       },
@@ -100191,7 +100191,7 @@
       "variant": null,
       "displayNumber": "15",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 286,
         "endLine": 297
       },
@@ -100272,7 +100272,7 @@
       "variant": null,
       "displayNumber": "16",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 298,
         "endLine": 306
       },
@@ -100350,7 +100350,7 @@
       "variant": null,
       "displayNumber": "17",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 307,
         "endLine": 314
       },
@@ -100427,7 +100427,7 @@
       "variant": null,
       "displayNumber": "18",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 315,
         "endLine": 344
       },
@@ -100576,7 +100576,7 @@
       "variant": null,
       "displayNumber": "19",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 345,
         "endLine": 359
       },
@@ -100659,7 +100659,7 @@
       "variant": null,
       "displayNumber": "20",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 360,
         "endLine": 372
       },
@@ -100741,7 +100741,7 @@
       "variant": null,
       "displayNumber": "21",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 373,
         "endLine": 385
       },
@@ -100848,7 +100848,7 @@
       "variant": null,
       "displayNumber": "22",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 386,
         "endLine": 397
       },
@@ -100929,7 +100929,7 @@
       "variant": null,
       "displayNumber": "23",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 398,
         "endLine": 409
       },
@@ -101010,7 +101010,7 @@
       "variant": null,
       "displayNumber": "24",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 410,
         "endLine": 448
       },
@@ -101193,7 +101193,7 @@
       "variant": null,
       "displayNumber": "25",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 449,
         "endLine": 471
       },
@@ -101372,7 +101372,7 @@
       "variant": null,
       "displayNumber": "26",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 472,
         "endLine": 483
       },
@@ -101453,7 +101453,7 @@
       "variant": null,
       "displayNumber": "27",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 484,
         "endLine": 492
       },
@@ -101531,7 +101531,7 @@
       "variant": null,
       "displayNumber": "28",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 493,
         "endLine": 517
       },
@@ -101736,7 +101736,7 @@
       "variant": null,
       "displayNumber": "29",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 518,
         "endLine": 544
       },
@@ -101950,7 +101950,7 @@
       "variant": null,
       "displayNumber": "30",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 545,
         "endLine": 557
       },
@@ -102057,7 +102057,7 @@
       "variant": null,
       "displayNumber": "31",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 558,
         "endLine": 593
       },
@@ -102249,7 +102249,7 @@
       "variant": null,
       "displayNumber": "32",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 594,
         "endLine": 610
       },
@@ -102397,7 +102397,7 @@
       "variant": null,
       "displayNumber": "33",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 611,
         "endLine": 630
       },
@@ -102561,7 +102561,7 @@
       "variant": null,
       "displayNumber": "34",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 631,
         "endLine": 647
       },
@@ -102647,7 +102647,7 @@
       "variant": null,
       "displayNumber": "35",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 648,
         "endLine": 659
       },
@@ -102728,7 +102728,7 @@
       "variant": null,
       "displayNumber": "36",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 660,
         "endLine": 674
       },
@@ -102812,7 +102812,7 @@
       "variant": null,
       "displayNumber": "37",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 675,
         "endLine": 699
       },
@@ -102931,7 +102931,7 @@
       "variant": null,
       "displayNumber": "38",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 700,
         "endLine": 722
       },
@@ -103110,7 +103110,7 @@
       "variant": null,
       "displayNumber": "39",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 723,
         "endLine": 734
       },
@@ -103191,7 +103191,7 @@
       "variant": null,
       "displayNumber": "40",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 735,
         "endLine": 743
       },
@@ -103269,7 +103269,7 @@
       "variant": null,
       "displayNumber": "41",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 744,
         "endLine": 751
       },
@@ -103346,7 +103346,7 @@
       "variant": null,
       "displayNumber": "42",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 752,
         "endLine": 772
       },
@@ -103511,7 +103511,7 @@
       "variant": null,
       "displayNumber": "43",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 773,
         "endLine": 791
       },
@@ -103655,7 +103655,7 @@
       "variant": null,
       "displayNumber": "44",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 792,
         "endLine": 811
       },
@@ -103769,7 +103769,7 @@
       "variant": null,
       "displayNumber": "45",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 812,
         "endLine": 823
       },
@@ -103850,7 +103850,7 @@
       "variant": null,
       "displayNumber": "46",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 824,
         "endLine": 836
       },
@@ -103957,7 +103957,7 @@
       "variant": null,
       "displayNumber": "47",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 837,
         "endLine": 844
       },
@@ -104034,7 +104034,7 @@
       "variant": null,
       "displayNumber": "48",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 845,
         "endLine": 862
       },
@@ -104177,7 +104177,7 @@
       "variant": null,
       "displayNumber": "49",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 863,
         "endLine": 872
       },
@@ -104256,7 +104256,7 @@
       "variant": null,
       "displayNumber": "50",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 873,
         "endLine": 896
       },
@@ -104436,7 +104436,7 @@
       "variant": null,
       "displayNumber": "51",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 897,
         "endLine": 909
       },
@@ -104543,7 +104543,7 @@
       "variant": null,
       "displayNumber": "52",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 910,
         "endLine": 931
       },
@@ -104684,7 +104684,7 @@
       "variant": null,
       "displayNumber": "53",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 932,
         "endLine": 958
       },
@@ -104830,7 +104830,7 @@
       "variant": null,
       "displayNumber": "54",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 959,
         "endLine": 987
       },
@@ -105015,7 +105015,7 @@
       "variant": null,
       "displayNumber": "55",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 988,
         "endLine": 1001
       },
@@ -105098,7 +105098,7 @@
       "variant": null,
       "displayNumber": "56",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1002,
         "endLine": 1022
       },
@@ -105244,7 +105244,7 @@
       "variant": null,
       "displayNumber": "57",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1023,
         "endLine": 1049
       },
@@ -105433,7 +105433,7 @@
       "variant": null,
       "displayNumber": "58",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1050,
         "endLine": 1063
       },
@@ -105541,7 +105541,7 @@
       "variant": null,
       "displayNumber": "59",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1064,
         "endLine": 1086
       },
@@ -105720,7 +105720,7 @@
       "variant": null,
       "displayNumber": "60",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1087,
         "endLine": 1098
       },
@@ -105801,7 +105801,7 @@
       "variant": null,
       "displayNumber": "61",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1099,
         "endLine": 1107
       },
@@ -105879,7 +105879,7 @@
       "variant": null,
       "displayNumber": "62",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1108,
         "endLine": 1141
       },
@@ -106100,7 +106100,7 @@
       "variant": null,
       "displayNumber": "63",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1142,
         "endLine": 1177
       },
@@ -106292,7 +106292,7 @@
       "variant": null,
       "displayNumber": "64",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1178,
         "endLine": 1187
       },
@@ -106371,7 +106371,7 @@
       "variant": null,
       "displayNumber": "65",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1188,
         "endLine": 1205
       },
@@ -106458,7 +106458,7 @@
       "variant": null,
       "displayNumber": "66",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1206,
         "endLine": 1220
       },
@@ -106542,7 +106542,7 @@
       "variant": null,
       "displayNumber": "67",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1221,
         "endLine": 1232
       },
@@ -106623,7 +106623,7 @@
       "variant": null,
       "displayNumber": "68",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1233,
         "endLine": 1253
       },
@@ -106800,7 +106800,7 @@
       "variant": null,
       "displayNumber": "69",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1254,
         "endLine": 1267
       },
@@ -106939,7 +106939,7 @@
       "variant": null,
       "displayNumber": "70",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1268,
         "endLine": 1291
       },
@@ -107088,7 +107088,7 @@
       "variant": null,
       "displayNumber": "71",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1292,
         "endLine": 1301
       },
@@ -107167,7 +107167,7 @@
       "variant": null,
       "displayNumber": "72",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1302,
         "endLine": 1328
       },
@@ -107350,7 +107350,7 @@
       "variant": null,
       "displayNumber": "73",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1329,
         "endLine": 1340
       },
@@ -107431,7 +107431,7 @@
       "variant": null,
       "displayNumber": "74",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1341,
         "endLine": 1364
       },
@@ -107574,7 +107574,7 @@
       "variant": null,
       "displayNumber": "75",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1365,
         "endLine": 1373
       },
@@ -107652,7 +107652,7 @@
       "variant": null,
       "displayNumber": "76",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1374,
         "endLine": 1398
       },
@@ -107808,7 +107808,7 @@
       "variant": null,
       "displayNumber": "77",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1399,
         "endLine": 1429
       },
@@ -107988,7 +107988,7 @@
       "variant": null,
       "displayNumber": "78",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1430,
         "endLine": 1440
       },
@@ -108068,7 +108068,7 @@
       "variant": null,
       "displayNumber": "79",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1441,
         "endLine": 1459
       },
@@ -108231,7 +108231,7 @@
       "variant": null,
       "displayNumber": "80",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1460,
         "endLine": 1476
       },
@@ -108373,7 +108373,7 @@
       "variant": null,
       "displayNumber": "81",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1477,
         "endLine": 1497
       },
@@ -108488,7 +108488,7 @@
       "variant": null,
       "displayNumber": "82",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1498,
         "endLine": 1520
       },
@@ -108654,7 +108654,7 @@
       "variant": null,
       "displayNumber": "83",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1521,
         "endLine": 1537
       },
@@ -108796,7 +108796,7 @@
       "variant": null,
       "displayNumber": "84",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1538,
         "endLine": 1555
       },
@@ -108933,7 +108933,7 @@
       "variant": null,
       "displayNumber": "85",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1556,
         "endLine": 1575
       },
@@ -109078,7 +109078,7 @@
       "variant": null,
       "displayNumber": "86",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1576,
         "endLine": 1594
       },
@@ -109228,7 +109228,7 @@
       "variant": null,
       "displayNumber": "87",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1595,
         "endLine": 1620
       },
@@ -109385,7 +109385,7 @@
       "variant": null,
       "displayNumber": "88",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1621,
         "endLine": 1635
       },
@@ -109519,7 +109519,7 @@
       "variant": null,
       "displayNumber": "89",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1636,
         "endLine": 1646
       },
@@ -109624,7 +109624,7 @@
       "variant": null,
       "displayNumber": "90",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1647,
         "endLine": 1667
       },
@@ -109770,7 +109770,7 @@
       "variant": null,
       "displayNumber": "91",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1668,
         "endLine": 1689
       },
@@ -109917,7 +109917,7 @@
       "variant": null,
       "displayNumber": "92",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1690,
         "endLine": 1712
       },
@@ -110096,7 +110096,7 @@
       "variant": null,
       "displayNumber": "93",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1713,
         "endLine": 1725
       },
@@ -110203,7 +110203,7 @@
       "variant": null,
       "displayNumber": "94",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1726,
         "endLine": 1753
       },
@@ -110400,7 +110400,7 @@
       "variant": null,
       "displayNumber": "95",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1754,
         "endLine": 1764
       },
@@ -110480,7 +110480,7 @@
       "variant": null,
       "displayNumber": "96",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1765,
         "endLine": 1773
       },
@@ -110558,7 +110558,7 @@
       "variant": null,
       "displayNumber": "97",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1774,
         "endLine": 1781
       },
@@ -110635,7 +110635,7 @@
       "variant": null,
       "displayNumber": "98",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1782,
         "endLine": 1801
       },
@@ -110780,7 +110780,7 @@
       "variant": null,
       "displayNumber": "99",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1802,
         "endLine": 1816
       },
@@ -110939,7 +110939,7 @@
       "variant": null,
       "displayNumber": "100",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1817,
         "endLine": 1837
       },
@@ -111079,7 +111079,7 @@
       "variant": null,
       "displayNumber": "101",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1838,
         "endLine": 1846
       },
@@ -111157,7 +111157,7 @@
       "variant": null,
       "displayNumber": "102",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1847,
         "endLine": 1859
       },
@@ -111264,7 +111264,7 @@
       "variant": null,
       "displayNumber": "103",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1860,
         "endLine": 1873
       },
@@ -111347,7 +111347,7 @@
       "variant": null,
       "displayNumber": "104",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1874,
         "endLine": 1891
       },
@@ -111484,7 +111484,7 @@
       "variant": null,
       "displayNumber": "105",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1892,
         "endLine": 1916
       },
@@ -111665,7 +111665,7 @@
       "variant": null,
       "displayNumber": "106",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1917,
         "endLine": 1926
       },
@@ -111744,7 +111744,7 @@
       "variant": null,
       "displayNumber": "107",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1927,
         "endLine": 1938
       },
@@ -111825,7 +111825,7 @@
       "variant": null,
       "displayNumber": "108",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1939,
         "endLine": 1961
       },
@@ -112004,7 +112004,7 @@
       "variant": null,
       "displayNumber": "109",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1962,
         "endLine": 1976
       },
@@ -112138,7 +112138,7 @@
       "variant": null,
       "displayNumber": "110",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 1977,
         "endLine": 1999
       },
@@ -112317,7 +112317,7 @@
       "variant": null,
       "displayNumber": "111",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2000,
         "endLine": 2019
       },
@@ -112462,7 +112462,7 @@
       "variant": null,
       "displayNumber": "112",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2020,
         "endLine": 2058
       },
@@ -112657,7 +112657,7 @@
       "variant": null,
       "displayNumber": "113",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2059,
         "endLine": 2084
       },
@@ -112808,7 +112808,7 @@
       "variant": null,
       "displayNumber": "114",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2085,
         "endLine": 2104
       },
@@ -112947,7 +112947,7 @@
       "variant": null,
       "displayNumber": "115",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2105,
         "endLine": 2116
       },
@@ -113028,7 +113028,7 @@
       "variant": null,
       "displayNumber": "116",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2117,
         "endLine": 2143
       },
@@ -113211,7 +113211,7 @@
       "variant": null,
       "displayNumber": "117",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2144,
         "endLine": 2162
       },
@@ -113324,7 +113324,7 @@
       "variant": null,
       "displayNumber": "118",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2163,
         "endLine": 2171
       },
@@ -113402,7 +113402,7 @@
       "variant": null,
       "displayNumber": "119",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2172,
         "endLine": 2189
       },
@@ -113589,7 +113589,7 @@
       "variant": null,
       "displayNumber": "120",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2190,
         "endLine": 2205
       },
@@ -113724,7 +113724,7 @@
       "variant": null,
       "displayNumber": "121",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2206,
         "endLine": 2217
       },
@@ -113805,7 +113805,7 @@
       "variant": null,
       "displayNumber": "122",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2218,
         "endLine": 2225
       },
@@ -113882,7 +113882,7 @@
       "variant": null,
       "displayNumber": "123",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2226,
         "endLine": 2237
       },
@@ -114013,7 +114013,7 @@
       "variant": null,
       "displayNumber": "124",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2238,
         "endLine": 2245
       },
@@ -114090,7 +114090,7 @@
       "variant": null,
       "displayNumber": "125",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2246,
         "endLine": 2255
       },
@@ -114169,7 +114169,7 @@
       "variant": null,
       "displayNumber": "126",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2256,
         "endLine": 2265
       },
@@ -114248,7 +114248,7 @@
       "variant": null,
       "displayNumber": "127",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2266,
         "endLine": 2272
       },
@@ -114324,7 +114324,7 @@
       "variant": null,
       "displayNumber": "128",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2273,
         "endLine": 2282
       },
@@ -114403,7 +114403,7 @@
       "variant": null,
       "displayNumber": "129",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2283,
         "endLine": 2294
       },
@@ -114534,7 +114534,7 @@
       "variant": null,
       "displayNumber": "130",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2295,
         "endLine": 2316
       },
@@ -114712,7 +114712,7 @@
       "variant": null,
       "displayNumber": "131",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2317,
         "endLine": 2324
       },
@@ -114789,7 +114789,7 @@
       "variant": null,
       "displayNumber": "132",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2325,
         "endLine": 2337
       },
@@ -114896,7 +114896,7 @@
       "variant": null,
       "displayNumber": "133",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2338,
         "endLine": 2358
       },
@@ -115036,7 +115036,7 @@
       "variant": null,
       "displayNumber": "134",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2359,
         "endLine": 2376
       },
@@ -115173,7 +115173,7 @@
       "variant": null,
       "displayNumber": "135",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2377,
         "endLine": 2394
       },
@@ -115310,7 +115310,7 @@
       "variant": null,
       "displayNumber": "136",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2395,
         "endLine": 2417
       },
@@ -115489,7 +115489,7 @@
       "variant": null,
       "displayNumber": "137",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2418,
         "endLine": 2440
       },
@@ -115674,7 +115674,7 @@
       "variant": null,
       "displayNumber": "138",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2441,
         "endLine": 2461
       },
@@ -115851,7 +115851,7 @@
       "variant": null,
       "displayNumber": "139",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2462,
         "endLine": 2477
       },
@@ -115992,7 +115992,7 @@
       "variant": null,
       "displayNumber": "140",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2478,
         "endLine": 2507
       },
@@ -116141,7 +116141,7 @@
       "variant": null,
       "displayNumber": "141",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2508,
         "endLine": 2526
       },
@@ -116254,7 +116254,7 @@
       "variant": null,
       "displayNumber": "142",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2527,
         "endLine": 2546
       },
@@ -116424,7 +116424,7 @@
       "variant": null,
       "displayNumber": "143",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2547,
         "endLine": 2567
       },
@@ -116564,7 +116564,7 @@
       "variant": null,
       "displayNumber": "144",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2568,
         "endLine": 2579
       },
@@ -116645,7 +116645,7 @@
       "variant": null,
       "displayNumber": "145",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2580,
         "endLine": 2597
       },
@@ -116782,7 +116782,7 @@
       "variant": null,
       "displayNumber": "146",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2598,
         "endLine": 2608
       },
@@ -116887,7 +116887,7 @@
       "variant": null,
       "displayNumber": "147",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2609,
         "endLine": 2631
       },
@@ -117035,7 +117035,7 @@
       "variant": null,
       "displayNumber": "148",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2632,
         "endLine": 2645
       },
@@ -117143,7 +117143,7 @@
       "variant": null,
       "displayNumber": "149",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2646,
         "endLine": 2666
       },
@@ -117258,7 +117258,7 @@
       "variant": null,
       "displayNumber": "150",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2667,
         "endLine": 2689
       },
@@ -117437,7 +117437,7 @@
       "variant": null,
       "displayNumber": "151",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2690,
         "endLine": 2711
       },
@@ -117584,7 +117584,7 @@
       "variant": null,
       "displayNumber": "152",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2712,
         "endLine": 2726
       },
@@ -117668,7 +117668,7 @@
       "variant": null,
       "displayNumber": "153",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2727,
         "endLine": 2752
       },
@@ -117850,7 +117850,7 @@
       "variant": null,
       "displayNumber": "154",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2753,
         "endLine": 2767
       },
@@ -117959,7 +117959,7 @@
       "variant": null,
       "displayNumber": "155",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2768,
         "endLine": 2781
       },
@@ -118092,7 +118092,7 @@
       "variant": null,
       "displayNumber": "156",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2782,
         "endLine": 2805
       },
@@ -118272,7 +118272,7 @@
       "variant": null,
       "displayNumber": "157",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2806,
         "endLine": 2817
       },
@@ -118353,7 +118353,7 @@
       "variant": null,
       "displayNumber": "158",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2818,
         "endLine": 2835
       },
@@ -118558,7 +118558,7 @@
       "variant": null,
       "displayNumber": "159",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2836,
         "endLine": 2876
       },
@@ -118640,6 +118640,24 @@
           "sourceText": "2.\tEstá bien, búrlate,\n\tmi amor por ti no cambiara.\n\tEstá bien, sepúltame,\n\tel día vendrá y libre seré."
         },
         {
+          "id": 4,
+          "position": 4,
+          "type": "chorus",
+          "label": "Coro 1",
+          "number": 1,
+          "explicitNumber": true,
+          "repeatMarked": false,
+          "repeatDepth": null,
+          "text": "Resucitaré,\nno hay nada que me detendrá.\nResucitaré,\nmuerte no me detendrás.",
+          "lines": [
+            "Resucitaré,",
+            "no hay nada que me detendrá.",
+            "Resucitaré,",
+            "muerte no me detendrás."
+          ],
+          "sourceText": "Coro 1"
+        },
+        {
           "id": 5,
           "position": 5,
           "type": "verse",
@@ -118711,6 +118729,12 @@
             "note": null
           },
           {
+            "position": 4,
+            "partId": 4,
+            "repeated": false,
+            "note": null
+          },
+          {
             "position": 5,
             "partId": 5,
             "repeated": false,
@@ -118743,6 +118767,12 @@
             "note": null
           },
           {
+            "position": 4,
+            "partId": 4,
+            "repeated": false,
+            "note": null
+          },
+          {
             "position": 5,
             "partId": 5,
             "repeated": false,
@@ -118766,7 +118796,7 @@
       "variant": null,
       "displayNumber": "160",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2877,
         "endLine": 2886
       },
@@ -118870,7 +118900,7 @@
       "variant": null,
       "displayNumber": "161",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2887,
         "endLine": 2913
       },
@@ -119016,7 +119046,7 @@
       "variant": null,
       "displayNumber": "162",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2914,
         "endLine": 2925
       },
@@ -119122,7 +119152,7 @@
       "variant": null,
       "displayNumber": "163",
       "source": {
-        "file": "HIMNARIO ESFORZADOR.txt",
+        "file": "Himnario Esforzador.txt",
         "startLine": 2926,
         "endLine": 2941
       },
@@ -119179,6 +119209,75 @@
       "hasChorus": false,
       "endsWithChorus": false,
       "hasRepetitions": true,
+      "sequence": {
+        "source": [
+          {
+            "position": 1,
+            "partId": 1,
+            "repeated": false,
+            "note": null
+          }
+        ],
+        "performance": [
+          {
+            "position": 1,
+            "partId": 1,
+            "repeated": false,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "extras-1",
+      "collectionId": "extras",
+      "masterSectionId": null,
+      "sectionId": null,
+      "number": 1,
+      "variant": null,
+      "displayNumber": "1",
+      "source": {
+        "file": "Extras.txt",
+        "startLine": 1,
+        "endLine": 7
+      },
+      "sourceTitle": "GOZO INEFABLE",
+      "sourceTitleLines": [
+        "GOZO INEFABLE"
+      ],
+      "title": "GOZO INEFABLE",
+      "titleLines": [
+        "GOZO INEFABLE"
+      ],
+      "subtitle": null,
+      "credits": [],
+      "authors": [],
+      "translators": [],
+      "bodyText": "Gozo inefable siente el cristiano\ncuando da su ofrenda con amor,\npues sabe que no es en vano\ntodo lo que hace por su Señor. Amén.",
+      "sourceText": "Gozo inefable siente el cristiano\ncuando da su ofrenda con amor,\npues sabe que no es en vano\ntodo lo que hace por su Señor. Amén.",
+      "parts": [
+        {
+          "id": 1,
+          "position": 1,
+          "type": "verse",
+          "label": null,
+          "number": null,
+          "explicitNumber": false,
+          "repeatMarked": false,
+          "repeatDepth": null,
+          "text": "Gozo inefable siente el cristiano\ncuando da su ofrenda con amor,\npues sabe que no es en vano\ntodo lo que hace por su Señor. Amén.",
+          "lines": [
+            "Gozo inefable siente el cristiano",
+            "cuando da su ofrenda con amor,",
+            "pues sabe que no es en vano",
+            "todo lo que hace por su Señor. Amén."
+          ],
+          "sourceText": "Gozo inefable siente el cristiano\ncuando da su ofrenda con amor,\npues sabe que no es en vano\ntodo lo que hace por su Señor. Amén."
+        }
+      ],
+      "hasChorus": false,
+      "endsWithChorus": false,
+      "hasRepetitions": false,
       "sequence": {
         "source": [
           {
