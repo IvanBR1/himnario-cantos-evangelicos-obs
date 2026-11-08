@@ -50,6 +50,13 @@ body { background: transparent; }
     white-space: pre-line;
 }
 .verse-reference { color: var(--verse-text-color); font-family: var(--verse-font-family); text-align: var(--verse-text-align); text-shadow: var(--verse-text-shadow); }
+body[data-auto-fit="true"] .verse-text { width: 100%; min-width: 0; }
+body[data-auto-fit="true"] .verse-text,
+body[data-auto-fit="true"] .verse-text * {
+    white-space: pre;
+    overflow-wrap: normal;
+    word-break: normal;
+}
 body.background-hidden .verse-container { background: transparent !important; }
 .title-card .verse-text { width: 100%; }
 .title-card .hymn-cover-title {

@@ -176,6 +176,7 @@ function buildDisplaySequence(hymn, mode) {
 }
 
 function selectHymn(hymn, preferredIndex = 0) {
+  $('program-panel').open = false;
   selectedHymn = hymn;
   elements.collection.value = hymn.collectionId;
   elements.search.value = `${hymn.displayNumber}. ${hymn.title}`;
@@ -242,7 +243,10 @@ function renderProgram() {
   }).join('') : '<li class="no-results">Agrega himnos de cualquier colecci&#243;n para preparar tu lista.</li>';
   list.querySelectorAll('.program-select').forEach(button => button.addEventListener('click', () => {
     const hymn = hymnsById.get(programmedHymns[Number(button.dataset.index)]);
-    if (hymn) selectHymn(hymn);
+    if (hymn) {
+      selectHymn(hymn);
+      $('program-panel').querySelector('summary').focus();
+    }
   }));
   list.querySelectorAll('.program-remove-bookmark').forEach(button => button.addEventListener('click', () => {
     removeProgramHymn(Number(button.dataset.index));
@@ -554,12 +558,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     clearTimeout(searchTimer);
     searchTimer = setTimeout(() => searchHymns(elements.search.value), 180);
   });
-  elements.search.addEventListener('focus', () => searchHymns(elements.search.value.includes('.') ? '' : elements.search.value));
+  elements.search.addEventListener('focus', () => {
+    $('program-panel').open = false;
+    searchHymns(elements.search.value.includes('.') ? '' : elements.search.value);
+  });
   elements.search.addEventListener('keydown', event => {
     if (event.key === 'Enter' && searchResults[0]) { event.preventDefault(); selectHymn(searchResults[0]); }
     if (event.key === 'Escape') elements.dropdown.classList.remove('visible');
   });
-  document.addEventListener('click', event => { if (!elements.search.contains(event.target) && !elements.dropdown.contains(event.target)) elements.dropdown.classList.remove('visible'); });
+  document.addEventListener('click', event => {
+    if (!elements.search.contains(event.target) && !elements.dropdown.contains(event.target)) elements.dropdown.classList.remove('visible');
+    if (!$('program-panel').contains(event.target)) $('program-panel').open = false;
+  });
   elements.searchClear.addEventListener('click', () => {
     clearTimeout(searchTimer);
     elements.search.value = '';
@@ -584,6 +594,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   elements.settingsClose.addEventListener('click', () => toggleSettings(false));
   elements.settingsScrim.addEventListener('click', () => toggleSettings(false));
   document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && $('program-panel').open) {
+      $('program-panel').open = false;
+      $('program-panel').querySelector('summary').focus();
+    }
     if (event.key === 'Escape') toggleSettings(false);
     if (event.key === 'ArrowLeft' && !['INPUT', 'SELECT', 'TEXTAREA'].includes(document.activeElement.tagName)) selectLine(currentIndex - 1);
     if (event.key === 'ArrowRight' && !['INPUT', 'SELECT', 'TEXTAREA'].includes(document.activeElement.tagName)) selectLine(currentIndex + 1);

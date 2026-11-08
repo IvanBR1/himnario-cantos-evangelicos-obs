@@ -72,6 +72,7 @@
     const margin = 23;
     return verseContainer.scrollHeight <= verseContainer.clientHeight + 1
       && verseContainer.scrollWidth <= verseContainer.clientWidth + 1
+      && verseText.scrollWidth <= verseText.clientWidth + 1
       && bounds.top >= margin
       && bounds.left >= margin
       && bounds.bottom <= window.innerHeight - margin
@@ -83,7 +84,7 @@
     const safe = window.BibleThemeUtilities;
     const requestedSize = safe.clamp(activeSettings.fontSize, 8, 96, 52);
     const maximumSize = activeSettings.autoFit === false ? requestedSize : 96;
-    const minimumSize = 8;
+    const minimumSize = activeSettings.autoFit === false ? 8 : 1;
 
     root.style.setProperty('--verse-font-size', `${maximumSize}px`);
     if (contentFits()) return;
@@ -108,6 +109,7 @@
 
   function applySettings(settings) {
     activeSettings = { ...getDefaults(), ...activeSettings, ...(settings || {}) };
+    body.dataset.autoFit = String(activeSettings.autoFit !== false);
     const safe = window.BibleThemeUtilities;
     setAnchoring(activeSettings.horizontalAlign, activeSettings.verticalAlign);
     root.style.setProperty('--verse-font-family', activeSettings.fontFamily);

@@ -1,4 +1,4 @@
-# Himnario OBS 1.2.0
+# Himnario OBS 1.3.0
 
 Aplicación monolítica y estática para consultar el himnario, controlar la letra mostrada y usar un visualizador como fuente de navegador en OBS.
 
@@ -49,6 +49,8 @@ El formato se explica en [`fuentes/FORMATO.md`](fuentes/FORMATO.md): `@himno`, `
 La integración conserva las funciones y apariencia del proyecto `himnario-panel-obs`:
 
 - búsqueda por número, título, autor o traductor;
+- búsqueda tolerante a errores y omisiones;
+- lista desplegable de himnos programados, con marcadores y orden mediante arrastre;
 - selección entre las tres colecciones;
 - navegación con botones o flechas del teclado;
 - parte actual y siguiente;
@@ -60,7 +62,7 @@ La integración conserva las funciones y apariencia del proyecto `himnario-panel
 - autoajuste tipográfico activo por defecto, con reducción de seguridad para impedir recortes;
 - tipografía, colores, opacidad, ancho y efectos configurables.
 
-Las líneas vacías y los saltos internos se presentan mediante `white-space: pre-line`. La fuente conserva la numeración original; en pantalla se identifica cada estrofa y el contador se mantiene durante todas sus líneas.
+Con el autoajuste activo se conservan los saltos originales y se reduce la tipografía para que cada línea quepa a lo ancho, sin partirla en nuevos renglones. La fuente conserva la numeración original; en pantalla se identifica cada estrofa y el contador se mantiene durante todas sus líneas.
 
 Cada tema define una posición inicial, y las posiciones superior, central e inferior actúan como anclajes completos; en posición inferior, un texto largo crece hacia arriba. La referencia del visualizador incluye número, título del himno, tipo de parte y progreso. La portada precede a la letra y no se incluye en el conteo; muestra título y sección.
 

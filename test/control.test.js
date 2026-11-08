@@ -39,7 +39,9 @@ test('programados conserva orden, evita duplicados y selecciona entre coleccione
   assert.deepEqual(JSON.parse(storage.get('hymnalProgram')), ['b-1','a-1']);
   run('programmedHymns = []; loadProgram();');
   assert.equal(run('programmedHymns[0]'), 'b-1');
+  getNode('program-panel').open = true;
   run("loadSequence = () => {}; selectHymn(hymnsById.get('b-1'));");
+  assert.equal(getNode('program-panel').open, false);
   assert.equal(getNode('collection-select').value, 'b');
   assert.equal(run('selectedHymn.id'), 'b-1');
   assert.equal(getNode('program-bookmark')['aria-pressed'], 'true');

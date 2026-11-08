@@ -281,13 +281,14 @@ body[data-panel-appearance="minimal"] .theme-card { grid-template-columns: 1fr; 
 body[data-panel-appearance="minimal"] .search-icon { display: block !important; }
 body[data-panel-appearance="minimal"] .status-dot { display: inline-block !important; }
 
-.program-panel { border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); overflow: hidden; }
-.program-panel summary { cursor: pointer; padding: 10px; font-size: 12px; font-weight: 700; }
-.program-panel[open] summary { border-bottom: 1px solid var(--surface-3); }
+.program-panel { position: relative; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); }
+.program-panel summary { cursor: pointer; padding: 10px; font-size: 12px; font-weight: 700; border-radius: inherit; -webkit-tap-highlight-color: transparent; }
+.program-panel summary:focus:not(:focus-visible) { outline: none; }
+.program-panel summary:focus-visible { outline-offset: -3px; }
 .program-panel summary i { margin-right: 6px; }
 #program-count { margin-left: 6px; color: var(--blue); font-weight: 700; }
-.program-body { padding: 0; border-radius: 0 0 9px 9px; overflow: hidden; }
-.program-list { list-style: none; padding: 0; margin: 0; max-height: 270px; overflow-y: auto; }
+.program-body { position: absolute; z-index: 1100; top: calc(100% + 5px); left: 0; right: 0; padding: 0; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-2); box-shadow: 0 16px 35px rgba(0,0,0,.38); overflow: hidden; }
+.program-list { list-style: none; padding: 0; margin: 0; max-height: min(270px, 50vh); overflow-y: auto; }
 .program-row { display: flex; gap: 0; align-items: stretch; overflow: hidden; }
 .program-select { display: grid; flex: 1; min-width: 0; gap: 4px; background: transparent; border: 0; color: inherit; padding: 8px 10px; text-align: left; cursor: pointer; font: inherit; transition: .14s ease; }
 .program-select:hover, .program-select:focus-visible { background: var(--surface-3); }
