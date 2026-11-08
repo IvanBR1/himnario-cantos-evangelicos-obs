@@ -6,7 +6,7 @@
   <title>Control Himnario · OBS</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="/assets/css/panel.css?v=20261108-cover2">
+  <link rel="stylesheet" href="/assets/css/panel.css?v=20261108-program8">
 </head>
 <body>
   <div class="main-container">
@@ -46,7 +46,14 @@
             <div id="hymn-dropdown" class="search-dropdown hymn-dropdown"></div>
           </div>
         </div>
+        <details class="program-panel" id="program-panel">
+          <summary><i class="fas fa-list-ol" aria-hidden="true"></i> Programados <span id="program-count">0</span></summary>
+          <div class="program-body">
+            <ol id="program-list" class="program-list"></ol>
+          </div>
+        </details>
         <div class="selection-meta" id="selection-meta" hidden>
+          <button type="button" id="program-bookmark" class="passage-bookmark" aria-label="Guardar himno en programados" title="Guardar himno en programados" aria-pressed="false"><i class="fas fa-bookmark" aria-hidden="true"></i></button>
           <strong id="selected-hymn-title"></strong>
           <span id="selected-hymn-section"></span>
         </div>
@@ -108,7 +115,7 @@
   </aside>
   <div id="settings-scrim" class="settings-scrim" hidden></div>
   <script src="/themes/index.js?v=20261108-cover2"></script>
-  <script src="/assets/js/control.js?v=20261108-modes6"></script>
+  <script src="/assets/js/control.js?v=20261108-program8"></script>
   <script src="/assets/js/panel-appearance.js"></script>
 </body>
 </html>

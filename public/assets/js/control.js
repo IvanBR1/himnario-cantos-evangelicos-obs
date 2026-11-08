@@ -24,6 +24,9 @@ let isVisible = false;
 let selectedThemeId = 'classic';
 let themeSettings = { ...window.BibleThemeDefaults };
 let searchTimer;
+const PROGRAM_STORAGE_KEY = 'hymnalProgram';
+let programmedHymns = [];
+
 const hymnNumberCollator = new Intl.Collator('es-MX', { numeric: true, sensitivity: 'base' });
 
 const controls = {
@@ -174,6 +177,7 @@ function buildDisplaySequence(hymn, mode) {
 
 function selectHymn(hymn, preferredIndex = 0) {
   selectedHymn = hymn;
+  elements.collection.value = hymn.collectionId;
   elements.search.value = `${hymn.displayNumber}. ${hymn.title}`;
   setSearchClearButton();
   elements.dropdown.classList.remove('visible');
@@ -181,6 +185,120 @@ function selectHymn(hymn, preferredIndex = 0) {
   elements.title.textContent = `${hymn.displayNumber}. ${hymn.title}`;
   elements.section.textContent = [hymnCollectionName(hymn), hymnSectionName(hymn)].filter(Boolean).join(' · ');
   loadSequence(preferredIndex);
+  renderProgram();
+}
+
+function saveProgram() {
+  localStorage.setItem(PROGRAM_STORAGE_KEY, JSON.stringify(programmedHymns));
+  renderProgram();
+}
+
+function addToProgram() {
+  if (!selectedHymn || programmedHymns.includes(selectedHymn.id)) return;
+  programmedHymns.push(selectedHymn.id);
+  saveProgram();
+}
+
+function toggleProgramBookmark() {
+  if (!selectedHymn) return;
+  const index = programmedHymns.indexOf(selectedHymn.id);
+  if (index >= 0) removeProgramHymn(index);
+  else addToProgram();
+}
+
+function reorderProgramHymn(index, target) {
+  if (index < 0 || index >= programmedHymns.length || target < 0 || target >= programmedHymns.length || index === target) return;
+  const [id] = programmedHymns.splice(index, 1);
+  programmedHymns.splice(target, 0, id);
+  saveProgram();
+}
+
+function removeProgramHymn(index) {
+  if (index < 0 || index >= programmedHymns.length) return;
+  programmedHymns.splice(index, 1);
+  saveProgram();
+}
+
+function loadProgram() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(PROGRAM_STORAGE_KEY) || '[]');
+    programmedHymns = Array.isArray(saved) ? [...new Set(saved.filter(id => hymnsById.has(id)))] : [];
+  } catch { programmedHymns = []; }
+  renderProgram();
+}
+
+function renderProgram() {
+  const list = $('program-list');
+  $('program-count').textContent = programmedHymns.length;
+  const bookmark = $('program-bookmark');
+  const saved = Boolean(selectedHymn && programmedHymns.includes(selectedHymn.id));
+  bookmark.disabled = !selectedHymn;
+  bookmark.setAttribute('aria-pressed', String(saved));
+  bookmark.title = saved ? 'Quitar himno de programados' : 'Guardar himno en programados';
+  bookmark.setAttribute('aria-label', bookmark.title);
+  list.innerHTML = programmedHymns.length ? programmedHymns.map((id, index) => {
+    const hymn = hymnsById.get(id);
+    return `<li class="program-row" data-index="${index}"><button type="button" class="program-grip" draggable="true" data-index="${index}" aria-label="Ordenar: ${escapeHtml(hymn.title)}" title="Arrastra para ordenar; usa las flechas arriba y abajo con el teclado"><i class="fas fa-grip-lines" aria-hidden="true"></i></button><button type="button" class="program-select" data-index="${index}" aria-current="${selectedHymn?.id === id}"><strong>${index + 1}. ${escapeHtml(hymn.displayNumber)} &middot; ${escapeHtml(hymn.title)}</strong><small>${escapeHtml(hymnCollectionName(hymn))}</small></button><button type="button" class="program-remove-bookmark" data-index="${index}" aria-pressed="true" aria-label="Quitar marcador: ${escapeHtml(hymn.title)}" title="Quitar de programados"><i class="fas fa-bookmark" aria-hidden="true"></i></button></li>`;
+  }).join('') : '<li class="no-results">Agrega himnos de cualquier colecci&#243;n para preparar tu lista.</li>';
+  list.querySelectorAll('.program-select').forEach(button => button.addEventListener('click', () => {
+    const hymn = hymnsById.get(programmedHymns[Number(button.dataset.index)]);
+    if (hymn) selectHymn(hymn);
+  }));
+  list.querySelectorAll('.program-remove-bookmark').forEach(button => button.addEventListener('click', () => {
+    removeProgramHymn(Number(button.dataset.index));
+  }));
+  let draggedIndex = null;
+  const clearDropIndicators = () => list.querySelectorAll('.program-row').forEach(row => {
+    row.classList.remove('drop-before', 'drop-after', 'dragging');
+  });
+  list.querySelectorAll('.program-grip').forEach(handle => {
+    handle.addEventListener('dragstart', event => {
+      draggedIndex = Number(handle.dataset.index);
+      event.dataTransfer.effectAllowed = 'move';
+      event.dataTransfer.setData('text/plain', programmedHymns[draggedIndex]);
+      const row = handle.closest('.program-row');
+      event.dataTransfer.setDragImage(row, 12, row.offsetHeight / 2);
+      row.classList.add('dragging');
+    });
+    handle.addEventListener('dragend', () => {
+      draggedIndex = null;
+      clearDropIndicators();
+    });
+    handle.addEventListener('keydown', event => {
+      if (!['ArrowUp', 'ArrowDown'].includes(event.key)) return;
+      event.preventDefault();
+      const index = Number(handle.dataset.index);
+      const target = index + (event.key === 'ArrowUp' ? -1 : 1);
+      reorderProgramHymn(index, target);
+      list.querySelector(`.program-grip[data-index="${Math.max(0, Math.min(programmedHymns.length - 1, target))}"]`)?.focus();
+    });
+  });
+  list.querySelectorAll('.program-row').forEach(row => {
+    const insertAfter = event => {
+      const bounds = row.getBoundingClientRect();
+      return event.clientY > bounds.top + bounds.height / 2;
+    };
+    row.addEventListener('dragover', event => {
+      if (draggedIndex === null) return;
+      event.preventDefault();
+      event.dataTransfer.dropEffect = 'move';
+      list.querySelectorAll('.program-row').forEach(item => item.classList.remove('drop-before', 'drop-after'));
+      row.classList.add(insertAfter(event) ? 'drop-after' : 'drop-before');
+    });
+    row.addEventListener('dragleave', event => {
+      if (!row.contains(event.relatedTarget)) row.classList.remove('drop-before', 'drop-after');
+    });
+    row.addEventListener('drop', event => {
+      if (draggedIndex === null) return;
+      event.preventDefault();
+      const insertion = Number(row.dataset.index) + (insertAfter(event) ? 1 : 0);
+      const target = insertion - (draggedIndex < insertion ? 1 : 0);
+      const from = draggedIndex;
+      draggedIndex = null;
+      clearDropIndicators();
+      reorderProgramHymn(from, target);
+    });
+  });
 }
 
 function hymnCollectionName(hymn) {
@@ -215,6 +333,11 @@ function levenshteinDistance(source, target) {
   if (source === target) return 0;
   if (!source.length) return target.length;
   if (!target.length) return source.length;
+  if (source.length === target.length) {
+    let first = 0;
+    while (first < source.length && source[first] === target[first]) first++;
+    if (source[first] === target[first + 1] && source[first + 1] === target[first] && source.slice(first + 2) === target.slice(first + 2)) return 1;
+  }
   let previous = Array.from({ length: target.length + 1 }, (_, index) => index);
   for (let row = 1; row <= source.length; row += 1) {
     const current = [row];
@@ -233,7 +356,7 @@ function levenshteinDistance(source, target) {
 function fuzzyTermScore(term, words) {
   const exactIndex = words.findIndex(word => word === term);
   if (exactIndex >= 0) return exactIndex / 1000;
-  const prefixIndex = words.findIndex(word => word.startsWith(term) || term.startsWith(word));
+  const prefixIndex = term.length >= 3 ? words.findIndex(word => word.startsWith(term)) : -1;
   if (prefixIndex >= 0) return 0.25 + prefixIndex / 1000;
   if (term.length < 3) return null;
   const tolerance = term.length < 6 ? 1 : 2;
@@ -252,9 +375,10 @@ function scoreSearchField(searchText, searchWords, terms, normalizedQuery) {
   if (searchText.startsWith(normalizedQuery)) return 0.05;
   if (searchText.includes(normalizedQuery)) return 0.1;
   const scores = terms.map(term => fuzzyTermScore(term, searchWords));
-  return scores.every(score => score !== null)
-    ? 0.25 + scores.reduce((total, score) => total + score, 0)
-    : null;
+  const missing = scores.filter(score => score === null).length;
+  if (missing > (terms.length >= 3 ? 1 : 0)) return null;
+  if (!terms.some((term, index) => term.length >= 3 && scores[index] !== null)) return null;
+  return missing * 100 + 0.25 + scores.reduce((total, score) => total + (score ?? 0), 0);
 }
 
 function scoreNumberSearch(numberText, normalizedQuery) {
@@ -326,6 +450,7 @@ async function initializeDatabase(saved) {
     hymnsById = new Map(database.hymns.map(hymn => [hymn.id, hymn]));
     masterSectionsById = new Map(database.masterSections.map(section => [section.id, section]));
     sectionsById = new Map(database.sections.map(section => [section.id, section]));
+    loadProgram();
     elements.collection.innerHTML = collections.map(item => `<option value="${escapeHtml(item.id)}">${escapeHtml(item.name)} (${item.hymnCount})</option>`).join('');
     if (saved.collection && collections.some(item => item.id === saved.collection)) elements.collection.value = saved.collection;
     setDatabaseStatus('connected', `${database.hymns.length} himnos en la base local`);
@@ -423,6 +548,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   renderThemeCards(); syncThemeSettingsUI(); sendThemeSettings();
 
+  $('program-bookmark').addEventListener('click', toggleProgramBookmark);
   elements.search.addEventListener('input', () => {
     setSearchClearButton();
     clearTimeout(searchTimer);
@@ -441,7 +567,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     elements.search.focus();
     searchHymns('');
   });
-  elements.collection.addEventListener('change', () => { selectedHymn = null; sequence = []; currentIndex = 0; elements.search.value = ''; setSearchClearButton(); elements.meta.hidden = true; updatePreview(); searchHymns(''); saveState(); });
+  elements.collection.addEventListener('change', () => { selectedHymn = null; sequence = []; currentIndex = 0; elements.search.value = ''; setSearchClearButton(); elements.meta.hidden = true; renderProgram(); updatePreview(); searchHymns(''); saveState(); });
   elements.mode.addEventListener('change', () => loadSequence(0));
   elements.previous.addEventListener('click', () => selectLine(currentIndex - 1));
   elements.next.addEventListener('click', () => selectLine(currentIndex + 1));
