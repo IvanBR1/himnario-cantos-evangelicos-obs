@@ -178,8 +178,8 @@ test("la versión y los recursos integrados no dependen de un servicio separado"
     "utf8",
   );
 
-  assert.equal(packageJson.version, "1.1.0");
-  assert.match(presentation, /Versión 1\.1\.0/u);
+  assert.equal(packageJson.version, "1.2.0");
+  assert.match(presentation, /Versión 1\.2\.0/u);
   assert.match(presentation, /href="\/panel\/"/u);
   assert.match(presentation, /href="\/visualizador\/"/u);
   assert.match(control, /\/data\/himnario\.db\.json/u);

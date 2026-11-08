@@ -1,10 +1,10 @@
-# Himnario OBS 1.1.0
+# Himnario OBS 1.2.0
 
 Aplicación monolítica y estática para consultar el himnario, controlar la letra mostrada y usar un visualizador como fuente de navegador en OBS.
 
 ## Rutas
 
-- `/`: presentación del desarrollador y accesos al proyecto.
+- `/`: presentación de la herramienta y accesos al proyecto.
 - `/panel/`: panel de búsqueda, navegación y personalización.
 - `/visualizador/`: salida limpia para OBS.
 
