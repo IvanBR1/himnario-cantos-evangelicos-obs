@@ -1,2 +1,7 @@
 node_modules/
 public/data/himnario.db.json
+~$*
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -21,15 +21,15 @@ npm start
 
 Después abre:
 
-- Presentación: `http://localhost:3000/`
-- Panel: `http://localhost:3000/panel/`
-- Visualizador: `http://localhost:3000/visualizador/`
+- Presentación: `http://localhost:3011/`
+- Panel: `http://localhost:3011/panel/`
+- Visualizador: `http://localhost:3011/visualizador/`
 
 En OBS agrega una fuente **Navegador** de 1920 × 1080 con la URL del visualizador. El panel y el visualizador deben usar el mismo origen porque sincronizan la selección, visibilidad, tema y ajustes mediante `localStorage`.
 
 ## Importación
 
-`npm run build` analiza `backup/Himnario.txt` y `backup/Himnario Esforzador.txt` y `backup/Extras.txt`, genera la base canónica `data/himnario.db.json` y copia la versión pública a `public/data/himnario.db.json`.
+`npm run build` lee todos los TXT de `fuentes/`, genera la base canónica `data/himnario.db.json` y copia la versión pública a `public/data/himnario.db.json`. Cada TXT declara su colección, himnos, créditos y partes mediante un formato común; la importación no depende del nombre del archivo.
 
 La base contiene:
 
@@ -40,9 +40,9 @@ La base contiene:
 - Estrofas, coros, indicaciones, repeticiones y saltos de línea.
 - Secuencias en orden original y de interpretación con coros.
 
-Los extras tienen numeración independiente y consecutiva desde 1: `1. GOZO INEFABLE`. Los nuevos cantos se agregan a `backup/Extras.txt` con el siguiente número, sin cambiar la numeración de las otras colecciones.
+Los extras tienen numeración independiente desde 1. Para agregar o editar cantos se modifican los TXT de `fuentes/` y se vuelve a ejecutar la construcción. Se puede crear otro TXT con cualquier nombre: los datos se declaran dentro del documento.
 
-Para corregir contenido se editan los TXT conservados en `backup/` y se vuelve a ejecutar la construcción.
+El formato se explica en [`fuentes/FORMATO.md`](fuentes/FORMATO.md): `@himno`, `@autor`, `@estrofa`, `@coro` y `@fin` delimitan explícitamente los datos. Cada renglón de letra sirve tanto para Original como para Línea por línea. «Desconocido» y «Anónimo» se conservan como autores, fuera de la letra.
 
 ## Panel y visualizador
 
@@ -52,6 +52,7 @@ La integración conserva las funciones y apariencia del proyecto `himnario-panel
 - selección entre las tres colecciones;
 - navegación con botones o flechas del teclado;
 - parte actual y siguiente;
+- selector único: Original, Con coros, Línea por línea y Con coros (línea por línea), con conteo por parte y la misma letra;
 - salida visible u oculta;
 - estado persistente del último himno;
 - temas Clásico, Libro moderno, Minimalista, Cinematográfico, Transmisión, Cristal, Editorial, Neón, Cinta y Reflector;
@@ -59,9 +60,9 @@ La integración conserva las funciones y apariencia del proyecto `himnario-panel
 - autoajuste tipográfico activo por defecto, con reducción de seguridad para impedir recortes;
 - tipografía, colores, opacidad, ancho y efectos configurables.
 
-Las líneas vacías y los saltos internos se presentan mediante `white-space: pre-line`. Si el TXT no numera una estrofa, el panel no inventa numeración.
+Las líneas vacías y los saltos internos se presentan mediante `white-space: pre-line`. La fuente conserva la numeración original; en pantalla se identifica cada estrofa y el contador se mantiene durante todas sus líneas.
 
-Cada tema define una posición inicial, y las posiciones superior, central e inferior actúan como anclajes completos; en posición inferior, un texto largo crece hacia arriba. La referencia del visualizador incluye colección, número, título del himno, tipo de parte y progreso.
+Cada tema define una posición inicial, y las posiciones superior, central e inferior actúan como anclajes completos; en posición inferior, un texto largo crece hacia arriba. La referencia del visualizador incluye número, título del himno, tipo de parte y progreso. La portada precede a la letra y no se incluye en el conteo; muestra título y sección.
 
 ## Netlify
 

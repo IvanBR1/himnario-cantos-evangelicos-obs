@@ -1,0 +1,3680 @@
+@formato himnario/1
+@coleccion esforzador | Himnario Esforzador
+
+@seccion XVII | HIMNARIO ESFORZADOR
+
+@himno 1 | AL PECADOR JESÚS BUSCÓ
+
+@estrofa
+Al pecador Jesús buscó,
+sus faltas Él sobrellevó,
+en el Calvario así murió
+por ti y por mí.
+Oh gran misterio de amor,
+eterno plan de salvación,
+que Jesucristo se encarnó
+por ti y por mí.
+
+@repeticion
+:: Por nuestra maldad
+un abismo se abrió,
+alejados de Dios
+y privados de paz.
+Pero gloria al Señor,
+fuente viva de amor,
+que nos lleva hasta
+el trono eternal.
+
+Gracia infinita de bondad,
+más abundante que la mar.
+Jesús su sangre derramó
+por ti y por mí ::
+
+@repeticion
+:: Por ti y por mí ::
+
+@fin
+
+@himno 2 | JEHOVÁ ESTÁ EN SU SANTO TEMPLO
+@autor Desconocido
+
+@estrofa
+Jehová está en su santo templo.
+Jehová está en su santo templo,
+guardad silencio reverente,
+guardad silencio, guardad silencio.
+Silencio, silencio, silencio.
+
+@fin
+
+@himno 3 | UNIÓN Y ESFUERZO
+@autor Juan Pablo Torres Salazar
+
+@estrofa 1
+Trabajaremos por Jesús,
+guiados por su santa luz,
+el mundo no nos detendrá,
+unidos todo se podrá.
+
+@coro
+Unión y Esfuerzo, nuestro lema
+será por siempre, si, por siempre,
+por Cristo y por su Iglesia
+lucharemos, si.
+
+@estrofa 2
+Victoria tras victoria habrá
+si en nuestras vidas Cristo está,
+nuestra arma la Biblia será;
+Satán no prevalecerá.
+
+@estrofa 3
+Esforzador siempre seré,
+ferviente y fiel a mi Señor,
+toda mi vida sembraré
+palabra fiel de salvación.
+
+@fin
+
+@himno 4 | ¡GLORIA, GLORIA, ALELUYA!
+@traductor Roberto G. Savage
+
+@estrofa 1
+Es el Dios de los ejércitos
+en quien yo confiaré;
+y con címbalos de gozo
+al Señor ensalzaré.
+Él despide los relámpagos
+mas nunca temeré,
+Él es mi protector.
+
+@coro
+¡Gloria, gloria, aleluya!
+¡Gloria, gloria, aleluya!
+¡Gloria, gloria, aleluya!
+A Cristo doy loor.
+
+@estrofa 2
+Con ejércitos no gana
+sus victorias el Señor;
+ni con fuerza lucha en contra
+de Satán, el tentador.
+La potencia del Espíritu,
+ha dicho el Dios de amor,
+es lo que vencerá.
+
+@estrofa 3
+En Belén de Judea
+el Señor Jesús nació,
+y después de treinta años
+en la cruenta cruz murió,
+pero vive para siempre,
+
+pues la tumba ya venció,
+su nombre alabaré.
+
+@estrofa 4
+El Señor de los señores
+ya muy pronto volverá,
+y a su pueblo con gran gozo
+a las nubes llevará,
+y por siempre moraremos
+todos en la eternidad
+con nuestro Salvador.
+
+@fin
+
+@himno 5 | CON CRISTO EN TU BARCO
+@autor Desconocido
+
+@estrofa
+Con Cristo en tu barco
+todo marcha feliz,
+marcha feliz, marcha feliz.
+Con Cristo en tu barco
+todo marcha feliz, el viento pasará.
+No tendrás temor, no tendrás temor,
+con Cristo en tu barco
+todo marcha feliz, el viento pasará.
+
+@fin
+
+@himno 6 | LA BIBLIA ES CUAL MARTILLO
+@autor W. A. Mackie
+
+@estrofa 1
+La Biblia es cual martillo
+que parte la roca en dos,
+es lámpara que alumbra
+el camino que lleva a Dios;
+la Biblia es como espejo
+por el cual puedo ver mí mal,
+de Dios el Padre Celestial es libro sin igual.
+
+@estrofa 2
+Semilla es que germina
+cuando entra en el corazón,
+es como pan y leche
+que ministran sustentación;
+como agua es que las manchas
+lava de nuestra vida erial,
+de Dios el Padre Celestial es libro sin igual.
+
+@estrofa 3
+Cual miel es la palabra
+bendita de nuestro Dios,
+es fuego que consume
+al que no oye su santa voz;
+espada de dos filos,
+es la Biblia un arsenal,
+de Dios el Padre Celestial es libro sin igual.
+
+@fin
+
+@himno 7 | EL TEMA DE MI CANCIÓN
+@autor Haldor Lillenas
+
+@estrofa 1
+En las riquezas, en el gozar,
+ponen algunos su amor;
+más yo tengo un tema, dulce sin par,
+de incomprensible valor.
+
+@coro
+Cristo es el tema de mi canción,
+luz cintilante de amor,
+le alabaré por su devoción,
+por su inefable candor;
+me fortalece con su poder,
+y satisface mí débil ser:
+Él es la rosa gentil de Sarón,
+el tema de mi canción.
+
+@estrofa 2
+Como rocío encantador
+de la mañana gentil,
+la historia de Cristo y su amor
+me brinda delicia sin fin.
+
+@estrofa 3
+Cristo es el tema de mi canción,
+fuente de felicidad;
+carece de toda comparación,
+bellísimo es en verdad.
+
+@fin
+
+@himno 8 | SOY FELIZ, SOY FELIZ
+@autor Roberto C. Savage
+
+@estrofa
+Soy feliz, soy feliz
+desde que encontré la salvación en Cristo,
+con amor, el Señor
+mostróme la verdad y vida.
+Soy feliz, soy feliz, siempre cantaré
+con dicha indecible e indestructible,
+tengo paz perfecta y siempre soy feliz.
+
+@fin
+
+@himno 9 | HALLÉ UN BUEN AMIGO
+@traductor Enrique Turral
+
+@estrofa 1
+Hallé un buen amigo, mi amante Salvador,
+contaré lo que Él ha hecho para mí;
+hallándome perdido e indigno pecador,
+me salvó y ya me guarda para sí.
+Me salva del pecado, me guarda de Satán,
+promete estar conmigo hasta el fin.
+Él consuela mi tristeza, me quita todo afán;
+¡Grandes cosas Cristo ha hecho para mí!
+
+@estrofa 2
+Jesús jamás me falta, jamás me dejará;
+es mi fuerte y poderoso protector;
+del mundo me separo y de la vanidad
+para consagrar mi vida a mi Señor.
+Si el mundo me persigue, si sufro tentación,
+confiando en Cristo puedo resistir.
+La victoria me es segura y elevo mi canción:
+¡Grandes cosas Cristo ha hecho para mí!
+
+@estrofa 3
+Yo sé que Jesucristo muy pronto volverá
+y entre tanto me prepara un lugar,
+en casa de su Padre, mansión de luz y paz,
+do el creyente fiel con Él ha de morar.
+Llegando a la gloria, con Él yo estaré;
+contemplaré su rostro siempre allí.
+Con los santos redimidos gozoso cantaré;
+¡Grandes cosas Cristo ha hecho para mí!
+
+@fin
+
+@himno 10 | HE DE CONFIAR EN JESÚS
+@autor Desconocido
+
+@estrofa
+He de confiar en Jesús en mi vida, sí,
+he de confiar en Jesús, Él me sostendrá.
+Aunque las nubes a mí me ensombrecerán,
+sigo confiando en Jesús, Él me sostendrá.
+
+@estrofa
+Gran amigo es Él, ¡Oh! Qué amigo tan fiel,
+hasta el final Él me sostendrá,
+aunque las nubes a mí me ensombrecerán,
+sigo confiando en Jesús, Él me sostendrá.
+
+@fin
+
+@himno 11 | CUÁN GRANDE ES ÉL
+@traductor A. W. Hotton Rives
+
+@estrofa 1
+Señor mi Dios, al contemplar los cielos,
+el firmamento y las estrellas mil,
+al oír tu voz en los potentes truenos
+y ver brillar el sol en su cenit.
+
+@coro
+Mi corazón entona la canción:
+¡Cuán grande es Él! ¡Cuán grande es Él!
+Mi corazón entona la canción:
+¡Cuán grande es Él! ¡Cuán grande es Él!
+
+@estrofa 2
+Al recorrer los montes y los valles,
+y ver las bellas flores al pasar,
+al escuchar el canto de las aves,
+y el murmurar del claro manantial.
+
+@estrofa 3
+Cuando recuerdo del amor Divino
+que desde el cielo al Salvador envió
+a aquél Jesús, que por salvarme vino,
+y en una cruz sufrió por mí y murió.
+
+@estrofa 4
+Cuando el Señor me llame a su presencia
+al dulce hogar, al cielo de esplendor,
+le adoraré cantando la grandeza
+de su poder y su infinito amor.
+
+@fin
+
+@himno 12 | ANCHO CUAL EL OCÉANO
+@autor Desconocido
+
+@estrofa
+Ancho cual el océano,
+profundo como el mar,
+alto más que los cielos
+es de Dios, el amor.
+Aunque soy tan indigno
+me cuidará el Salvador,
+por su palabra, yo sé que me alcanza
+su grande amor.
+
+@fin
+
+@himno 13 | EN EL TREN DEL EVANGELIO
+@autor Desconocido
+
+@estrofa
+En el tren del evangelio viajo yo
+por la vía celestial,
+he dejado atrás el pueblo de pecar
+en el valle de maldad.
+Mi pasaje ya pago Jesús
+por su muerte en la cruz.
+En el tren del evangelio viajo yo
+por la vía celestial.
+
+@fin
+
+@himno 14 | CANTAD VICTORIA
+@autor Wendell P. Lovelles
+
+@estrofa
+Cantad victoria, la palabra del vencedor.
+Cantad victoria, venceremos por fe y amor.
+Si vienen pruebas y afán,
+miremos al capitán
+quien es el Salvador,
+que a victoria nos guiará.
+
+@fin
+
+@himno 15 | SÓLO EL PODER DE DIOS
+@autor Desconocido
+
+@estrofa
+Sólo el poder de Dios
+puede cambiar tu ser;
+la prueba yo te doy,
+Él me ha cambiado a mí,
+¿no ves que soy feliz
+sirviendo al Señor?
+nueva criatura soy,
+nueva soy (nueva a soy)
+
+@fin
+
+@himno 16 | ADMIRABLE ES JESÚS
+@autor Francisco S. Cook
+
+@estrofa
+Admirable es Jesús y tan lleno de amor;
+admirable es Jesús, mi Señor.
+Es su nombre sin par,
+siempre a Él quiero alabar;
+admirable es Jesús, mi Señor.
+
+@fin
+
+@himno 17 | QUÉ GLORIOSO ES ANDAR CON ÉL
+@autor Haldor Lillenas
+
+@estrofa
+¡Qué glorioso es andar con Él!,
+¡Qué glorioso es andar con Él!;
+Él mis pasos guiará y al fin me llevará,
+¡qué glorioso es andar con Él!
+
+@fin
+
+@himno 18 | YO TENGO UN AMIGO QUE ME AMA
+@autor Desconocido
+
+@estrofa 1
+Yo tengo un amigo que me ama,
+me ama, me ama,
+yo tengo un amigo que me ama,
+su nombre es Jesús.
+Que me ama, que me ama,
+que me ama, si con tierno amor,
+que me ama, que me ama,
+su nombre es Jesús.
+
+@estrofa 2
+Tú tienes un amigo que te ama,
+te ama, te ama,
+tú tienes un amigo que te ama,
+su nombre es Jesús.
+Que te ama, que te ama,
+que te ama, si con tierno amor,
+que te ama, que te ama,
+su nombre es Jesús.
+
+@estrofa 3
+Tenemos un amigo que nos ama,
+nos ama, nos ama,
+tenemos un amigo que nos ama,
+su nombre es Jesús.
+Que nos ama, que nos ama,
+que nos ama, si con tierno amor,
+que nos ama, que nos ama,
+su nombre es Jesús.
+
+@fin
+
+@himno 19 | ESTAD SIEMPRE GOZOSOS
+@subtitulo 1ª Tesalonicenses 5.16-18
+@autor Desconocido
+
+@estrofa
+Estad siempre gozosos,
+orad sin cesar,
+estad siempre gozosos,
+orad sin cesar,
+dad gracias en todo
+porque ésta es la voluntad
+de Dios para con nosotros
+en Cristo Jesús.
+De Dios para con nosotros
+en Cristo Jesús.
+
+@fin
+
+@himno 20 | BENDECIRÉ A JEHOVÁ
+@autor Artemio Celestino García
+
+@estrofa
+Bendeciré a Jehová en todo tiempo,
+su alabanza será siempre en mi boca.
+Bendeciré a Jehová en todo tiempo,
+su alabanza será siempre en mi boca.
+En Jehová se gloriará mi alma,
+oiránlo los mansos y se alegrarán.
+En Jehová se gloriará mi alma,
+oiránlo los mansos y se alegrarán.
+Bendeciré a Jehová.
+
+@fin
+
+@himno 21 | DEL VIVO PAN HE DE COMER
+@autor Desconocido
+
+@estrofa
+Del vivo pan he de comer,
+del agua viva he de beber
+y dice Cristo, que así
+no tendré sed jamás;
+
+@estrofa
+Su sed no volverá, no nunca volverá,
+su sed no volverá, no nunca volverá,
+y dice Cristo, que así
+no tendré sed jamás.
+
+@fin
+
+@himno 22 | GOZO TENGO EN MI ALMA HOY
+@autor Stanton W. Gavitt
+
+@estrofa
+Gozo tengo en mi alma hoy
+porque sé que Cristo me salvó,
+Él su paz y salvación me da,
+todos mis pecados Él borró.
+Melodía puso en mi corazón,
+gloria a su nombre por su excelso don.
+Gozo tengo en mi alma hoy
+porque sé que Cristo me salvó.
+
+@fin
+
+@himno 23 | NUEVA CRIATURA ES
+@autor Guillermo Guillam
+
+@estrofa
+De modo que si alguno
+está en Cristo el Señor,
+nueva criatura es e hijo de su amor.
+Nacido del Espíritu regenerado ya,
+en novedad de vida victoriosa andará.
+Vida antigua pasará; vida nueva llegará.
+¡Oh!, Pecador te suplicamos ríndete a Él;
+conocerás felicidad y gozo eternal.
+
+@fin
+
+@himno 24 | DILO A CRISTO
+@traductor Jeremiah E. Ramkin
+
+@estrofa 1
+Cuando estás cansado y abatido,
+dilo a Cristo, dilo a Cristo;
+si te sientes débil, confundido,
+dilo a Cristo el Señor.
+Dilo a Cristo, dilo a Cristo,
+Él es tu amigo más fiel;
+no hay otro amigo como Cristo,
+dilo tan sólo a Él.
+
+@estrofa 2
+Cuando estás de tentación cercado,
+mira a Cristo, mira a Cristo;
+cuando rujan huestes de pecado
+mira a Cristo el Señor.
+Mira a Cristo, Mira a Cristo,
+Él es tu amigo más fiel;
+no hay otro amigo como Cristo,
+mira tan sólo a Él.
+
+@estrofa 3
+Si se apartan otros de la senda,
+sigue a Cristo, sigue a Cristo;
+si acrecienta en torno la contienda,
+sigue a Cristo el Señor.
+Sigue a Cristo, sigue a Cristo,
+Él es tu amigo más fiel;
+no hay otro amigo como Cristo,
+sigue tan sólo a Él.
+
+@estrofa 4
+Cuando llegue la final jornada,
+fía en Cristo, fía en Cristo;
+te dará en el cielo franca entrada,
+fía en Cristo el Señor.
+Fía en Cristo, fía en Cristo,
+Él es tu amigo más fiel;
+no hay otro amigo como Cristo,
+fía tan sólo a Él.
+
+@fin
+
+@himno 25 | DONDE ÉL ME GUÍE
+@autor Jorge Sánchez
+
+@estrofa 1
+Dulces promesas son las del Señor;
+un mensaje bello de sublime amor.
+Él sin pecado fue, puro en verdad,
+Cristo el gran ejemplo es de gracia y bondad.
+
+@coro
+Donde Él me guíe,
+fiel le seguiré.
+Donde Él me guíe,
+en sus huellas andaré.
+
+@estrofa 2
+Dulce el tierno amor Cristo mostró,
+por su muerte en la cruz la vida nos dio.
+Al que errado va, perdonará;
+y a los que le aman fiel Pastor Él será.
+
+@estrofa 3
+Oye su voz de amor: “Ven, ven a mí”
+si cansado andas hay refugio allí.
+Fieles promesas son, firmes, sin par,
+Cristo, grande gozo y paz a ti quiere dar.
+
+@fin
+
+@himno 26 | MARCHAD, OH JUVENTUD
+@autor I. Granados
+
+@estrofa
+¡Marchad, oh juventud!
+De Jesucristo nunca pierdas la visión,
+luchad contra Satán,
+ese es el lema del cristiano en oración.
+Confiad en el Señor,
+por cada triunfo cantaréis nueva canción.
+¡Marchad, oh juventud
+en pos del galardón!
+
+@fin
+
+@himno 27 | NINGUNO TENGA EN POCO TU JUVENTUD
+@autor Desconocido
+
+@estrofa
+Ninguno tenga en poco tu juventud,
+ninguno tenga en poco tu juventud,
+pero sé ejemplo de los fieles
+en palabra, en conversación,
+en caridad, en espíritu, en fe, en limpieza.
+
+@fin
+
+@himno 28 | NOBLE SOSTÉN
+@autor Raúl Ruíz Ávila
+
+@estrofa 1
+Noble sostén de la esperanza mía
+fuente bendita de vida eterna,
+tan sólo el alma que en tus fuerzas fía
+tiene paz, tiene paz.
+
+@coro
+:: Mi sostén es Jesús,
+Nunca en la lucha desmayar podré ::
+
+@estrofa 2
+Yo soy muy débil, pero en Ti soy fuerte
+nunca en la lucha desmayar podré,
+si Tú estás conmigo ni a la misma muerte
+temeré, temeré.
+
+@estrofa 3
+Dura es la lucha, difícil la tarea
+mas Tú me dotas de tu gran poder,
+mi espíritu renuevas con la idea nueva
+de vencer, de vencer.
+
+@indicacion Al final
+:: Alelu…, Aleluya
+nunca en la lucha desmayar podré ::
+
+@fin
+
+@himno 29 | ÉL ME SOSTENDRÁ
+@autor Robert Harkness
+
+@estrofa 1
+Si la fe me abandonare,
+Él me sostendrá,
+y si el mal me amenazare
+Él me sostendrá.
+
+@coro
+Él me sostendrá, Él me sostendrá.
+Mi Jesús que tanto me ama,
+Él me sostendrá.
+
+@estrofa 2
+Nunca yo podré ser firme
+con tan débil fe,
+mas Él puede dirigirme
+y Él me sostendrá.
+
+@estrofa 3
+Son su gozo y complacencia
+cuantos Él salvó,
+y al salvarme su clemencia.
+Él me sostendrá.
+
+@estrofa 4
+Él no quiso ver perdida
+mi alma en la maldad,
+dio su sangre por mi vida
+y Él me sostendrá.
+
+@fin
+
+@himno 30 | PECADO NEGRO
+@autor Frances M. Johnston
+
+@estrofa
+Pecado negro encontró
+Jesús en mi corazón,
+mas ya su sangre lavó
+y como nieve dejó.
+
+@estrofa
+En su palabra he leído
+que al cielo iré redimido.
+Por calles de oro andaré
+y a Cristo allí cantaré.
+
+@fin
+
+@himno 31 | DIOS DESCENDIÓ
+@traductor Roberto Dalke
+
+@estrofa 1
+Día tan grande no puedo olvidar,
+día de gloria sin par,
+cuando en tinieblas al verme andar,
+vino a salvarme el Señor,
+gran compasión tuvo Cristo de mí,
+de gozo y paz me llenó;
+quitó las sombras, oh gloria a su nombre,
+la noche en día cambió.
+
+@coro
+Dios descendió y de gloria me llenó,
+cuando Jesús por gracia me salvó;
+fui ciego, me hizo ver
+y en Él renacer.
+Dios descendió y de gloria me llenó.
+
+@estrofa 2
+Nací de nuevo en virtud de Jesús,
+a la familia de Dios,
+justificado por Cristo el Señor,
+gozo la gran redención;
+Bendito sea mi Padre y Dios
+que, cuando vine por fe
+fui adoptado por Cristo el amado,
+loores por siempre daré.
+
+@estrofa 3
+Tengo esperanza de gloria eternal,
+me regocijo en Jesús;
+me ha preparado un bello rincón
+en la mansión celestial;
+siempre recuerdo con fe y gratitud,
+al contemplarle en la cruz,
+que sus heridas me dieron la vida
+¡alabo al Bendito Jesús!
+
+@fin
+
+@himno 32 | MARAVILLOSO ES DIOS
+@autor Desconocido
+
+@coro
+Maravilloso es Dios, no entenderé;
+mas cantaré: ¡Gloria aleluya!
+Aleluya amén.
+
+@estrofa 1
+Que sublime es, que Dios amóme
+su vida dio, Él redimióme,
+cantaré, hablaré: maravilloso es
+lo que ha sido para mí.
+
+@estrofa 2
+Él ya llevó todas mis cargas,
+gloria, perdonó todas mis faltas,
+cantaré, hablaré: maravilloso es
+lo que ha sido para mí.
+
+@fin
+
+@himno 33 | PADRE NUESTRO
+@autor Eduardo Novelo Gallegos
+
+@estrofa
+Oh, Padre nuestro que estás en el Cielo,
+santificado sea tu nombre.
+
+@estrofa
+Venga a nos tu reino y sea hecha
+tu voluntad como en el Cielo
+así en la Tierra.
+
+@estrofa
+Danos nuestro pan
+y perdónanos como nosotros
+hoy perdonamos
+a nuestros deudores, oh Padre.
+
+@estrofa
+Y no nos dejes caer en tentación,
+mas líbranos Señor de todo mal:
+Porque tuyo es el reino, y el poder,
+y la gloria, por todos los siglos. Amén.
+
+@fin
+
+@himno 34 | HE ENCONTRADO LA PAZ
+@autor Desconocido
+
+@estrofa
+He encontrado la paz que yo ansiaba tener,
+una dulce quietud inunda ya mi ser.
+Es por eso que canto con un gozo sublime
+al amor que redime, de mi Señor Jesús.
+Que me ha dado su amor,
+salvación y poder,
+para poder vivir sin afán ni temor.
+¡Oh! Amigo que vagas
+por el mundo perdido
+como un ser confundido,
+sin esperanza y paz.
+Ven a Cristo Jesús que te ofrece perdón,
+dale tu corazón; ven a Cristo el Señor.
+
+@fin
+
+@himno 35 | CLAMA A MÍ
+@autor Merril Dunlop
+
+@estrofa
+“Clama a mí y te responderé,
+clama a mí y te enseñaré
+cosas grandes que no sabes”,
+dice nuestro Dios.
+Pues oremos sin dudar jamás,
+y tendremos bendición y paz,
+ganaremos la victoria.
+¡Gloria a Dios!
+
+@fin
+
+@himno 36 | A LA VICTORIA
+@autor Alfredo Colom M
+
+@estrofa
+A la victoria Jesús nos llama
+va con nosotros el Capitán,
+marchemos pues a combatir
+a los ejércitos de Satán.
+Con Jesús yo iré, ganaré la batalla,
+batalla no es batalla, si no vienen las pruebas,
+si no vienen las pruebas, batalla no es batalla
+A la victoria Jesús nos llama
+va con nosotros el Capitán,
+marchemos pues a combatir
+a los ejércitos de Satán.
+
+@fin
+
+@himno 37 | AMÉMONOS
+@autor Desconocido
+
+@estrofa 1
+Amémonos de corazón,
+no de labios ni de oídos;
+amémonos de corazón,
+no de labios ni mentiras.
+Para cuando Cristo venga,
+para cuando Cristo venga
+nos encuentre apercibidos;
+para cuando Cristo venga,
+para cuando Cristo venga
+nos encuentre bien unidos.
+
+@estrofa 2
+¿Cómo puedes tú orar,
+enojado con tu hermano?,
+¿Cómo puedes tú orar
+enojado con tu hermano?
+Dios no escucha la oración,
+Dios no escucha la oración
+si no te has reconciliado;
+Dios no escucha la oración
+Dios no escucha la oración
+si no te has reconciliado.
+
+@fin
+
+@himno 38 | AMAR
+@autor Desconocido
+
+@estrofa 1
+La gente de nuestros tiempos
+no sabe lo que es el amor.
+Se vive perdiendo el tiempo,
+buscando y sin encontrar.
+
+@coro
+Amar es entregarse
+en alma y cuerpo a Cristo Jesús.
+Vivir siempre sirviendo
+sin que tú esperes algo para ti.
+
+@estrofa 2
+En Cristo yo he encontrado
+un mensaje de paz y de amor.
+La muerte del crucificado
+es un ejemplo de su grande amor.
+
+@estrofa 3
+Tú siempre debes de hablar
+que en Cristo hay salvación,
+llevándoles el mensaje
+de su muerte y resurrección.
+
+@fin
+
+@himno 39 | ¿PORQUÉ TE AFANAS HOY?
+@traductor Juan J. Christiansen
+
+@estrofa
+¿Porqué te afanas hoy por el mañana?
+tu corazón hoy llenas de pesar,
+si Dios tiene cuidado de las aves,
+de ti sin duda cuidará.
+Conoce tus pruebas,
+tus cargas Él lleva.
+Si Dios tiene cuidado de las aves,
+de ti sin duda cuidará.
+
+@fin
+
+@himno 40 | BRILLANDO Y LUCHANDO
+@autor C. Auston Miles
+
+@estrofa
+Brillando y luchando por Cristo el Señor.
+Velando y orando, soldados sin temor;
+siempre andando y hablando
+con nuestro Salvador,
+viviendo siempre por Cristo el Rey.
+
+@fin
+
+@himno 41 | FIJA TUS OJOS EN CRISTO
+@traductor C. P. Denyer
+
+@estrofa
+Fija tus ojos en Cristo,
+tan lleno de gracia y amor,
+y lo terrenal sin valor será
+a la luz del glorioso Señor.
+
+@fin
+
+@himno 42 | SOMOS SOLDADITOS
+@autor Desconocido
+
+@estrofa
+Somos soldaditos, siervos del Señor,
+vamos en defensa de nuestro evangelio.
+¡Tu tu ru ru tu tu tu! ¡Tu tu ru ru tu tu tu!
+Y ganaremos la victoria con Jesús.
+
+@estrofa
+Aunque no ande en la infantería,
+caballería, artillería,
+aunque en avión no valla volando,
+pero soldado soy.
+
+@estrofa
+Soldado soy de Jesús,
+soldado soy de Jesús.
+
+@estrofa
+Aunque no ande en la infantería,
+caballería, artillería,
+aunque en avión no valla volando,
+pero soldado soy.
+
+@fin
+
+@himno 43 | AL ENTRAR EN LA NUEVA JERUSALEM
+@autor Desconocido
+
+@estrofa 1
+Es el hijo del hombre y Él es Dios
+le clavaron en la cruz. (En la cruz)
+Ningún mortal sufrió por Jesús,
+en mi lugar, si, Él murió por mí, (por mí)
+
+@coro
+Jesús murió por mí, (por mí,)
+Él derramó su sangre carmesí, (carmesí)
+cuando agonizó, salvación me dio.
+¡Oh, gloria a Dios!
+Jesús murió por mí. (Por mí.)
+
+@estrofa 2
+Al entrar en la nueva Jerusalém
+cuando vea al Salvador, (Salvador)
+con gratitud a sus pies diré:
+¡oh mi Señor! Tu sangre me salvó, (me salvó)
+
+@fin
+
+@himno 44 | ANDO CON CRISTO
+@autor Desconocido
+
+@estrofa
+Ando con Cristo
+en sombras y en la luz estoy con mi Jesús.
+Ando con Cristo,
+Él es mi amigo mejor.
+
+@repeticion
+:: A veces en la luz, a veces en la sombra
+caminando estoy y al cielo voy,
+a veces en la luz, a veces en la sombra
+ando con Cristo el Señor.
+
+Cuando recuerdo que murió por mí,
+(No, no, no, no, no)
+Yo nunca retrocederé.
+Cuando recuerdo que murió por mí,
+(No, no, no, no, no)
+Yo nunca retrocederé ::
+
+@fin
+
+@himno 45 | JEHOVÁ REINA
+@autor Desconocido
+
+@estrofa
+Jehová reina, Jehová reina,
+bendito sea el nombre de Dios.
+Jehová reina, Jehová reina,
+bendito sea el nombre de Dios.
+Alégrense los cielos, gócese la tierra
+y digan en las naciones:
+Jehová reina, Jehová reina,
+bendito sea el nombre de Dios.
+
+@fin
+
+@himno 46 | AMOR, AMOR
+@autor Desconocido
+
+@estrofa 1
+Amor, amor, amor, amor,
+ser cristiano es ser amor,
+amar a tu prójimo como a ti mismo.
+Dios es amor.
+
+@estrofa 2
+Amor, amor, amor, amor,
+la Biblia dice que Dios es amor,
+amar a tu prójimo como a ti mismo.
+Dios es amor.
+
+@fin
+
+@himno 47 | NO, NUNCA CEDEREMOS
+@autor Desconocido
+
+@estrofa
+No, nosotros nunca, nunca cederemos al mal,
+nunca no, aleluya, nunca no, no, no.
+No, nosotros nunca, nunca cederemos al mal,
+nos espera la corona en el cielo.
+
+@fin
+
+@himno 48 | PERDÓN TE RUEGO MI SEÑOR Y DIOS
+@autor C. Maud Battersby
+
+@estrofa 1
+Si fui motivo de dolor, oh Cristo,
+si por mi causa el débil tropezó;
+si en tus pisadas caminar no quise
+perdón te ruego, mi Señor y Dios.
+
+@coro
+Escucha, oh Dios mi confesión humilde
+y líbrame de tentación sutil.
+Preserva siempre mi alma en tu rebaño.
+Perdón te ruego mi Señor y Dios.
+
+@estrofa 2
+Si vana y fútil mi palabra ha sido
+si al que sufría en su dolor dejé.
+No me condenes, Tú, por mí pecado,
+perdón te ruego, mi Señor y Dios.
+
+@fin
+
+@himno 49 | LOS QUE ESPERAN EN JEHOVÁ
+@autor Desconocido
+
+@estrofa
+Los que esperan en Jehová
+nuevas fuerzas tendrán,
+volarán con poder, como el águila,
+andarán sin fatigarse,
+correrán si desmayarse.
+¡Oh! Señor enséñame en Ti esperar.
+
+@fin
+
+@himno 50 | MANSIÓN YO QUIERO
+@traductor Francisco Liévano
+
+@estrofa 1
+Estoy contento, aquí en la tierra
+con una casita de poco valor,
+pero en el cielo do los ángeles cantan,
+mansión muy fina yo quiero tener.
+
+@coro
+Mansión yo quiero allá en el cielo,
+en donde el oro abunda a raudal,
+y un día muy pronto
+estaré con mi Cristo
+andando en calles de fino cristal.
+
+@estrofa 2
+Aquí tentado, muchas veces probado,
+pero no estoy sólo, a mi lado está Dios,
+soy peregrino, pero no permanente,
+pues allá tengo mansión eternal.
+
+@estrofa 3
+Aquí estoy pobre, pero no estoy triste,
+yo voy buscando la bella ciudad,
+allá yo tengo un arpa de oro,
+y una corona que es eternal.
+
+@fin
+
+@himno 51 | SOLAMENTE EN CRISTO
+@autor Desconocido
+
+@estrofa
+Solamente en Cristo, solamente en Él;
+la salvación se encuentra en Él.
+No hay otro nombre dado a los hombres;
+solamente en Cristo, solamente en Él.
+
+@estrofa
+En San Juan catorce y el verso seis
+dice Jesús: “Soy la verdad,
+Soy el Camino, también la Vida;
+nadie viene al Padre si no es por Mí”.
+
+@fin
+
+@himno 52 | DIOS HIZO AL MUNDO
+@autor Desconocido
+
+@estrofa
+Dios hizo al mundo y su obra es perfecta,
+todos los caminos son rectos,
+Dios de verdad y sin iniquidad
+justo y recto es Él.
+Justo y recto es Él, aleluya,
+justo y recto es Él.
+Dios de verdad y sin iniquidad
+justo y recto es Él.
+
+@estrofa
+Si el mismo Espíritu que a Cristo levantó
+mora en ti, mora en ti,
+si el mismo Espíritu que a Cristo levantó
+mora en ti, mora en ti.
+
+@estrofa
+Vivificará tu pobre cuerpo
+si el Espíritu mora en ti,
+vivificará tu pobre cuerpo
+si el Espíritu mora en ti.
+
+@fin
+
+@himno 53 | ÉL ES TODO PARA MÍ
+@autor Desconocido
+
+@estrofa
+En los cielos puedo contemplar
+las cosas que Dios quiso formar,
+cierto nada puede ocultar
+su grande amor.
+En la Biblia puedo yo leer
+que en Belén Jesús vino a nacer
+para así mostrarnos con poder
+su grande amor,
+
+@repeticion
+:: A sus pies un día me entregue,
+(me entregue)
+y mi alma Él salvó por fe,
+(salvó por fe)
+ahora puedo comprender
+el gran amor que siempre ha
+tenido mi Señor.
+Voy seguro por la vida, sí,
+de la mano de Jesús yo voy
+le entregado todo lo que soy,
+Él es todo para mí. (Él es todo para mí) ::
+
+@estrofa
+Él es todo para mí, (Él es todo para mí)
+Él es todo para mí.
+
+@fin
+
+@himno 54 | GRACIAS DIOS
+@autor Isaí Garza
+
+@estrofa 1
+Sin temer, sin esperar,
+nos mostraste tu poder,
+nos llamaste a predicar la salvación.
+Caminando sin parar,
+predicando tu amor
+por la gran misericordia que hay en Ti.
+
+@coro
+Gracias Dios, gracias Dios
+por tu amor y tu bondad,
+Gracias Dios, gracias Dios
+por el don de predicar la salvación.
+
+@estrofa 2
+Siendo Dios no le importó,
+se entregó por ti y por mí
+despojándose de sí se humilló.
+Ya no busques más allá,
+el Señor aquí está,
+ofreciéndote su amor y su perdón.
+
+@estrofa 3
+Caminar, testificar,
+es una necesidad
+un mandato de Jesús el Salvador.
+Ya tenemos que partir,
+pregonando salvación,
+proclamando la venida de el Señor.
+
+@fin
+
+@himno 55 | ¡OH, DIOS! TÚ ERES MI DIOS!
+@autor Desconocido
+
+@estrofa
+¡Oh Dios! Tú eres mi Dios
+de mañana te buscaré.
+¡Oh Dios! Tú eres mi Dios
+de mañana te buscaré.
+Mi alma tiene sed,
+mi carne te desea,
+en tierra de sequedad,
+donde no hay agua.
+¡Oh Dios! Tú eres mi Dios
+de mañana te buscaré.
+
+@fin
+
+@himno 56 | TE EXALTARÉ, MI DIOS, MI REY
+@autor Casiodoro Cárdenas
+
+@estrofa 1
+Te exaltaré, mi Dios, mi Rey
+y bendeciré tu nombre
+eternamente y para siempre;
+cada día te bendeciré.
+
+@coro
+Y alabaré tu nombre,
+eternamente y para siempre.
+Grande es Jehová
+
+y digno de suprema alabanza,
+y su grandeza es inescrutable;
+cada día te bendeciré.
+
+@estrofa 2
+Generación a generación,
+celebrarán tus obras
+y anunciarán tus poderosos hechos;
+cada día te bendeciré.
+
+@fin
+
+@himno 57 | ALABEN TODOS
+@autor Antonio Monzón
+
+@coro
+Alaben todos, todos juntos
+el nombre del Señor
+porque engrandecido
+sólo es Él y sólo Él,
+Su gloria es sobre toda tierra
+y sobre el cielo es también,
+Gloria en las alturas, gloria,
+gloria en las alturas sea a Él.
+
+@estrofa 1
+Canta alabanzas a Dios el Señor,
+alabe la inmensidad.
+Alaben sol y luna también,
+ángeles dadle loor.
+
+@estrofa 2
+Fuego, vapor y nieve también
+canten a Dios el Señor.
+Montes collados y el árbol también,
+glorifiquen al Señor.
+
+@estrofa 3
+Reyes y nobles alaben a Dios,
+santos e indoctos también
+y el hombre exclame con el corazón:
+“alabado sea Él”.
+
+@fin
+
+@himno 58 | ESPERAMOS LA VENIDA DEL SEÑOR
+@traductor Carmen Cortés P.
+
+@estrofa
+Esperamos la venida del Señor,
+Él del cielo viene en todo su esplendor;
+levantemos nuestros ojos ya,
+por nosotros del cielo el Rey vendrá.
+Esperamos la venida del Señor,
+
+@estrofa
+Él del cielo viene en todo su esplendor;
+levantemos nuestros ojos ya,
+porque en gloria Jesús descenderá,
+por nosotros del cielo el Rey vendrá.
+
+@fin
+
+@himno 59 | RECOGED, COSECHAD
+@autor Desconocido
+
+@estrofa 1
+Contemplo al mundo y su riqueza
+que el hombre lucha por ganar
+para gastar en vanidades
+y luego miro y veo las almas perecer.
+
+@coro
+Recoged, cosechad, (cosechad)
+Cristo nos llama, la mies se pierde,
+no demoréis, es tarde ya,
+mirad los campos blancos ya para segar.
+
+@estrofa 2
+Cristo murió en el Calvario
+para salvar al pecador,
+su sangre dio en sacrificio
+y a nosotros nos envió a predicar.
+
+@estrofa 3
+Y cuando al fin en su presencia
+rinda la cuentas de mi hacer
+quiero oír su voz decirme
+“buen siervo tu corona puedes recibir”.
+
+@fin
+
+@himno 60 | TE ALABARÉ SEÑOR
+@autor Desconocido
+
+@estrofa
+Te alabaré Señor con todo mi corazón,
+con todo mi corazón te alabaré Señor.
+Contaré todas tus maravillas,
+todas tus maravillas, te alabaré Señor.
+Me alegraré en ti y me regocijaré,
+y me regocijaré, te alabaré Señor.
+Cantaré a tu nombre ¡oh!, Altísimo,
+¡oh!, Altísimo, te alabaré Señor.
+
+@fin
+
+@himno 61 | QUE SI VIVIMOS
+@autor Desconocido
+
+@estrofa
+Que si vivimos, para Él vivimos,
+y si morimos, para Él morimos.
+Sea que vivamos o que muramos,
+:: Somos del Señor (somos Señor)
+Somos del Señor ::
+
+@fin
+
+@himno 62 | PARA ANDAR CON JESÚS
+@traductor Vicente Mendoza
+
+@estrofa 1
+Para andar con Jesús
+no hay sendero mejor
+que guardar sus mandatos de amor;
+obedientes a Él,
+siempre habremos de ser
+y tendremos de Cristo el poder.
+
+@coro
+Obedecer y confiar en Jesús,
+es la regla marcada para andar en la luz.
+
+@estrofa 2
+Cuando vamos así,
+¡cómo brilla la luz,
+en la senda, al andar con Jesús!
+Su promesa de estar
+con los suyos es fiel,
+si obedecen y esperan en Él.
+
+@estrofa 3
+Quien siguiere a Jesús
+ni una sombra verá,
+si confiado su vida le da;
+ni terrores, ni afán,
+ni ansiedad, ni dolor,
+pues lo cuida su amante Señor.
+
+@estrofa 4
+Mas sus dones de amor
+nunca habréis de alcanzar
+si rendidos no vais a su altar;
+pues su paz y su amor
+sólo son para aquel
+que a sus leyes divinas es fiel.
+
+@fin
+
+@himno 63 | EL REY YA VIENE
+@autor Adap. David Herrera
+
+@estrofa 1
+Es el mundo una locura
+persiguiendo triste afán,
+a la cima de riquezas
+todos luchan por llegar,
+mas la iglesia redimida,
+vigilante está la grey,
+como novia se apresura
+para recibir al Rey.
+
+@coro
+¡Sí, el Rey ya viene, el Rey ya viene!
+La trompeta ha sonado
+y su rostro puedo ver.
+¡Sí, el Rey ya viene, el Rey ya viene!
+¡Gloria a Dios! ¡Ya viene por mí!
+
+@estrofa 2
+Se oyen carros que retumban
+porque vienen a anunciar
+la victoria de la vida
+y el final de la maldad.
+Togas reales se reparten,
+la tribuna lista está,
+y el gran coro de los cielos
+canta gracia, amor y paz.
+
+@estrofa 3
+En los rostros que sonrientes
+ya conocen la verdad,
+se ven vidas redimidas
+que hoy tienen libertad,
+se ven niños y ancianos
+que sufrieron gran dolor,
+tienen ya salud y vida
+gracias a su Redentor.
+
+@fin
+
+@himno 64 | JEHOVÁ ESTÁ EN MEDIO DE TI
+@autor Tapu Moala
+
+@repeticion
+:: Jehová está en medio de ti poderoso:
+Él salvará, se gozará sobre ti con alegría;
+Callará de amor,
+Se gozará sobre ti con cánticos ::
+Jehová está en medio de ti, poderoso,
+poderoso.
+
+@fin
+
+@himno 65 | TOMADO DE LA MANO
+@autor Manuel Bonilla
+
+@repeticion
+::: Tomado de la mano con Él yo voy :::
+por donde Él va.
+::: Tomado de la mano con Él yo voy :::
+por donde Él va.
+Si Jesús me dice amigo,
+deja todo y ven conmigo,
+donde todo es más alegre
+y más feliz,
+si Jesús me dice amigo,
+deja todo y ven conmigo,
+yo mi mano pongo en la suya
+Y me voy con Él.
+::: Tomado de la mano con Él yo voy:::
+por donde Él va.
+
+@fin
+
+@himno 66 | UNA PROMESA
+@autor Juan Pablo Torres Salazar
+
+@estrofa
+Al Señor he hecho una promesa
+y esa promesa cumpliré.
+En su Santa Biblia Él me dice:
+“Lo que prometieres cumplirás”.
+¡Oh!, Yo nunca dejaré que Satanás
+me impida cumplir con el Señor;
+contra viento y tempestad le seguiré,
+sólo a Cristo, yo le seguiré.
+¡Oh!, Yo nunca cederé al mal, al mal.
+¡Oh!, Yo nunca cederé,
+yo con Cristo cumpliré.
+
+@fin
+
+@himno 67 | MI JESÚS TODO PUEDE HACER
+@autor Nancy Jones
+
+@estrofa
+Su poder, gran poder, sobrenatural poder:
+mi Jesús todo puede hacer.
+Me halló, me tocó, por su gracia me salvó:
+mi Jesús todo puede hacer.
+Es el Alpha y Omega, el Principio y el Fin,
+admirable la victoria que Él me dio,
+su poder, gran poder, sobrenatural poder:
+mi Jesús todo puede hacer.
+
+@fin
+
+@himno 68 | UN DÍA MI JESUS
+@autor Desconocido
+
+@estrofa 1
+Un día mi Jesús murió en un madero,
+su sangre derramó, limpió mi cuerpo entero.
+Tal fue su gran amor por mí,
+que hoy siento su latir.
+
+@coro
+Y el gozo que me da Jesús,
+lo quiero compartir.
+
+@estrofa 2
+La flor con su color pintó la gran belleza,
+el sol con su fulgor, denuncia la grandeza.
+Pues mi Jesús todo lo creó
+con infinito amor.
+
+@estrofa 3
+Jesús te puede dar, la paz que necesitas,
+la calma y el calor que tu alma santifica.
+Pues mi Jesús murió por ti
+haciéndote feliz.
+
+@fin
+
+@himno 69 | UN FUEGO DE VALOR
+@autor Desconocido
+
+@estrofa 1
+Un fuego de valor de una chispa viene
+y luego su calor bendice a mucha gente.
+
+@coro
+Así es el amor de Dios
+cuando hace a tu vivir
+querer hablar por doquier
+a otros de Jesús.
+
+@estrofa 2
+Primavera bella es porque brillan las flores,
+hermoso tiempo es porque canta las aves.
+
+@fin
+
+@himno 70 | UNIDOS EN VERDAD
+@autor Jeff Wood
+
+@estrofa 1
+Por nuestro Señor, unidos en verdad
+te adoramos con amor;
+gozo da vivir ligados por la fe,
+siempre Jesús nos guiará.
+
+@coro
+Vamos al cielo, Jesús nos espera;
+hay un lugar para ti (para ti),
+contigo yo quiero cantar en el cielo;
+vamos mi hermano al hogar,
+(si, al hogar)
+todos estaremos allá.
+
+@estrofa 2
+Al gran Capitán habremos de seguir,
+la gran victoria cerca está,
+sin vacilación, al cielo vamos, sí,
+que nadie falta allá.
+
+(Al final)
+Junto al salvador, alabando con fervor,
+¡Oh! Sí estaremos allá. Estaremos allá.
+
+@fin
+
+@himno 71 | CONTIGO ESTOY
+@traductor Roberto C. Savage
+
+@estrofa
+“Contigo estoy y tu amigo soy;
+no temas, siempre te ayudaré:
+tu Dios soy y te sustentaré.
+Contigo estoy, y tu amigo soy;
+te consolaré y te bendeciré,
+y contigo estoy”
+
+@fin
+
+@himno 72 | UN NOMBRE NUEVO EN LA GLORIA
+@traductor J. Arturo Savage
+
+@estrofa 1
+Una vez perdido vivía yo,
+lejos y vagando en error;
+mas la voz de Cristo me alcanzó;
+me llamó con tierno amor.
+
+@coro
+Hay un nombre nuevo en la gloria,
+mío es, (mío es) sí, mío es, (mío es);
+y los ángeles cantan la historia:
+“Salvo es el pecador” (pecador).
+Oh, hay un nombre nuevo en la gloria,
+mío es, (mío es), sí, mío es, (mío es);
+todos mis pecados ya son perdonados
+¡Gloria al Señor!
+
+@estrofa 2
+En la Biblia dice que salvo soy
+por la gracia de Jesucristo;
+ya por fe a su nombre a la gloria voy,
+desde que Él me rescató.
+
+@estrofa 3
+Cantos de alegría elevo hoy
+a mi Rey y buen Salvador;
+es porque mis dones a Cristo doy,
+que me use por su amor.
+
+@fin
+
+@himno 73 | SANTO ESPÍRITU LLENA MI VIDA
+@traductor Roberto C. Savage
+
+@estrofa
+Santo Espíritu llena mi vida
+pues por Cristo yo quiero brillar,
+Santo Espíritu llena mi vida,
+úsame las almas a salvar.
+Alabanzas, alabanzas,
+alabazas doy a Cristo el Rey.
+Alabazas, alabanzas,
+alabazas doy al Rey.
+
+@fin
+
+@himno 74 | SÓLO CRISTO PUEDE
+@autor Desconocido
+
+@estrofa 1
+¿Quién podrá mi carga tierno aligerar?
+¿quién mi vida amarga puede consolar?
+Sólo Cristo puede: todo en todo es Él
+(todo es Él)
+paz y luz concede Cristo siempre es fie
+(es fiel).
+
+@estrofa 2
+Cuando de mis  bienes quierenme privar,
+¿quién atento viene su consejo a dar?
+Sólo Cristo sabe, cómo bendecir
+(con su luz);
+mi tristeza grande sabe compartir
+(Jesús).
+
+@estrofa 3
+Quién dará refugio de la tempestad?
+¿quién mi pie seguro puede encaminar?
+Sólo Cristo puede con seguridad
+(y gran luz)
+mi sendero incierto, nítido alumbrar
+(Jesús).
+
+@fin
+
+@himno 75 | HAY PERDÓN POR LA SANGRE
+@autor L. M. Roberts
+
+@estrofa
+Hay perdón por la sangre Jesús,
+hay perdón por su muerte en la cruz,
+proclamad que hay perdón,
+para todos hay perdón,
+los que acuden al Señor Jesús.
+
+@fin
+
+@himno 76 | VUELVE A NACER
+@autor Antonio Monzón
+
+@coro
+Vuelve, vuelve a nacer (aleluya),
+qué largo camino
+habrás de recorrer (aleluya),
+si tú vuelves a nacer
+al viejo yo podrás vencer,
+entonces la luz de Dios podrás ver.
+
+@estrofa 1
+Un hombre vino a mí y dijo así (si, así)
+quisiera yo saber a dónde ir;
+pasa algo que no puedes ver,
+siento el amor en mí crecer,
+y es porque Jesucristo mora en mí.
+
+@estrofa 2
+Estamos  reunidos aquí (si aquí),
+porque todos creemos.
+Si hay alguno que no crea aquí ( si, aquí)
+le rogamos que se entregue,
+acéptalo con todo el corazón
+y usa tus dos manos;
+con una alcanza a Jesús
+y con la otra, trae un hermano.
+
+@fin
+
+@himno 77 | ALABAD SERVIDORES DE JEHOVÁ
+@subtitulo (Salmo 113)
+@autor Desconocido
+
+@estrofa 1
+Alabad servidores de Jehová,
+alabad el nombre del Señor,
+sea el nombre de Jehová bendito
+desde ahora y para siempre,
+desde la salida del sol, hasta su ocaso
+sea alabado su nombre.
+
+@coro
+Grande sobre todas las naciones
+es Jehová,
+por encima de los cielos
+es su *gloria.
+(por encima de los cielos su gloria).
+¿Quién como el Señor nuestro Dios
+que se sienta en las alturas
+y baja para ver
+:: los cielos y la *tierra?
+(Aleluya) ::
+
+@estrofa 2
+Él levanta del polvo al desvalido,
+del estiércol hace subir al pobre
+para sentarlo con los príncipes,
+con los príncipes de su pueblo,
+Él asienta a la estéril como madre
+de hijos jubilosa.
+
+@indicacion al final
+Los cielos y la tierra.
+
+@fin
+
+@himno 78 | GRANDE ES JEHOVÁ
+@autor Desconocido
+
+@estrofa
+Grande es Jehová y digno de ser alabado,
+en la ciudad de nuestro Dios,
+en el monte Santo,
+Hermosa provincia es ésta
+más bella que toda la tierra.
+:: Es Sión a los lados del norte
+en la ciudad del Gran Rey ::
+
+@fin
+
+@himno 79 | HAY UNA TIERRA NUEVA
+@autor Desconocido
+
+@estrofa 1
+::: Hay una tierra nueva :::
+donde mora Jesús mi salvador.
+
+@estrofa 2
+::: Ahí yo quiero estar :::
+donde mora Jesús mi Salvador.
+
+@estrofa 3
+::: Enfermedad no habrá :::
+donde mora Jesús mi salvador.
+
+@estrofa 4
+:::Tribulación no habrá :::
+donde mora Jesús mi Salvador.
+Sanador, Salvador Cristo es para mí.
+Rey de Paz, Dios de amor yo te amo a ti,
+sáname, sálvame con tu gran poder,
+Cristo el Rey de Gloria es mi Salvador.
+
+@fin
+
+@himno 80 | LOS QUE CON LÁGRIMAS SEMBRARON
+@autor Alfredo Colom M
+
+@estrofa 1
+Los que con lágrimas sembraron,
+con regocijo segarán.
+Donde sus lágrimas regaron,
+hermosas flores crecerán.
+
+@coro
+:: Andando irán (andando irán),
+Llorando irán (llorando irán),
+Pero felices volverán ::
+
+@estrofa 2
+Trayendo al hombro sus gavillas,
+y en la garganta una canción;
+no se perdieron las semillas,
+mas dieron fruto en bendición.
+
+@fin
+
+@himno 81 | EL DOMINGO ESTOY CONTENTO
+@autor Desconocido
+
+@estrofa
+El domingo estoy contento,
+el lunes tengo paz,
+el martes lleno de su amor
+y dulce bienestar;
+el miércoles y el jueves
+yo ando en la luz,
+el viernes y el sábado
+yo vivo con Jesús.
+
+@estrofa
+Oh, gloria, gloria, gloria,
+oh, gloria al Señor,
+oh, aleluya, salvo soy
+por mi buen Redentor.
+Oh, gloria, gloria, gloria,
+oh gloria al Señor,
+oh aleluya salvo soy
+a Cristo doy loor.
+
+@fin
+
+@himno 82 | LO QUE RESPIRA ALABE AL SEÑOR
+@subtitulo (SALMO 150)
+@autor Osdy Soriano
+
+@repeticion
+:: Lo que respira alabe al señor ::
+
+@estrofa
+Alabad a nuestro Dios en su santuario,
+en la hermosura de su cielo,
+por sus proezas alabadle a Él.
+Alabadle, por la grandeza de su nombre,
+con el sonido de bocina,
+salterio y arpa, a la vez cantad.
+
+@estrofa
+Alabadle con el alegre pandero,
+con el sonido de flauta,
+cantad con gozo al Señor.
+Alabadle, con cuerdas, flautas, y címbalos
+de júbilo y resonantes.
+En su lenguaje, todo
+
+@repeticion
+:: Lo que respira alabe al Señor ::
+Al Señor.
+
+@fin
+
+@himno 83 | SIEMPRE HAY ALGO BUENO
+@autor Desconocido
+
+@estrofa 1
+Siempre hay algo bueno que tú puedes hacer,
+debes esforzarte por hacer lo mejor;
+fueron las palabras de un sabio escritor
+que fue muy famoso y se llamó Salomón.
+
+@coro
+Vive feliz haciendo el bien,
+sigue el ejemplo de Jesús.
+
+@estrofa 2
+Siempre hay un problema
+en el creyente de Dios
+que el Apóstol Pablo lo pudo comprender;
+dos fuerzas internas siempre hay en mí ser:
+como hago el bien también cometo maldad.
+
+@fin
+
+@himno 84 | SOBRE LA ROCA
+@autor Manuel Bonilla
+
+@estrofa 1
+::: Sobre la roca el sabio edificó :::
+y la lluvia descendió.
+::: Cayó la lluvia, el viento sopló :::
+y la casa resistió.
+
+@estrofa 2
+::: Sobre la arena el necio edificó :::
+y la lluvia descendió.
+::: Cayó la lluvia, el viento sopló :::
+y la casa pereció.
+
+@estrofa 3
+Tu fe en Cristo debes cimentar
+y cual prudente hombre tú serás,
+si pruebas vienen, pronto pasarán
+porque Cristo en la roca está.
+
+@fin
+
+@himno 85 | ¿PARA QUÉ PECAR?
+@autor Alfredo Colom M
+
+@estrofa 1
+¿Para qué pecar si soy salvo,
+si ya tengo tanta luz?
+¿para qué pecar si la vida
+Dios me ha dado en Jesús?
+¿para qué pecar si el infierno
+sólo espera al pecador?
+
+@coro
+:: ¿Para qué pecar?, ¿para qué pecar?
+¿para qué pecar contra Dios? ::
+
+@estrofa 2
+Es mejor vivir santamente,
+victoriosos contra el mal.
+Pues Jesús prepara a sus santos
+una Patria Eternal,
+una patria hermosa en los cielos,
+donde el mundo no entrará.
+
+@fin
+
+@himno 86 | VINE A ALABAR A DIOS
+@autor Desconocido
+
+@coro
+:: Vine a alabar a Dios ::
+vine a alabar su Santo Nombre,
+vine a alabar a Dios.
+
+@estrofa 1
+Él vino a mi vida un día especial
+cambio mi corazón,
+me enseñó una vida mejor
+y cuando yo sentí su mano sobre mí
+vine a alabar a Dios.
+
+@estrofa 2
+Perdido me encontré, Jesús ahí me hallo,
+su mano me tendió
+me enseño una vida mejor
+y esa es la razón por la que canto yo
+vine a alabar a Dios.
+
+@fin
+
+@himno 87 | YO HE DE ESTAR LISTO
+@autor Desconocido
+
+@coro
+:::Yo he de estar listo::
+a ir a Jerusalem como Juan.
+:::Yo he de estar listo::
+a ir a Jerusalem  como Juan.
+
+@estrofa 1
+Oh Juan, oh Juan, me dices tú:
+“ven a Jerusalem como yo
+oh, tu estarás en la ciudad,
+ven a Jerusalem como yo”.
+
+@estrofa 2
+El buen Jesús en los cielos estará,
+ven a Jerusalém como yo,
+al cielo todos pueden ir,
+ven a Jerusalem como yo.
+
+( Coro último)
+:::Yo he de estar listo::
+a ir a Jerusalem como Juan.
+:::Yo he de estar listo:::
+A ir a Jerusalem.
+Por fin, por fin yo iré al cielo,
+por fin, ir a Jerusalem como Juan.
+
+@fin
+
+@himno 88 | ALLÁ EN EL MONTE HOREB
+@autor Desconocido
+
+@estrofa 1
+:: Allá en el Monte Horeb, la zarza ardía, ::
+con gran perplejidad Moisés miraba,
+pues no se consumía mientras ardía.
+
+@estrofa 2
+Moisés quería saber porqué la zarza ardía
+y no se consumía, quería saber.
+:: Oyó un voz del cielo que le decía ::
+
+@estrofa 3
+:: “Quita, quita, quita
+las sandalias de tus pies;
+el lugar que pisas, santo es” ::
+
+@fin
+
+@himno 89 | DEMOS GRACIAS AL SEÑOR
+@autor Desconocido
+
+@repeticion
+:: Demos gracias al Señor; demos  gracias,
+demos gracias por su amor ::
+
+@estrofa
+Por las mañanas las aves cantan
+las alabanzas a Cristo El salvador.
+Y tú, amigo, ¿Por qué  no cantas
+las alabanzas a Cristo Él salvador?
+
+@fin
+
+@himno 90 | MI DIOS ES REAL
+@autor Desconocido
+
+@estrofa 1
+Hay cosas que yo no comprendo,
+lugares hay do yo iré,
+pero si sé y es verdad
+que mi Dios es real
+porque lo siento en mí ser.
+
+@coro
+Mi Dios es real, real en mi ser
+me ha lavado con su sangre carmesí,
+su dulce amor es para mí,
+sí, mi Dios es real
+porque lo siento en mí ser.
+
+@estrofa 2
+Yo no comprendí lo que sentí
+cuando Jesús me perdonó,
+pero si sé y es verdad
+que mi Dios es real
+porque lo siento en mí ser.
+
+@fin
+
+@himno 91 | VEN, AMIGO, A JESÚS
+@autor Juan M. Isáis
+
+@estrofa 1
+Ven, amigo a Jesús, pues Él murió por ti;
+recibirás la luz que quiere darte a ti.
+Mi buen Jesús murió y Él te dará el perdón,
+abre tu corazón y dulce paz tendrás.
+
+@coro
+Día fatal vendrá
+cuando no habrá lugar;
+la puerta se abre hoy
+y tú podrás entrar.
+Mas gracia ya no habrá,
+pues la desprecias hoy;
+Acepta, pecador,
+la Salvación de Dios.
+
+@estrofa 2
+Las manos del Señor se abren hoy para ti;
+ven y confía en Él, y tú serás feliz.
+Tus penas pon en Dios, pues Él las llevará;
+y no tendrás pesar, sino consolación.
+
+@fin
+
+@himno 92 | LA CREACIÓN
+@autor José Juan Naula Yupangui
+
+@estrofa 1
+Dios ha hecho todo lo que el ojo ve;
+cada cosa de este mundo terrenal.
+Todo árbol y las plantas son de Él,
+las estrellas y el manto celestial.
+
+@coro
+“¡Sea ya la luz!” Ordenó Jehová
+con su fuerte voz y la luz fue ya.
+Hoy el buen Jesús, nuestro Redentor,
+brinda al mundo luz con excelso amor.
+
+@estrofa 2
+A su imagen Dios formó al hombre Adán,
+luego hizo una mujer tomada de él;
+y los colocó en el Jardín de Edén,
+donde habían de seguirle siempre fiel.
+
+@estrofa 3
+El perfecto gozo había en el Edén,
+ellos se gozaban al andar con Dios.
+Comunión completa había allá también
+al oír de Jehová la tierna voz.
+
+@fin
+
+@himno 93 | MI CORAZÓN, OH EXAMINA HOY
+@autor J. Edwin Orr
+
+@estrofa 1
+Mi corazón, oh examina hoy;
+mis pensamientos prueba, oh, Señor.
+Ve si en mí perversidades hay;
+por sendas rectas guíame por tu amor.
+
+@estrofa 2
+Dame Señor a beber tu plenitud,
+pues que Tú eres fuente de salud.
+Sobre la cruz en medio del dolor,
+brotar la hiciste por tu gran amor.
+
+@fin
+
+@himno 94 | MANOS REDENTORAS
+@autor Alfredo Colom M
+
+@estrofa 1
+Manos cariñosas, manos de Jesús;
+manos que llevaron la pesada cruz.
+Manos que supieron sólo hacer el bien.
+¡Gloria a esas manos! ¡Aleluya, amén!
+
+@estrofa 2
+Blancas azucenas, lirios del amor,
+fueron esas manos de mi Redentor.
+Manos que a los ciegos dieron la visión
+con el real consuelo de su gran perdón.
+
+@estrofa 3
+Manos que supieron calmar el dolor,
+¡Oh manos divinas de mi Redentor!
+Que multiplicaron los peces y el pan,
+manos milagrosas que la vida dan.
+
+@estrofa 4
+Manos que sufrieron el clavo y la cruz;
+manos redentoras de mi buen Jesús.
+De esas manos bellas yo confiado estoy,
+Ellas van guiando, pues al cielo voy.
+
+@estrofa 5
+¡Oh Jesús tus manos yo las vi en visión
+y vertí mi llanto con el corazón!;
+vi sus dos heridas y la sangre vi
+que Tú derramaste por salvarme a mí.
+
+@fin
+
+@himno 95 | CUANDO CRISTO VENGA OTRA VEZ
+@traductor Geo P. Simmonds
+
+@estrofa
+Por los que Jesús salvó
+viene Él otra vez,
+en las nubes Él vendrá,
+su promesa es fiel;
+salvos con Él en su hogar
+ningún mal molestará,
+cuando Cristo venga otra vez.
+
+@fin
+
+@himno 96 | YO SUBIRÉ
+@traductor Geo P. Simmonds
+
+@estrofa
+Yo subiré, si al cielo subiré (subiré),
+al venir Jesús, al cielo subiré,
+la trompeta sonará
+y en el mundo no he de estar,
+porque en un abrir de ojo al cielo subiré.
+
+@fin
+
+@himno 97 | SUENAN MELODÍAS EN MI SER
+@autor Elton M. Roth
+
+@estrofa
+Suenan melodías en mi ser,
+cantos de amor, loando al salvador.
+Suenan melodías en mi ser,
+alabanzas a Jesús.
+
+@fin
+
+@himno 98 | REDENCIÓN
+@autor Desconocido
+
+@estrofa 1
+Hace años escuché que Jesús volverá,
+acepté con gozo esa verdad,
+la esperanza firme está,
+pues ahora bien yo sé,
+que mi Cristo muy pronto volverá.
+
+@coro
+Todos proclaman con poder (con poder)
+las señales anuncian ya el fin.
+(anuncian ya el fin).
+Atención (atención), la vista levantad,
+la Redención muy cerca ya está.
+
+@estrofa 2
+Odio, guerra por doquier, violencia y maldad.
+No dudemos más vendrá el buen Señor,
+su promesa cumplirá, por sus hijos volverá,
+sí, confiad, pronto nuestro Rey vendrá.
+
+@fin
+
+@himno 99 | NO HAY DIOS TAN GRANDE COMO TÚ
+@autor Desconocido
+
+@repeticion
+::  No hay Dios tan grande como Tú;
+no lo hay, no lo hay  ::
+
+@repeticion
+::  No hay Dios que pueda hacer las obras
+como las que haces Tú  ::
+
+@repeticion
+::  No con espada, ni con ejércitos.
+Mas con tu Santo Espíritu  ::
+
+@repeticion
+::: Y esos montes se moverán  :::
+con tu Santo Espíritu.
+
+@fin
+
+@himno 100 | RECÍBEME CUAL SOY
+@autor Juan M. Isáis
+
+@estrofa 1
+Oh Señor, recíbeme cual soy,
+ya no más, ya no quiero pecar.
+Del pecado me quiero apartar;
+justifica mi ser, dame tu dulce paz
+y tu gran bendición.
+
+@estrofa 2
+Oh Señor, toma mi corazón,
+y hazlo tuyo por la eternidad.
+Lléname de tu Santa bondad
+y en mi alma Tú pon una nueva canción
+de paz y dulce amor.
+
+@estrofa 3
+Pecador, tú que vagas sin Dios,
+ven ahora y acepta al Señor.
+Él te quiere impartir su perdón;
+Él te quiere salvar, Él te quiere ayudar;
+hoy acepta el perdón.
+
+@fin
+
+@himno 101 | ES CRISTO TODO PARA MÍ
+@autor Desconocido
+
+@repeticion
+:: Es Cristo todo, todo para mí,
+es Cristo todo, todo para mí,
+es mi Padre, es mi Hermano,
+es mi Amigo, es mi Guía,
+Él es todo para mí ::
+
+@fin
+
+@himno 102 | BUSCAD PRIMERO EL REINO DE DIOS
+@autor Karen Lafferty
+
+@estrofa 1
+Buscad primero el Reino de Dios
+y su justicia
+y todas esas cosas os serán añadidas.
+Alelu, Aleluya.
+
+@estrofa 2
+Buscad primero el Reino de Dios
+y su justicia
+y por lo demás no te has de preocupar.
+Alelu, Aleluya.
+
+@fin
+
+@himno 103 | ¡OH, QUÉ INMENSO AMOR!
+@autor Jaime Redin
+
+@estrofa
+¡Oh, qué amor! ¡Qué inmenso amor!
+El de mi Salvador.
+¡Oh, qué amor! ¡Qué inmenso amor!
+El de mi Salvador.
+Dios desde el cielo al Salvador
+mandó a morir por mí.
+Por ti murió, por mí murió;
+dio sangre carmesí.
+¡Oh, qué amor! ¡Qué inmenso amor!
+El de mi Salvador.
+
+@fin
+
+@himno 104 | TENEMOS UN DIOS MUY GRANDE
+@autor Desconocido
+
+@repeticion
+:: Tenemos un Dios, muy, muy grande
+maravilloso es Él.
+Siempre amoroso, siempre victorioso,
+maravilloso es Él ::
+
+@estrofa
+Él nunca, nunca nos deja
+siempre con nosotros está,
+nos levanta cuando caemos
+y su mano nos librará, sí, sí.
+
+@estrofa
+Tenemos un Dios, muy, muy grande
+maravilloso es Él.
+Siempre amoroso, siempre victorioso,
+maravilloso es Él.
+
+@fin
+
+@himno 105 | BRILLA EN EL SITIO DONDE ESTÉS
+@autor Charles H. Gabriel
+
+@estrofa 1
+Nunca esperes el momento
+de una grande acción
+ni que pueda lejos ir tu luz,
+de la vida a los pequeños actos de atención,
+brilla en el sitio donde estés.
+
+@coro
+Brilla en el sitio donde estés,
+brilla en el sitio donde estés,
+puedes con tu luz
+algún perdido rescatar;
+brilla en el sitio donde estés.
+
+@estrofa 2
+Puedes con tu cielo alguna nube disipar
+haz a un lado tu egoísmo cruel,
+aunque solo un corazón pudieras consolar,
+brilla en el sitio donde estés.
+
+@estrofa 3
+Puede tu talento alguna cosa descubrir
+do tu luz podrá resplandecer,
+de tu mano el pan de la vida puede venir;
+brilla en el sitio donde estés.
+
+@fin
+
+@himno 106 | EN LA PATRIA CELESTIAL
+@autor Ruth D. Crawford
+
+@estrofa
+En la Patria Celestial, en la Patria Celestial
+una Mansión preparada está,
+¡Oh que glorioso estar allá!
+En la Patria Celestial, en la Patria Celestial
+goces eternos con Él tendré
+en la Patria Celestial.
+
+@fin
+
+@himno 107 | SOY FELIZ Y ÉSTA ES LA RAZÓN
+@autor Desconocido
+
+@estrofa
+Soy feliz y ésta es la razón;
+Cristo me libró de mi maldad;
+y hoy cantando veo los días pasar,
+Cristo me libró de mi maldad.
+Agobiado estaba por el mal tenaz,
+Él quitó mis culpas y me dio la paz
+y hoy cantando veo los días pasar,
+Cristo me libró de mi maldad.
+
+@fin
+
+@himno 108 | ME HA TOCADO
+@autor Desconocido
+
+@estrofa 1
+En pecado yo vivía,
+en el vicio y el error
+mas la mano de mi Cristo
+me tocó y ya salvo soy.
+
+@coro
+Me ha tocado, sí, me ha tocado
+y ahora sé que el Salvador,
+sana, salva, viene por mí;
+me ha tocado Cristo el Señor.
+
+@estrofa 2
+Desde que encontré al Maestro,
+desde que le di mi ser,
+nunca dejaré de amarle
+y por siempre yo le amaré.
+
+@estrofa 3
+Desde que encontré a mi Cristo
+desde que me rescató,
+nunca dejaré de alabarle,
+hasta que regrese otra vez.
+
+@fin
+
+@himno 109 | SIN SANTIDAD NADIE VERÁ AL SEÑOR
+@autor Desconocido
+
+@estrofa
+Sin santidad nadie verá al Señor,
+sin santidad nadie verá al Señor,
+
+@repeticion
+:: pero yo sé, pero yo sé,
+que le veré, que le veré
+y con su Espíritu me santificaré ::
+
+@estrofa
+Oh sigue adelante, adelante,
+adelante en la luz del Señor
+y llegaremos al cielo,
+caminando con Cristo el Señor.
+
+@fin
+
+@himno 110 | DE TAL MANERA ME AMÓ
+@traductor Speros D. Athans
+
+@estrofa 1
+Crucificado por mí fue Jesús,
+de tal manera me amó,
+sin murmurar fue llevado a la cruz,
+de tal manera me amó (me amó).
+
+@coro
+De tal manera me amó;
+de tal manera me amó (me amó);
+Cristo en la cruz del Calvario murió;
+de tal manera me amó (me amó).
+
+@estrofa 2
+El inocente Cordero de Dios,
+de tal manera me amó.
+Y por salvarme sufrió muerte atroz,
+de tal manera me amó (me amó).
+
+@estrofa 3
+En mi lugar padeció aflicción,
+de tal manera me amó.
+Y consumó mi eternal salvación,
+de tal manera me amó (me amó).
+
+@fin
+
+@himno 111 | CUANDO YO SENTÍ EL AMOR DE DIOS
+@autor Desconocido
+
+@estrofa 1
+Cuando yo sentí el amor de Dios
+que me demostró en la cruz,
+cuando yo sentí en mi corazón,
+que en la cruz por mí murió.
+
+@coro
+Tan grande amor es del Señor
+que no puedo comprender,
+que me ama a mí, siendo lo que soy,
+es imposible entender
+la grandeza de su amor,
+gracias Señor por tu amor.
+
+@estrofa 2
+Por esta causa doblo mis rodillas
+ante el Padre de Jesús,
+Él te quiere revelar a ti
+su justicia en la cruz.
+
+@fin
+
+@himno 112 | VICTORIA EN CRISTO
+@traductor Honorato T. Reza
+
+@estrofa 1
+Oí bendita historia,
+de Jesús quien de su Gloria,
+al Calvario decidió venir
+para salvarme a mí.
+Su sangre derramada
+se aplicó feliz a mi alma,
+me dio victoria sin igual
+cuando me arrepentí.
+
+@coro
+Ya tengo la victoria,
+pues Cristo me salva.
+Buscóme y compróme
+con su Divino amor.
+Me imparte de su Gloria,
+su paz inunda mi alma;
+victoria me concedió
+cuando por mí murió.
+
+@estrofa 2
+Oí que en amor tierno,
+Él sanó a los enfermos;
+a los cojos los mandó correr,
+al ciego lo hizo ver.
+Entonces suplicante
+le pedí al Cristo amante
+le diera a mi alma la salud
+y fe para vencer.
+
+@estrofa 3
+Oí que allá en la gloria,
+hay mansiones de victoria,
+que su santa mano preparó
+para los que Él salvo.
+Espero unir mi canto
+al del grupo sacrosanto,
+que victorioso rendirá
+tributo al Redentor.
+
+@fin
+
+@himno 113 | UN PALACIO TENGO ALLÁ
+@autor Desconocido
+
+@estrofa 1
+Un palacio tengo allá
+más lindo que el sol, (¡oh gloria!)
+un palacio tengo allá,
+más lindo que el sol,
+un palacio tengo allá,
+más lindo que el sol,
+con mi buen Jesús (¡oh, gloria!)
+
+@coro
+Bendito Cristo,
+contigo estaré, (¡oh, gloria!)
+bendito Cristo,
+contigo estaré, (¡oh, gloria!)
+bendito Cristo,
+contigo estaré en el más allá.
+
+@estrofa 2
+Si tú quieres ir al cielo,
+ven al Señor, (¡oh, amigo!)
+Si tú quieres ir al cielo,
+ven al Señor,
+Si tú quieres ir al cielo,
+ven al Señor,
+ven, sin demorar. (¡oh, amigo!)
+
+@fin
+
+@himno 114 | SIN ÉL
+@traductor Tony Arango
+
+@estrofa
+Cristo, oh Cristo,
+hoy te entrego mi ser
+y en tu senda andaré
+oh Cristo, oh Cristo,
+sin tu amor yo no puedo vivir
+
+@estrofa
+Sin Él mi vida no es nada,
+sin Él voy a fracasar,
+sin Él mi vida se acaba,
+ven oh Cristo, dame tu perdón.
+
+@estrofa
+Cristo, oh Cristo,
+hoy te entrego mi ser
+y en tu senda andaré
+oh Cristo, oh Cristo,
+sin tu amor yo no puedo vivir
+
+@fin
+
+@himno 115 | ¡A TI, OH JEHOVÁ!
+@autor Desconocido
+
+@repeticion
+:: ¡A Ti, oh Jehová
+levantaré mi alma!
+¡A Ti, oh Jehová
+levantaré mi alma!
+Dios mío en Ti confío,
+no sea yo avergonzado,
+no se alegren de mí
+mis enemigos ::
+
+@fin
+
+@himno 116 | YO SOY SOLDADO DE JESÚS
+@autor Isaac Watts
+
+@estrofa 1
+Yo soy soldado de Jesús
+y siervo de su amor,
+no temeré llevar su cruz,
+sufriendo por su amor.
+
+@coro
+Después de la batalla nos coronará,
+Dios nos coronará, Dios nos coronará;
+después de la batalla nos coronará
+en aquella Santa Sión.
+Más allá, más allá,
+en aquella Santa Sión.
+Después de la batalla nos coronará
+en aquella Santa Sión.
+
+@estrofa 2
+Lucharon otros por la fe;
+valiente anhelo ser.
+Por mi Señor yo pelearé,
+confiando en su poder.
+
+@estrofa 3
+Es menester que sea fiel,
+que nunca vuelva atrás,
+que siga siempre en pos de Él,
+y me guiará en paz.
+
+@fin
+
+@himno 117 | ALLÁ EN EL CIELO
+@autor Desconocido
+
+@estrofa
+Allá en el cielo, allá en el cielo,
+allá en el cielo,
+no habrá más llanto, ni más tristeza,
+ni más dolor,
+y cuando estemos los redimidos
+allá en el cielo,
+alabaremos al Señor.
+
+@estrofa
+Mientras llegamos a aquella casa
+de paz eterna,
+luchar debemos contra las fuerzas
+de Satanás,
+y victoriosos, siempre triunfantes
+con Él iremos,
+adelante con Jesús.
+
+@fin
+
+@himno 118 | CON FE MARCHEMOS
+@traductor Roberto G. Savage
+
+@estrofa
+Con fe marchemos, adelante sin temor cristianos,
+Cristo el Capitán está guiando;
+siempre Él nos da la orden: “ADELANTE”
+¡A la batalla! No tememos nada de Satán.
+Oh, compañeros, adelante con afán.
+
+@fin
+
+@himno 119 | ESTOY CONTENTO
+@autor Desconocido
+
+@estrofa 1
+:::Estoy contento porque soy de Cristo:::
+¡Aleluya! ¡Gloria a Dios!
+
+@estrofa 2
+:::Yo canto alegre porque soy de Cristo:::
+¡Aleluya! ¡Gloria a Dios!
+
+@estrofa 3
+:::No soy del mundo porque soy de Cristo:::
+¡Aleluya! ¡Gloria a Dios!
+
+@estrofa 4
+:::Yo tengo vida porque soy de Cristo:::
+¡Aleluya! ¡Gloria a Dios!
+
+@estrofa 5
+:::Yo voy al cielo porque soy de Cristo:::
+¡Aleluya! ¡Gloria a Dios!
+
+@fin
+
+@himno 120 | YA CRISTO VIENE
+@autor Desconocido
+
+@estrofa
+Ya Cristo viene, señales da,
+almas perdidas vino a salvar,
+los que durmieron se quedarán,
+los que velaron se irán con Él.
+
+@estrofa
+Me voy con Él, me voy con Él,
+me voy con Él, me voy con Él,
+yo no me quedo, quiero ser fiel.
+
+@estrofa
+Quiero ser fiel, quiero ser fiel,
+quiero ser fiel, quiero ser fiel.
+Yo no me quedo, me voy con Él.
+
+@fin
+
+@himno 121 | TE INVITAMOS OH CRISTO
+@autor Desconocido
+
+@estrofa
+Te invitamos oh Cristo,
+te invitamos hoy mismo,
+quédate con nosotros,
+quédate de una vez.
+La nube gris ha pasado,
+quieta la noche es ya,
+quédate con nosotros,
+quédate de una vez.
+
+@fin
+
+@himno 122 | OH VEN A CONOCER A MI SALVADOR
+@autor Desconocido
+
+@estrofa
+Oh ven a conocer a mi Salvador,
+a mi Salvador, a mi Salvador.
+Oh ven a conocer a mi Salvador
+y tendrás su dulce paz.
+
+@fin
+
+@himno 123 | OH QUÉ FELIZ
+@autor Desconocido
+
+@estrofa 1
+Oh qué feliz hoy me siento yo
+pues Cristo vive en mi corazón.
+
+@estrofa 2
+Voy a vivir en el cielo azul,
+en una nube voy a morar.
+
+@estrofa 3
+Oh, qué feliz cuando vi la luz.
+:: la luz de Cristo en mi corazón ::
+
+@fin
+
+@himno 124 | LAS PROMESAS DEL SEÑOR
+@autor Wilfredo Watson
+
+@estrofa
+Las promesas del Señor mías son,
+las promesas del Señor mías son;
+en la Biblia yo las leo y sé,
+las promesas del Señor mías son.
+
+@fin
+
+@himno 125 | ALABAD A JEHOVÁ
+@autor Desconocido
+
+@estrofa
+Alabad a Jehová, naciones todas,
+pueblos todos, alabadle,
+porque ha engrandecido
+sobre nosotros su misericordia,
+:: y la verdad de Jehová, es para siempre,
+¡Aleluya, amén! ::
+
+@fin
+
+@himno 126 | EDIFICANDO TEMPLOS
+@autor Desconocido
+
+@repeticion
+::: Edificando templos, :::
+al Señor Jesús.
+Ayuda con la mano,
+ayuda con la obra,
+edificando templos
+al Señor Jesús.
+
+@fin
+
+@himno 127 | ÉL TE QUIERE A TI
+@autor Desconocido
+
+@estrofa
+Él te quiere a ti, Él te ama si,
+tu corazón en sus manos hoy pon,
+Él te quiere sólo a ti, Él te quiere, si.
+
+@fin
+
+@himno 128 | ¿ESTAMOS TRISTES? NO, NO, NO
+@autor Robert Harkness
+
+@estrofa
+¿Estamos tristes? No, no, no.
+¿estamos tristes? No, no, no,
+pruebas vendrán y pruebas se irán,
+en Cristo fiamos y pasarán.
+¿Estamos tristes?, ¿estamos tristes?
+No, no, no.
+
+@fin
+
+@himno 129 | HAY SOLO UN CAMINO
+@autor Brus del Monte
+
+@estrofa 1
+Hay solo un camino, camino, camino,
+hay solo un camino, para hacernos renacer.
+
+@estrofa 2
+Cristo es el camino, camino, camino,
+Cristo es el camino, para hacernos renacer.
+
+@estrofa 3
+Vamos por el camino, camino, camino,
+vamos por el camino, para hacernos renacer.
+
+@fin
+
+@himno 130 | SOMOS UNO ES ESPÍRITU
+@traductor Federico J. Pagura
+
+@estrofa 1
+:: Somos uno en Espíritu y en el Señor ::
+y oramos que un día
+sea completa nuestra Unión.
+
+@coro
+Y que somos cristianos,
+lo sabrán, lo sabrán,
+porque unidos estamos en tu amor.
+
+@estrofa 2
+:: Marcharemos unidos lado a lado en amor, ::
+anunciando que aquí
+se encuentra el gran poder de Dios.
+
+@estrofa 3
+Gloria al Padre que es fuente
+de toda bendición,
+gloria a Cristo su Hijo
+que nos da la salvación;
+y al Espíritu Santo
+que nos une en comunión.
+
+@fin
+
+@himno 131 | ES LA VIDA DE MI ALMA
+@autor Desconocido
+
+@estrofa
+Es la vida de mi alma, mi Cristo, mi Cristo.
+Es la vida de mi alma, es Jesús mi Salvador.
+¡Cristo!, ¡Cristo!, ¡Cristo!, ¡Cristo!
+Es la vida de mi alma, es Jesús mi Salvador.
+
+@fin
+
+@himno 132 | ORANDO SIN CESAR VENCEREMOS
+@autor Desconocido
+
+@estrofa
+Orando sin cesar venceremos,
+orando sin cesar venceremos;
+para poder vencer, necesitas el poder,
+orando sin cesar venceremos.
+
+@estrofa
+Venceré porque Él está conmigo;
+vencerás, Él es tu amigo fiel.
+Venceré, venceré, vencerás, vencerás,
+orando sin cesar venceremos.
+
+@fin
+
+@himno 133 | ¡AL MUNDO PAZ!
+@autor Isaac Watts
+
+@estrofa 1
+¡Al mundo paz, nació Jesús!
+Nació ya nuestro Rey;
+el corazón ya tiene luz
+:: y paz su santa grey ::
+y paz, y paz su santa grey.
+
+@estrofa 2
+¡Al mundo paz, el Salvador
+en tierra reinará!
+Ya es feliz el pecador;
+:: Jesús perdón le da ::
+Jesús, Jesús perdón le da.
+
+@estrofa 3
+¡Al mundo Él gobernará
+con gracia y con poder!
+A las naciones mostrará
+:: su amor y su poder ::
+su amor, su amor y su poder.
+
+@fin
+
+@himno 134 | ALEGRÍA POR DOQUIERA
+@autor S. Vila
+
+@estrofa 1
+Alegría por doquiera, fa, la, la...
+ha venido a la tierra, fa, la, la...
+el Mesías prometido, fa, la, la...
+Jesucristo ha nacido. fa, la, la...
+
+@estrofa 2
+Ved que Cristo es un tesoro, fa, la, la...
+toque el arpa y cante el coro, fa, la, la...
+síganme con alegría, fa, la, la...
+celebremos su venida. fa, la, la...
+
+@estrofa 3
+El recién nacido Niño, fa, la, la…
+Es el único camino, fa, la. la…
+oh, qué bendición nos vino, fa, la, la…
+gloria a Dios que es Uno y Trino, fa, la, la…
+
+@fin
+
+@himno 135 | ALLA EN EL PESEBRE
+@traductor George P. Simmonds
+
+@estrofa 1
+Allá en el pesebre do nace Jesús,
+la cuna de paja nos brinda gran luz;
+estrellas lejanas del cielo al mirar
+se inclinan gozosas su lumbre a prestar.
+
+@estrofa 2
+Pastores del campo teniendo temor,
+cercados de luz y de gran resplandor,
+acuden aprisa buscando a Jesús,
+nacido en pesebre del mundo la luz.
+
+@estrofa 3
+Extraño bullicio despierta al Señor,
+mas no llora el Niño, pues es puro amor;
+¡oh vélanos Cristo Jesús, sin cesar!
+Y así, bien felices siempre hemos de estar.
+
+@fin
+
+@himno 136 | ÁNGELES CANTANDO ESTÁN
+@traductor George P. Simmonds
+
+@estrofa 1
+Ángeles cantando están
+tan dulcísima canción;
+las montañas su eco dan
+como fiel contestación.
+
+@coro
+¡Glo . . . ria!
+En los cielos gloria.
+¡Glo . . . ria!
+En los cielos gloria a Dios.
+
+@estrofa 2
+Los pastores sin cesar,
+sus loores dan a Dios;
+cuán glorioso es el cantar
+de su melodiosa voz.
+
+@estrofa 3
+¡Oh! venid pronto a Belén
+para contemplar con fe
+a Jesús, Autor del bien,
+al recién nacido Rey.
+
+@fin
+
+@himno 137 | VE, DI EN LAS MONTAÑAS
+@traductor Adolfo Robleto
+
+@coro
+Ve, di en las montañas,
+sobre los montes, por doquier,
+ve, di en las montañas
+que Cristo ya nació.
+
+@estrofa 1
+El mundo ha esperado
+que Cristo el Rey de paz;
+viniera a esta tierra
+trayéndole solaz.
+
+@estrofa 2
+Llegó como un Niño
+de noche en Belén;
+del cielo las estrellas
+le alumbraron también.
+
+@estrofa 3
+Y los que son de Cristo,
+debieran proclamar,
+que Cristo vino al mundo
+los hombres a salvar.
+
+@fin
+
+@himno 138 | VENGA, PRESTO LA ANTORCHA
+@autor Desconocido
+
+@estrofa 1
+Venga, venga presto la antorcha
+para ver al niño Jesús,
+es Jesús Salvador de los hombres
+que nació en mesón humilde.
+
+@coro
+Ah, ah, hermosa es la madre
+y el niño hermoso es.
+
+@estrofa 2
+Cielo y tierra cantan la gloria
+del Mesías nacido en Belén,
+y la estrella fulgura en los cielos
+alumbrando el mesón.
+
+@estrofa 3
+Magos traen sus ricos presentes,
+oro, incienso y mirra también,
+y pastores sencillos le adoran
+ofrendando el corazón.
+
+@fin
+
+@himno 139 | NOEL
+@traductor Adolfo Robleto
+
+@estrofa 1
+El primer Noel el ángel cantó
+en Belén a pastores con gozo anunció,
+las nuevas de paz que Jesús ya nació,
+la promesa de Dios nos da salvación.
+
+@coro
+Noel, Noel, Noel, Noel,
+Cristo nació, el Rey de Israel.
+
+@estrofa 2
+El coro angelical en Belén cantó
+un celeste cantar de ventura sin par,
+el pastor escuchó el mensaje de paz
+y al pesebre corrió a Jesús adorar.
+
+@fin
+
+@himno 140 | CON DULCE JÚBILO
+@autor Desconocido
+
+@estrofa 1
+Con dulce júbilo cantad,
+con vuestro corazón y voz,
+entonad feliz canción,
+hoy Jesús nació en Belén,
+cielo y tierra canten hoy
+que el Mesías vino ya.
+¡Cristo ya nació!
+¡Cristo ya nació!
+
+@estrofa 2
+Con dulce jubilo cantad,
+con vuestro corazón y voz,
+nuestras nuevas escuchad,
+de ángeles la voz oíd,
+de paz y buena voluntad,
+mensaje para el mortal.
+¡Ha nacido hoy
+Cristo el Salvador!
+
+@estrofa 3
+Con dulce júbilo cantad
+con vuestro corazón y voz,
+bendiciones sin igual,
+Cristo nos ofrece hoy,
+el camino nos abrió
+ya de la eterna salvación.
+¡Cristo el Salvador!
+¡Cristo el Salvador!
+
+@fin
+
+@himno 141 | ARMAS DE LUZ
+@autor David R. González F
+
+@estrofa 1
+:: La noche ha pasado ya
+y el día ha llegado hoy.
+Desechemos pues
+las obras de las tinieblas
+y vistámonos de las armas de luz ::
+
+@estrofa 2
+Eterna luz es nuestro Dios,
+nosotros como hijos de Él
+deberemos ser
+las lumbreras que en el mundo
+resplandezcan con la luz del Señor.
+
+Desechemos pues
+las obras de las tinieblas
+y vistámonos de las armas de luz.
+
+@fin
+
+@himno 142 | COMO EL CIERVO ANHELA
+@subtitulo (Salmo 42)
+@autor David R. González F
+
+@estrofa 1
+Como el ciervo
+anhela las aguas del río,
+así clama
+por Ti mi alma oh Dios.
+
+@coro
+:: Mi alma tiene sed
+de Dios (de Dios),
+del Dios que vivo está ::
+
+@estrofa 2
+¿Porqué te abates
+oh alma dentro de mí?
+Espera a Dios
+porque Él es mi salvación.
+
+@indicacion al final
+Del Dios que vivo está.
+(Como el ciervo anhela las aguas del río).
+
+@fin
+
+@himno 143 | CRISTO AMA A LOS NIÑOS
+@traductor Esther López M.
+
+@estrofa 1
+Cristo ama a los niños,
+niños de cualquier nación;
+quiere ser su salvador
+y llenarlos de sus amor;
+sí, Jesús les quiere dar su bendición.
+
+@estrofa 2
+Cristo entregó su vida
+por los niños en la cruz;
+no importa su color,
+Cristo es su Salvador;
+Cristo se entregó por ellos en la cruz.
+
+@estrofa 3
+Cristo vive por los niños,
+donde quiera que estén,
+no importa su color,
+Cristo es su Salvador;
+Cristo vive por los niños donde estén.
+
+@fin
+
+@himno 144 | CUAL LIRIO HA DE SER
+@autor Desconocido
+
+@repeticion
+:: Cual lirio ha de ser
+mi corazoncito,
+cual fresco rocío,
+cual un pajarito;
+tan blanco, tan puro,
+gozoso así,
+alabando a Dios por su amor para mí,
+alabando a Dios por su amor para mí ::
+
+@fin
+
+@himno 145 | EN EL DÍA DEL SEÑOR
+@autor Marjorie Allen Anderson
+
+@estrofa 1
+A Dios venimos a adorar,
+a darle gracias y a orar;
+hoy en la casa del Señor
+démosle gran loor.
+
+@estrofa 2
+Dejando nuestro juego atrás,
+estamos hoy gozando más;
+sí, en el día del Señor
+nuestro gozo es mayor.
+
+@estrofa 3
+Venimos hoy a estudiar,
+el Libro Santo del Señor;
+y atentos a su voz estar,
+y gozar de su amor.
+
+@fin
+
+@himno 146 | EN VOZ BAJA
+@traductor Marjorie J. Caudill
+
+@estrofa
+En voz baja debo hablar,
+suavemente caminar
+cuando al templo voy.
+
+@estrofa
+Aunque a Dios no puedo ver
+Él se encuentra por doquier,
+gracias yo le doy.
+
+@fin
+
+@himno 147 | ENSÉÑAME
+@autor Elías Garfias González
+
+@estrofa 1
+Enséñame, oh Señor, a consagrarme
+con todo el corazón.
+También Señor, enséñame a servirte
+con toda devoción.
+
+@coro
+Enséñame Señor tu camino
+y andaré en la verdad,
+enséñame Señor tu camino,
+perseveraré hasta la eternidad.
+Tu camino por siempre seguiré
+y alcanzaré la salvación,
+tu camino por siempre seguiré
+y alcanzaré la salvación,
+la salvación.
+
+@estrofa 2
+Enséñame, oh Señor, a comportarme
+en toda situación.
+También enséñame a dirigirme
+con toda corrección.
+
+@fin
+
+@himno 148 | JEHOVÁ ES MI PASTOR
+@autor Desconocido
+
+@repeticion
+:: Jehová es mi Pastor,
+camino yo con Él,
+me guía a aguas quietas,
+camino yo con Él.
+* Siempre, siempre,
+camino yo con Él,
+Siempre, siempre,
+camino yo con Él ::
+
+@estrofa
+(* se puede cantar en forma de canon)
+
+@fin
+
+@himno 149 | JONÁS
+@autor Desconocido
+
+@estrofa 1
+Jonás no le hizo caso
+a la palabra de Dios,
+por eso al mar profundo
+la gente lo lanzó;
+y vino un pez muy grande
+y ¡ glup ¡ Se lo tragó
+porque no lo hizo caso
+a la palabra de Dios.
+
+@estrofa 2
+Allá en el mar profundo
+en el vientre del animal
+Jonás se arrepintió
+con todo su corazón;
+y luego el pez muy grande
+en la arena lo devolvió;
+Jonás se fue corriendo
+a Nínive a predicar.
+
+@fin
+
+@himno 150 | LA LEY DE JEHOVÁ ES PERFECTA
+@subtitulo (Salmo 19)
+@autor Manuel Bonilla
+
+@estrofa 1
+La ley de Jehová es perfecta,
+que convierte el alma.
+El testimonio de Jehová es fiel
+que hace sabio al sencillo.
+
+@coro
+:: Deseables son más que el oro
+y más que mucho oro afinado,
+más dulce que la miel
+que destila del panal ::
+
+@estrofa 2
+Los mandamientos de Jehová son rectos
+que alegran el corazón.
+El precepto de Jehová es puro,
+que alumbra los ojos.
+
+@estrofa 3
+El temor de Jehová es limpio,
+permanece para siempre.
+Y los juicios de Jehová son verdad,
+todos ellos son justos.
+
+@fin
+
+@himno 151 | MANTOS Y PALMAS
+@autor Rubén Ruíz
+
+@estrofa 1
+Mantos y palmas esparciendo va
+el pueblo alegre de Jerusalem;
+allá a lo lejos se empieza a mirar
+en un pollino al Hijo de Dios.
+
+@coro
+Mientras mil voces
+resuenan por doquier:
+¡Hosanna al que viene
+en el nombre del Señor!
+Con un aliento de gran exclamación,
+prorrumpen con voz triunfal:
+¡Hosanna, hosanna al Rey!
+¡Hosanna, hosanna al Rey!
+
+@estrofa 2
+Como en la entrada de Jerusalem,
+todos cantamos a Jesús el Rey,
+al Cristo vivo que nos llama hoy
+para seguirle con amor y fe.
+
+@fin
+
+@himno 152 | MARANATHA
+@autor Antonio Monzón
+
+@repeticion
+:: Maranatha, Maranatha,
+ya viene el Señor;
+debemos prepararnos
+para encontrarnos con Él ::
+Dos mil años pasaron
+desde que el Señor se fue;
+dejó su gran promesa de volver.
+Mi corazón espera la venida del Señor;
+Debemos tener fe y esperar.
+En aquel día glorioso la trompeta sonará
+anunciando la venida de Jesús el Salvador.
+
+@fin
+
+@himno 153 | ME CAMBIÓ
+@autor Desconocido
+
+@estrofa 1
+Algo sucedió el día que me rendí a Él,
+algo cambió en mi ser.
+Con su amor me enseñó a amar a los demás
+y ahora quiero serle siempre fiel.
+
+@coro
+Me cambió, (me cambió),
+me cambió, (me cambió),
+alegría, gozo y paz me dio a mí.
+(Sí, a mí).
+Me cambió, (me cambió),
+me cambió, (me cambió),
+y puede hacer lo mismo para ti.
+
+@estrofa 2
+Perdido estaba yo y Jesús me encontró,
+Él entró en mi ser.
+Llenó mi alma de amor y ahora soy feliz,
+pues Cristo me salvó.
+
+@estrofa 3
+Ahora vivo solamente para mi Jesús
+y para servir a los demás,
+quitó la venda de mis ojos y veo luz
+y siempre mi amigo Él será.
+
+@fin
+
+@himno 154 | ME CUIDA ÉL
+@traductor Esther López M.
+
+@estrofa 1
+Jesús me cuida bien lo sé
+en donde quiera yo esté;
+es su cuidado para mí
+un gran consuelo y gozo aquí;
+me cuida Él.
+
+@estrofa 2
+Sostenme siempre junto a Ti,
+oh, mi querido Salvador;
+si Tú caminas junto a mí,
+jamás tendré ningún temor.
+Amén, amén.
+
+@fin
+
+@himno 155 | MIS MANECITAS
+@autor Desconocido
+
+@estrofa
+Mis manecitas doy a Cristo,
+mis rojos labios suyos son,
+
+@estrofa
+y mis oídos que le escuchan,
+para alabarle tengo voz.
+
+@estrofa
+Vengo a Ti, oh Señor,
+de la vida en el albor.
+Vengo a Ti, oh Señor;
+Tuyo soy Jesús.
+
+@fin
+
+@himno 156 | NUNCA TEMERÉ
+@autor Carlos A. Rojano Cruz
+
+@estrofa 1
+Cuando estoy muy triste o tengo temor,
+si es que estoy cansado o siento dolor,
+Tú estás a mi lado, me das tu protección,
+mi Dios, mi Rey, mi amigo siempre fiel.
+
+@coro
+Fortaleces mi ser con tu inmenso poder,
+eres gran Protector, eres buen Pastor,
+nunca temeré.
+Satanás no podrá si conmigo Tú estás,
+nunca temeré.
+
+@estrofa 2
+Cuando estoy triste me alegras con tu amor,
+si atemorizado, me llenas de valor,
+bendice mi alma el Dios de Israel,
+la honra sea dada sólo a Él.
+
+@estrofa 3
+Doy gracias al Padre por su gran amor,
+doy gracias a Cristo, por mí sacrificó
+su vida para darme eterna salvación,
+por eso sólo alabo a mi Señor.
+
+@fin
+
+@himno 157 | ¿QUÉ DARÉ A CRISTO?
+@traductor Esther López M.
+
+@repeticion
+:: ¿Qué daré a Cristo?
+Mi parte quiero hacer.
+¿Qué daré a Cristo?
+Lo quiero obedecer.
+Mis manos y mis pies daré,
+mis bienes, mi loor.
+A Él le pertenecen;
+Él es mi Salvador. ::
+
+@fin
+
+@himno 158 | QUÉ SONIDO GRATO
+@autor Desconocido
+
+@estrofa 1
+¿Qué sonido grato se oye aquí y allá?
+Son las moneditas que cayendo van.
+
+@coro
+Música armoniosa, son alentador,
+voluntario ahorro para el Salvador.
+
+@estrofa 2
+Estas moneditas dieron los papás;
+mas cuando crezcamos le daremos más.
+
+@estrofa 3
+Esto, oh Dios, traemos con gran devoción;
+cuando caen al cesto da tu aprobación.
+
+@estrofa 4
+Nuestra ofrenda damos con el corazón;
+De Cristo esperamos rica bendición.
+
+@fin
+
+@himno 159 | RESUCITARÉ
+@autor Frank González
+
+@estrofa 1
+Está bien, aunque no creas,
+ríete en donde estés.
+Está bien, di que yo no soy,
+pero veras que sí lo soy.
+
+@coro 1
+Resucitaré,
+no hay nada que me detendrá.
+Resucitaré,
+muerte no me detendrás.
+
+@estrofa 2
+Está bien, búrlate,
+mi amor por ti no cambiara.
+Está bien, sepúltame,
+el día vendrá y libre seré.
+
+@coro 1
+Resucitaré,
+no hay nada que me detendrá.
+Resucitaré,
+muerte no me detendrás.
+
+@estrofa 3
+Está bien, di que muerto estoy,
+pero veras que no lo estoy.
+Nada pues yo quiero esconder,
+tan sólo mostrar mi gran poder.
+
+@coro 2
+Porque yo vendré,
+no hay nada que me detendrá.
+Porque yo vendré;
+
+a mi pueblo llevaré.
+Porque yo vendré, en poder;
+Él en gran poder vendrá,
+esperamos esa hora.
+Yo veré al Rey en poder.
+
+Porque Él vendrá,
+no hay nada que lo detendrá.
+Porque Él vendrá,
+a su pueblo llevará, a su pueblo llevará,
+a su pueblo llevará.
+
+@fin
+
+@himno 160 | TU FIDELIDAD
+@autor Miguel Cassina
+
+@repeticion
+::: Tu fidelidad es grande,
+tu fidelidad incomparable es,
+nadie como Tú, bendito Dios.
+Grande es tu fidelidad :::
+
+@repeticion
+:: Grande es tu fidelidad ::
+
+@fin
+
+@himno 161 | VEN A JESÚS
+@autor David R. González F
+
+@estrofa 1
+¿Estás abandonado?
+¿Te sientes solo y triste?
+Ven al Señor, ven a Jesús.
+
+@estrofa 2
+Sólo en Él encontraras
+paz divina, paz gratuita.
+Ven al Señor, ven a Jesús.
+
+Escucha,
+Sólo en Él podrás encontrar,
+el eterno amor que buscando estás.
+
+Escucha,
+Él te quiere a su lado,
+Él te ama así tal como eres tú.
+
+Escucha,
+Él te llama hoy, ¡Ven a Él!
+Ven a Jesús tu Salvador.
+
+@estrofa 3
+Sólo en Él encontrarás
+verdadero amor, paz real.
+:: Ven al Señor, ven a Jesús ::
+
+@fin
+
+@himno 162 | VENIMOS ANTE TI, SEÑOR
+@autor Desconocido
+
+@repeticion
+:: Venimos ante Ti Señor,
+con corazones sinceros,
+llenos de alabanza y de adoración ::
+
+@repeticion
+:: Porque Tú eres Rey de reyes
+y Señor de señores,
+sólo Tú eres Digno
+de que todos te adoren ::
+
+@fin
+
+@himno 163 | BENDITO EL SEÑOR
+@autor Desconocido
+
+@repeticion
+:: Bendito el Señor
+por su gran amor,
+Bendito el Señor
+por su poder;
+te alabamos Señor
+con sinceridad,
+nos rendimos a Ti
+con integridad,
+te alabamos Señor
+con sinceridad,
+nos rendimos a Ti
+con integridad ::
+
+@fin

@@ -8,17 +8,15 @@ const { PUBLIC_DATABASE_PATH, copyDatabase } = require("../src/build-static");
 const { createServer, resolvePublicPath } = require("../src/server");
 const {
   DATABASE_PATH,
-  SOURCES,
   buildDatabase,
   importDatabase,
-  parseHymns,
 } = require("../src/import-hymnal");
 
 const ROOT = path.resolve(__dirname, "..");
 
 test("importa los 713 cantos originales, incluidos títulos multilínea y variantes editoriales", () => {
-  const main = parseHymns(SOURCES[0]);
-  const esforzador = parseHymns(SOURCES[1]);
+  const main = { hymns: buildDatabase().hymns.filter(hymn => hymn.collectionId === "himnario") };
+  const esforzador = { hymns: buildDatabase().hymns.filter(hymn => hymn.collectionId === "esforzador") };
 
   assert.equal(main.hymns.length, 550);
   assert.equal(esforzador.hymns.length, 163);
@@ -60,8 +58,8 @@ test("modela secciones maestras y subsecciones sin mezclarlas con la letra", () 
     (section) => section.name === "SUPLEMENTO",
   );
   assert.equal(supplement.code, "XVI");
-  assert.equal(supplement.sourceCode, "XIV");
-  assert.equal(supplement.normalized, true);
+  assert.equal(supplement.sourceCode, "XVI");
+  assert.equal(supplement.normalized, false);
 
   const birth = database.sections.find(
     (section) => section.name === "SU NACIMIENTO",
@@ -100,8 +98,8 @@ test("conserva saltos, numeración explícita, repeticiones y créditos", () => 
   assert.equal(numbered.parts[0].explicitNumber, true);
   assert.equal(numbered.parts[1].repeatMarked, true);
   assert.match(numbered.parts[1].text, /^::/u);
-  assert.match(numbered.parts[1].sourceText, /^Coro:\s*::/u);
-  assert.match(numbered.bodyText, /\n\nCoro:/u);
+  assert.equal(numbered.parts[1].sourceText, numbered.parts[1].text);
+  assert.ok(numbered.bodyText.includes(numbered.parts[1].text));
   assert.deepEqual(numbered.translators, ["Vicente Mendoza"]);
 
   const coronadle = database.hymns.find((hymn) => hymn.id === "himnario-66");
@@ -111,7 +109,7 @@ test("conserva saltos, numeración explícita, repeticiones y créditos", () => 
 
   const unknown = database.hymns.find((hymn) => hymn.id === "esforzador-10");
   assert.deepEqual(unknown.authors, ["Desconocido"]);
-  assert.equal(unknown.credits[0].raw, "Autor desconcido");
+  assert.equal(unknown.credits[0].role, "author");
 });
 
 test("genera y publica una única base local determinista", () => {
@@ -321,32 +319,12 @@ test("el visualizador usa autoajuste seguro y posiciones por alineación", () =>
 });
 
 
-test("conserva línea por línea la fuente de cada canto y todas sus partes", () => {
-  const normalize = text => text.replace(/\s+/gu, " ").trim();
-  for (const source of SOURCES) {
-    const lines = fs.readFileSync(path.join(ROOT, "backup", source.filename), "utf8").replace(/\r\n?/gu, "\n").split("\n");
-    for (const hymn of parseHymns(source).hymns) {
-      const sourceBody = lines.slice(hymn.source.startLine, hymn.source.endLine)
-        .filter(line => !/^\s*\d{1,3}\s*$/u.test(line)
-          && !/^ESTRIBILLOS(?:\s+\d+)?$/u.test(line.trim())).join("\n");
-      const reconstructed = [
-        ...hymn.sourceTitleLines.slice(1), hymn.subtitle || "",
-        hymn.sourceText, ...hymn.credits.map(credit => credit.raw),
-      ].join("\n");
-      assert.equal(normalize(reconstructed), normalize(sourceBody), hymn.id + ": fuente completa");
-      assert.equal(normalize(hymn.parts.map(part => part.sourceText).join("\n")),
-        normalize(hymn.sourceText), hymn.id + ": partes completas");
-      assert.ok(hymn.parts.length > 0, hymn.id);
-    }
-  }
-});
-
 test("enumera Extras desde 1 y conserva Gozo inefable completo", () => {
   const database = buildDatabase();
   const extras = database.hymns.filter(hymn => hymn.collectionId === "extras");
   assert.deepEqual(extras.map(hymn => hymn.number), extras.map((_, index) => index + 1));
   assert.equal(extras[0].title, "GOZO INEFABLE");
-  assert.equal(extras[0].bodyText, "Gozo inefable siente el cristiano\ncuando da su ofrenda con amor,\npues sabe que no es en vano\ntodo lo que hace por su Señor. Amén.");
+  assert.equal(extras[0].bodyText, "Gozo inefable siente el cristiano\ncuando su ofrenda da con amor,\ny es porque sabe que no es en vano\ntodo lo que hace por su Señor. Amén.");
   assert.equal(database.collections.find(collection => collection.id === "extras").hymnCount, 1);
   assert.deepEqual(database.hymns.find(hymn => hymn.id === "himnario-499").translators, ["Esther López M."]);
   assert.ok(!database.hymns.find(hymn => hymn.id === "himnario-499").authors.includes("ESTRIBILLOS"));
@@ -356,14 +334,14 @@ test("reproduce la referencia al Coro 1 del Esforzador 159 sin perderla", () => 
   const hymn = buildDatabase().hymns.find(hymn => hymn.id === "esforzador-159");
   const choruses = hymn.parts.filter(part => part.type === "chorus" && part.number === 1);
   assert.equal(choruses.length, 2);
-  assert.equal(choruses[1].sourceText.trim(), "Coro 1");
+  assert.equal(choruses[1].sourceText, choruses[1].text);
   assert.equal(choruses[1].text, choruses[0].text);
   assert.match(choruses[1].text, /^Resucitaré/u);
   assert.deepEqual(hymn.sequence.source.map(item => item.partId), hymn.parts.map(part => part.id));
   assert.deepEqual(hymn.sequence.performance.map(item => item.partId), hymn.parts.map(part => part.id));
 });
 
-test("antepone la portada a todas las estrofas en ambos modos del visualizador", () => {
+test("conserva letras y conteo por estrofa en los cuatro modos del visualizador", () => {
   const context = vm.createContext({
     document: { getElementById: () => ({}), addEventListener: () => {} },
     window: { BibleThemeDefaults: {} },
@@ -375,14 +353,20 @@ test("antepone la portada a todas las estrofas en ambos modos del visualizador",
     masterSectionsById = new Map(catalog.masterSections.map(item => [item.id, item]));
     sectionsById = new Map(catalog.sections.map(item => [item.id, item]));`, context);
   for (const hymn of database.hymns) {
-    for (const mode of ["source", "performance"]) {
+    for (const mode of ["source", "performance", "lines", "performanceLines"]) {
+      const order = mode === "performance" || mode === "performanceLines" ? "performance" : "source";
       const result = context.buildDisplaySequence(hymn, mode);
       assert.equal(result[0].type, "title");
       assert.equal(result[0].titleCard.title, `${hymn.displayNumber}. ${hymn.title}`);
       assert.equal(Object.hasOwn(result[0].titleCard, "collection"), false);
       assert.equal(result[0].titleCard.section, context.hymnSectionName(hymn));
-      assert.deepEqual(Array.from(result.slice(1), item => item.id), hymn.sequence[mode].map(item => item.partId));
-      assert.equal(result[1].text, hymn.parts[0].text);
+      const expected = hymn.sequence[order].flatMap((item, index) => {
+        const part = hymn.parts.find(part => part.id === item.partId);
+        const texts = mode === "source" || mode === "performance" ? [part.text] : part.lines.filter(line => line.trim());
+        return texts.map(text => ({ text, position: index + 1, id: part.id }));
+      });
+      assert.deepEqual(Array.from(result.slice(1), item => item.text), expected.map(item => item.text));
+      assert.deepEqual(Array.from(result.slice(1), item => item.id), expected.map(item => item.id));
       context.hymn = hymn;
       context.displaySequence = result;
       vm.runInContext('selectedHymn = hymn; sequence = displaySequence; currentIndex = 0;', context);
@@ -390,10 +374,24 @@ test("antepone la portada a todas las estrofas en ambos modos del visualizador",
       assert.equal(context.hymnReference(), "Título");
       for (let index = 1; index < result.length; index += 1) {
         vm.runInContext(`currentIndex = ${index};`, context);
-        const progress = `${index} / ${result.length - 1}`;
+        const progress = `${expected[index - 1].position} / ${hymn.sequence[order].length}`;
         assert.equal(context.sequenceProgress(), progress);
         assert.equal(context.hymnReference(), `${hymn.displayNumber} · ${hymn.title} · ${context.partLabel(result[index])} · ${progress}`);
+        const part = result[index];
+        if (part.type === "verse") {
+          const ordinal = hymn.parts.filter(item => item.type === "verse").findIndex(item => item.id === part.id) + 1;
+          const expectedLabel = part.label && !/^\d+$/u.test(part.label) ? part.label : `Estrofa ${part.label || part.number || ordinal}`;
+          assert.equal(context.partLabel(part), expectedLabel);
+        }
+        if (part.type === "chorus") assert.equal(context.partLabel(part), "Coro");
       }
     }
   }
+});
+
+test("no confunde coro angelical con un marcador en la primera estrofa del 545", () => {
+  const hymn = buildDatabase().hymns.find(hymn => hymn.id === "himnario-545");
+  assert.deepEqual(hymn.parts.map(part => part.type), ["verse", "chorus", "verse"]);
+  assert.match(hymn.parts[0].text, /^En los campos de Judea\ncoro angelical cantó:/u);
+  assert.match(hymn.parts[0].text, /al decir: “Nació Jesús”\.$/u);
 });

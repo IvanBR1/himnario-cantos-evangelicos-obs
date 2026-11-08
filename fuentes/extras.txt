@@ -1,0 +1,12 @@
+@formato himnario/1
+@coleccion extras | Extras
+
+@himno 1 | GOZO INEFABLE
+
+@estrofa
+Gozo inefable siente el cristiano
+cuando su ofrenda da con amor,
+y es porque sabe que no es en vano
+todo lo que hace por su Señor. Amén.
+
+@fin

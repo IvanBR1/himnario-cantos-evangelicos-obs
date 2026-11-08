@@ -51,6 +51,7 @@ function partLabel(item) {
   if (item.type === 'title') return 'Título';
   if (item.type === 'chorus') return 'Coro';
   if (item.type === 'repetition') return 'Repetición';
+  if (item.type === 'verse' && !item.label && item.verseNumber) return `Estrofa ${item.verseNumber}`;
   return item.label && /^\d+$/.test(item.label) ? `Estrofa ${item.label}` : (item.label || 'Estrofa');
 }
 
@@ -63,9 +64,8 @@ function hymnReference(item = sequence[currentIndex]) {
 function sequenceProgress() {
   if (!sequence.length) return '— / —';
   if (sequence[currentIndex]?.type === 'title') return 'Título';
-  const total = sequence.filter(item => item.type !== 'title').length;
-  const position = sequence.slice(0, currentIndex + 1).filter(item => item.type !== 'title').length;
-  return `${position} / ${total}`;
+  const current = sequence[currentIndex];
+  return `${current.partPosition} / ${current.partTotal}`;
 }
 
 function saveState() {
@@ -153,8 +153,23 @@ function buildDisplaySequence(hymn, mode) {
     title: `${hymn.displayNumber}. ${hymn.title}`,
     section: hymnSectionName(hymn)
   };
-  return [{ type: 'title', titleCard, text: [titleCard.title, titleCard.section].filter(Boolean).join('\n') },
-    ...(hymn.sequence[mode] || []).map(item => parts.get(item.partId))];
+  const order = mode === 'performance' || mode === 'performanceLines' ? 'performance' : 'source';
+  const verseNumbers = new Map();
+  let verseOrdinal = 0;
+  for (const part of hymn.parts) {
+    if (part.type === 'verse') {
+      verseOrdinal += 1;
+      verseNumbers.set(part.id, part.number ?? verseOrdinal);
+    }
+  }
+  const orderedParts = (hymn.sequence[order] || []).map((item, index, entries) => ({
+    ...parts.get(item.partId), verseNumber: verseNumbers.get(item.partId),
+    partPosition: index + 1, partTotal: entries.length
+  }));
+  const content = mode === 'lines' || mode === 'performanceLines'
+    ? orderedParts.flatMap(part => part.lines.filter(line => line.trim()).map(line => ({ ...part, text: line, lines: [line] })))
+    : orderedParts;
+  return [{ type: 'title', titleCard, text: [titleCard.title, titleCard.section].filter(Boolean).join('\n') }, ...content];
 }
 
 function selectHymn(hymn, preferredIndex = 0) {
@@ -401,7 +416,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   themeSettings = { ...getThemeDefaults(), ...(saved.themeSettings || {}) };
   isVisible = Boolean(saved.visible);
   elements.visibility.checked = isVisible;
-  if (saved.mode) elements.mode.value = saved.mode;
+  elements.mode.value = saved.mode === 'performance' && saved.displayMode === 'lines' ? 'performanceLines'
+    : saved.mode === 'source' && saved.displayMode === 'lines' ? 'lines'
+    : ['source', 'performance', 'lines', 'performanceLines'].includes(saved.mode) ? saved.mode : 'source';
   $('obs-url').textContent = `${window.location.origin}/visualizador/`;
 
   renderThemeCards(); syncThemeSettingsUI(); sendThemeSettings();
